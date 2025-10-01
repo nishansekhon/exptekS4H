@@ -61,22 +61,22 @@ const HomePage = () => {
         
         {/* Stats Section */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="text-3xl font-bold text-[#0A6ED1] mb-2">100+</div>
-              <div className="text-gray-600 font-medium">Fit-to-Standard Workshops</div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100/50 group">
+              <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#0A6ED1] to-blue-600 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">100+</div>
+              <div className="text-gray-600 font-medium text-sm lg:text-base">Fit-to-Standard Workshops</div>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="text-3xl font-bold text-[#0A6ED1] mb-2">50%</div>
-              <div className="text-gray-600 font-medium">Faster Implementation</div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100/50 group">
+              <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">50%</div>
+              <div className="text-gray-600 font-medium text-sm lg:text-base">Faster Implementation</div>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="text-3xl font-bold text-[#0A6ED1] mb-2">10+</div>
-              <div className="text-gray-600 font-medium">Years SAP Experience</div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100/50 group">
+              <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-500 to-violet-600 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">10+</div>
+              <div className="text-gray-600 font-medium text-sm lg:text-base">Years SAP Experience</div>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="text-3xl font-bold text-[#0A6ED1] mb-2">24/7</div>
-              <div className="text-gray-600 font-medium">Post-Go-Live Support</div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100/50 group">
+              <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">24/7</div>
+              <div className="text-gray-600 font-medium text-sm lg:text-base">Post-Go-Live Support</div>
             </div>
           </div>
         </div>
