@@ -37,13 +37,14 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-[#0A6ED1] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">E</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/r7yxv8eg_ExpTek%20Logo.jpeg" 
+              alt="ExpTek Logo" 
+              className="h-12 w-auto"
+            />
             <div className="hidden sm:block">
-              <span className="text-xl font-bold text-gray-900">ExpTek</span>
-              <div className="text-xs text-gray-600 -mt-1">SAP Finance Experts</div>
+              <div className="text-xs text-gray-600">SAP Finance Experts</div>
             </div>
           </Link>
 
