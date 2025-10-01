@@ -157,14 +157,18 @@ const HomePage = () => {
       </section>
 
       {/* Case Studies Preview */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section className="py-20 lg:py-32 bg-gradient-to-br from-gray-50 via-blue-50/20 to-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-50 text-green-700 text-sm font-medium mb-6">
+              <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+              Proven Results
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Success Stories
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real results from our SAP Public Cloud Finance implementations
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
+              Real results from our SAP Public Cloud Finance implementations across industries
             </p>
           </div>
           
