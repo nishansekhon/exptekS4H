@@ -108,6 +108,7 @@ const HomePage = () => {
               
               const isPaymentService = service.id === 'digital-payments';
               const isFinanceImplementation = service.id === 'finance-implementation';
+              const isApiIntegration = service.id === 'api-integration';
               
               return (
                 <Card key={service.id} className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-sm hover:-translate-y-2 bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden">
@@ -127,6 +128,16 @@ const HomePage = () => {
                         src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/x7ywqunq_Finance%20Implementation%20SAP.png"
                         alt="Finance Implementation SAP"
                         className="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>
+                    </div>
+                  )}
+                  {isApiIntegration && (
+                    <div className="h-48 bg-gradient-to-br from-blue-50 to-cyan-50 relative overflow-hidden">
+                      <img 
+                        src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/4ttxf48d_API%20Image.png"
+                        alt="API & External System Integration"
+                        className="w-full h-full object-cover opacity-85 group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>
                     </div>
