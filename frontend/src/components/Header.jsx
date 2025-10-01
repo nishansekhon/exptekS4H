@@ -1,0 +1,118 @@
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Button } from './ui/button';
+import { Menu, X } from 'lucide-react';
+
+const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    { name: 'Case Studies', path: '/case-studies' },
+    { name: 'Insights', path: '/insights' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' }
+  ];
+
+  const isActivePath = (path) => {
+    if (path === '/') return location.pathname === '/';
+    return location.pathname.startsWith(path);
+  };
+
+  return (
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100' : 'bg-white'
+    }`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-[#0A6ED1] rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">E</span>
+            </div>
+            <div className="hidden sm:block">
+              <span className="text-xl font-bold text-gray-900">ExpTek</span>
+              <div className="text-xs text-gray-600 -mt-1">SAP Finance Experts</div>
+            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`font-medium transition-colors duration-200 hover:text-[#0A6ED1] ${
+                  isActivePath(item.path) 
+                    ? 'text-[#0A6ED1] border-b-2 border-[#0A6ED1] pb-1' 
+                    : 'text-gray-700'
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+
+          {/* CTA Button */}
+          <div className="hidden lg:block">
+            <Button 
+              asChild
+              className="bg-[#0A6ED1] hover:bg-[#085bb5] text-white px-6 py-2 rounded-lg font-medium transition-all duration-200 shadow-sm hover:shadow-md"
+            >
+              <Link to="/contact">Book Consultation</Link>
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden p-2 text-gray-700 hover:text-[#0A6ED1] transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden bg-white border-t border-gray-100">
+          <div className="px-4 py-6 space-y-4">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`block py-2 font-medium transition-colors duration-200 ${
+                  isActivePath(item.path) ? 'text-[#0A6ED1]' : 'text-gray-700 hover:text-[#0A6ED1]'
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+            <div className="pt-4">
+              <Button 
+                asChild
+                className="w-full bg-[#0A6ED1] hover:bg-[#085bb5] text-white px-6 py-2 rounded-lg font-medium"
+              >
+                <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Book Consultation</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Header;
