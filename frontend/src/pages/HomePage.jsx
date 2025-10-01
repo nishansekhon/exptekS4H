@@ -11,28 +11,47 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-50 to-blue-50 pt-20 pb-16 lg:pt-32 lg:pb-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50/30 to-white pt-20 pb-16">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(10,110,209,0.05),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(59,130,246,0.03),transparent_50%)]"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              {company.tagline}
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-[#0A6ED1] text-sm font-medium mb-8 border border-blue-100">
+              <span className="w-2 h-2 bg-[#0A6ED1] rounded-full mr-2 animate-pulse"></span>
+              Leading SAP Public Cloud Finance Experts
+            </div>
+            
+            <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 tracking-tight">
+              <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+                SAP S/4HANA
+              </span>
+              <br />
+              <span className="text-[#0A6ED1]">Public Cloud Finance</span>
+              <br />
+              <span className="text-gray-700">Experts</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              {company.description}
+            
+            <p className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
+              Transform your financial operations with 100+ Fit-to-Standard workshops delivered using proven SAP Activate methodology
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button 
                 asChild
                 size="lg"
-                className="bg-[#0A6ED1] hover:bg-[#085bb5] text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
+                className="bg-[#0A6ED1] hover:bg-[#085bb5] text-white px-10 py-5 text-lg font-semibold rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0 group"
               >
-                <Link to="/contact">Book a Consultation <ArrowRight className="ml-2 w-5 h-5" /></Link>
+                <Link to="/contact">
+                  Book a Consultation 
+                  <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </Button>
               <Button 
                 asChild
                 variant="outline" 
                 size="lg"
-                className="border-2 border-[#0A6ED1] text-[#0A6ED1] hover:bg-[#0A6ED1] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-200"
+                className="border-2 border-gray-200 text-gray-700 hover:bg-gray-50 hover:border-[#0A6ED1] hover:text-[#0A6ED1] px-10 py-5 text-lg font-semibold rounded-2xl transition-all duration-300 backdrop-blur-sm"
               >
                 <Link to="/services">Explore Services</Link>
               </Button>
