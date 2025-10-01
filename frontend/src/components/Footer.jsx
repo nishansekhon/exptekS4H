@@ -12,14 +12,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-[#0A6ED1] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">E</span>
-              </div>
-              <div>
-                <span className="text-xl font-bold">ExpTek</span>
-                <div className="text-sm text-gray-400 -mt-1">SAP Finance Experts</div>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/r7yxv8eg_ExpTek%20Logo.jpeg" 
+                alt="ExpTek Logo" 
+                className="h-12 w-auto"
+              />
+              <div className="text-sm text-gray-400">SAP Finance Experts</div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Leading SAP S/4HANA Public Cloud Finance consulting with 100+ Fit-to-Standard workshops delivered using proven SAP Activate methodology.
