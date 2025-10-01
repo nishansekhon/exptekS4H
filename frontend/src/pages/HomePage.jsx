@@ -109,6 +109,8 @@ const HomePage = () => {
               const isPaymentService = service.id === 'digital-payments';
               const isFinanceImplementation = service.id === 'finance-implementation';
               const isApiIntegration = service.id === 'api-integration';
+              const isRevenueRecognition = service.id === 'revenue-recognition';
+              const isBankingTreasury = service.id === 'banking-treasury';
               
               return (
                 <Card key={service.id} className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-sm hover:-translate-y-2 bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden">
@@ -137,6 +139,26 @@ const HomePage = () => {
                       <img 
                         src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/4ttxf48d_API%20Image.png"
                         alt="API & External System Integration"
+                        className="w-full h-full object-cover opacity-85 group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>
+                    </div>
+                  )}
+                  {isRevenueRecognition && (
+                    <div className="h-48 bg-gradient-to-br from-purple-50 to-indigo-50 relative overflow-hidden">
+                      <img 
+                        src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85"
+                        alt="Revenue Recognition & Compliance - SAP Fiori Interface"
+                        className="w-full h-full object-cover opacity-85 group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>
+                    </div>
+                  )}
+                  {isBankingTreasury && (
+                    <div className="h-48 bg-gradient-to-br from-emerald-50 to-teal-50 relative overflow-hidden">
+                      <img 
+                        src="https://images.unsplash.com/photo-1748439435495-722cc1728b7e?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85"
+                        alt="Banking & Treasury Optimization - Modern Financial Interface"
                         className="w-full h-full object-cover opacity-85 group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>
