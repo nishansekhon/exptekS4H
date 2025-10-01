@@ -106,27 +106,41 @@ const HomePage = () => {
                 'bar-chart': TrendingUp
               }[service.icon] || TrendingUp;
               
+              const isPaymentService = service.id === 'digital-payments';
+              
               return (
-                <Card key={service.id} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-sm hover:-translate-y-1">
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#0A6ED1] group-hover:text-white transition-colors">
-                      <IconComponent className="w-6 h-6 text-[#0A6ED1] group-hover:text-white" />
+                <Card key={service.id} className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-sm hover:-translate-y-2 bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden">
+                  {isPaymentService && (
+                    <div className="h-48 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
+                      <img 
+                        src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/0frb3bcz_Digital%20Payment%20and%20Customer%20Payment%20image.png"
+                        alt="Digital Payment Services"
+                        className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed">{service.description}</p>
-                    <ul className="space-y-2 mb-4">
+                  )}
+                  <CardContent className="p-8">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gradient-to-br group-hover:from-[#0A6ED1] group-hover:to-blue-600 transition-all duration-300">
+                      <IconComponent className="w-8 h-8 text-[#0A6ED1] group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#0A6ED1] transition-colors">{service.title}</h3>
+                    <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                    <ul className="space-y-3 mb-6">
                       {service.features.slice(0, 3).map((feature, idx) => (
                         <li key={idx} className="flex items-center text-sm text-gray-600">
-                          <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                          <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                            <CheckCircle className="w-3 h-3 text-green-600" />
+                          </div>
                           {feature}
                         </li>
                       ))}
                     </ul>
                     <Link 
                       to={`/services/${service.id}`}
-                      className="inline-flex items-center text-[#0A6ED1] hover:text-[#085bb5] font-medium group-hover:underline transition-colors"
+                      className="inline-flex items-center text-[#0A6ED1] hover:text-[#085bb5] font-semibold group-hover:underline transition-all duration-200 text-sm"
                     >
-                      Learn More <ArrowRight className="ml-1 w-4 h-4" />
+                      Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </CardContent>
                 </Card>
