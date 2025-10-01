@@ -265,21 +265,47 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-24 bg-[#0A6ED1]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Ready to Transform Your Finance Operations?
+      <section className="py-20 lg:py-32 bg-gradient-to-r from-[#0A6ED1] via-blue-600 to-[#0A6ED1] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.05),transparent_50%)]"></div>
+        
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 text-blue-100 text-sm font-medium mb-8 backdrop-blur-sm">
+            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
+            Ready to Transform?
+          </div>
+          
+          <h2 className="text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+            Transform Your Finance
+            <br />
+            <span className="text-blue-200">Operations Today</span>
           </h2>
-          <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            Let's discuss how our SAP Public Cloud Finance expertise can accelerate your digital transformation
+          
+          <p className="text-xl lg:text-2xl text-blue-100 mb-12 leading-relaxed font-light max-w-3xl mx-auto">
+            Let's discuss how our SAP Public Cloud Finance expertise can accelerate your digital transformation journey
           </p>
-          <Button 
-            asChild
-            size="lg"
-            className="bg-white text-[#0A6ED1] hover:bg-gray-50 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
-          >
-            <Link to="/contact">Schedule Your Consultation <ArrowRight className="ml-2 w-5 h-5" /></Link>
-          </Button>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Button 
+              asChild
+              size="lg"
+              className="bg-white text-[#0A6ED1] hover:bg-gray-50 hover:scale-105 px-10 py-5 text-lg font-bold rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-0 group"
+            >
+              <Link to="/contact">
+                Schedule Your Consultation 
+                <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </Button>
+            
+            <Button 
+              asChild
+              variant="outline" 
+              size="lg"
+              className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-5 text-lg font-semibold rounded-2xl transition-all duration-300 backdrop-blur-sm"
+            >
+              <Link to="/case-studies">View Success Stories</Link>
+            </Button>
+          </div>
         </div>
       </section>
     </div>
