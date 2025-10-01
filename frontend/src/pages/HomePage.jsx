@@ -172,34 +172,36 @@ const HomePage = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {caseStudies.slice(0, 2).map((caseStudy, index) => (
-              <Card key={caseStudy.id} className="bg-white hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-4">
-                    <div className="bg-[#0A6ED1] text-white px-3 py-1 rounded-full text-sm font-medium">
+              <Card key={caseStudy.id} className="bg-white/90 backdrop-blur-sm hover:shadow-2xl transition-all duration-500 rounded-3xl border-0 overflow-hidden group">
+                <CardContent className="p-10">
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="bg-gradient-to-r from-[#0A6ED1] to-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
                       {caseStudy.industry}
                     </div>
-                    <div className="ml-auto flex items-center text-gray-500">
-                      <Clock className="w-4 h-4 mr-1" />
-                      <span className="text-sm">{caseStudy.timeline}</span>
+                    <div className="flex items-center text-gray-500 bg-gray-50 px-3 py-1 rounded-full">
+                      <Clock className="w-4 h-4 mr-2" />
+                      <span className="text-sm font-medium">{caseStudy.timeline}</span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{caseStudy.title}</h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{caseStudy.challenge}</p>
-                  <div className="space-y-2 mb-6">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#0A6ED1] transition-colors">{caseStudy.title}</h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed text-lg">{caseStudy.challenge}</p>
+                  <div className="space-y-3 mb-8">
                     {caseStudy.results.slice(0, 3).map((result, idx) => (
-                      <div key={idx} className="flex items-center">
-                        <Star className="w-4 h-4 text-yellow-500 mr-2" />
-                        <span className="text-sm text-gray-700">{result}</span>
+                      <div key={idx} className="flex items-start">
+                        <div className="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                          <Star className="w-3 h-3 text-yellow-600" />
+                        </div>
+                        <span className="text-gray-700 font-medium">{result}</span>
                       </div>
                     ))}
                   </div>
                   <Link 
                     to={`/case-studies#${caseStudy.id}`}
-                    className="inline-flex items-center text-[#0A6ED1] hover:text-[#085bb5] font-medium hover:underline transition-colors"
+                    className="inline-flex items-center text-[#0A6ED1] hover:text-[#085bb5] font-semibold hover:underline transition-all duration-200 text-lg group"
                   >
-                    Read Full Case Study <ArrowRight className="ml-1 w-4 h-4" />
+                    Read Full Case Study <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </CardContent>
               </Card>
