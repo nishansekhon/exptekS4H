@@ -148,9 +148,9 @@ const HomePage = () => {
             })}
           </div>
           
-          <div className="text-center mt-12">
-            <Button asChild variant="outline" size="lg" className="border-2 border-[#0A6ED1] text-[#0A6ED1] hover:bg-[#0A6ED1] hover:text-white px-8 py-3">
-              <Link to="/services">View All Services <ArrowRight className="ml-2 w-5 h-5" /></Link>
+          <div className="text-center mt-16">
+            <Button asChild variant="outline" size="lg" className="border-2 border-gray-200 text-gray-700 hover:bg-[#0A6ED1] hover:border-[#0A6ED1] hover:text-white px-10 py-4 rounded-2xl font-semibold transition-all duration-300 backdrop-blur-sm">
+              <Link to="/services">View All Services <ArrowRight className="ml-3 w-5 h-5" /></Link>
             </Button>
           </div>
         </div>
