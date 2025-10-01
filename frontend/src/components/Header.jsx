@@ -69,7 +69,7 @@ const Header = () => {
           <div className="hidden lg:block">
             <Button 
               asChild
-              className="bg-[#0A6ED1] hover:bg-[#085bb5] text-white px-6 py-2 rounded-lg font-medium transition-all duration-200 shadow-sm hover:shadow-md"
+              className="bg-[#0A6ED1] hover:bg-[#085bb5] text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               <Link to="/contact">Book Consultation</Link>
             </Button>
