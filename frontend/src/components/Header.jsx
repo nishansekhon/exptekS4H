@@ -104,7 +104,7 @@ const Header = () => {
             <div className="pt-4">
               <Button 
                 asChild
-                className="w-full bg-[#0A6ED1] hover:bg-[#085bb5] text-white px-6 py-2 rounded-lg font-medium"
+                className="w-full bg-[#0A6ED1] hover:bg-[#085bb5] text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Book Consultation</Link>
               </Button>
