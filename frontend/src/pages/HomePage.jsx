@@ -22,17 +22,17 @@ const HomePage = () => {
               Leading SAP Public Cloud Finance Experts
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 tracking-tight">
-              <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+            <h1 className="text-5xl lg:text-7xl font-bold mb-8 tracking-tight">
+              <span className="bg-gradient-to-r from-slate-800 via-gray-900 to-slate-800 bg-clip-text text-transparent">
                 SAP S/4HANA
               </span>
               <br />
               <span className="text-[#0A6ED1]">Public Cloud Finance</span>
               <br />
-              <span className="text-gray-700">Experts</span>
+              <span className="bg-gradient-to-r from-slate-700 to-gray-800 bg-clip-text text-transparent">Experts</span>
             </h1>
             
-            <p className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="text-xl lg:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
               Transform your financial operations with 100+ Fit-to-Standard workshops delivered using proven SAP Activate methodology
             </p>
             
