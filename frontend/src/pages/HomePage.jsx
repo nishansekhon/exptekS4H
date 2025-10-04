@@ -11,36 +11,40 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50/30 to-white pt-20 pb-16">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(10,110,209,0.05),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(59,130,246,0.03),transparent_50%)]"></div>
+      <section className="relative min-h-[95vh] flex items-center justify-center bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 pt-20 pb-16 overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(16,185,129,0.05),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,rgba(59,130,246,0.03)_25%,transparent_25%,transparent_75%,rgba(59,130,246,0.03)_75%)] bg-[length:60px_60px]"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-[#0A6ED1] text-sm font-medium mb-8 border border-blue-100">
-              <span className="w-2 h-2 bg-[#0A6ED1] rounded-full mr-2 animate-pulse"></span>
+            <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-600/20 to-cyan-600/20 backdrop-blur-sm border border-blue-500/20 text-blue-300 text-sm font-medium mb-8">
+              <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 animate-pulse"></span>
               Leading SAP Public Cloud Finance Experts
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-bold mb-8 tracking-tight">
-              <span className="bg-gradient-to-r from-slate-800 via-gray-900 to-slate-800 bg-clip-text text-transparent">
+            <h1 className="text-5xl lg:text-8xl font-bold mb-8 tracking-tight leading-none">
+              <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
                 SAP S/4HANA
               </span>
               <br />
-              <span className="text-[#0A6ED1]">Public Cloud Finance</span>
+              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                Public Cloud Finance
+              </span>
               <br />
-              <span className="bg-gradient-to-r from-slate-700 to-gray-800 bg-clip-text text-transparent">Experts</span>
+              <span className="text-gray-300 text-6xl lg:text-7xl">Experts</span>
             </h1>
             
-            <p className="text-xl lg:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
-              Transform your financial operations with 100+ Fit-to-Standard workshops delivered using proven SAP Activate methodology
+            <p className="text-xl lg:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
+              Transform your financial operations with <span className="text-blue-400 font-medium">100+ Fit-to-Standard workshops</span> delivered using proven SAP Activate methodology
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button 
                 asChild
                 size="lg"
-                className="bg-[#0A6ED1] hover:bg-[#085bb5] text-white px-10 py-5 text-lg font-semibold rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0 group"
+                className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-12 py-6 text-lg font-bold rounded-2xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 border-0 group"
               >
                 <Link to="/contact">
                   Book a Consultation 
@@ -51,7 +55,7 @@ const HomePage = () => {
                 asChild
                 variant="outline" 
                 size="lg"
-                className="border-2 border-gray-200 text-gray-700 hover:bg-gray-50 hover:border-[#0A6ED1] hover:text-[#0A6ED1] px-10 py-5 text-lg font-semibold rounded-2xl transition-all duration-300 backdrop-blur-sm"
+                className="border-2 border-gray-600 text-gray-300 hover:bg-white/5 hover:border-blue-400 hover:text-blue-400 px-12 py-6 text-lg font-bold rounded-2xl transition-all duration-300 backdrop-blur-sm"
               >
                 <Link to="/services">Explore Services</Link>
               </Button>
