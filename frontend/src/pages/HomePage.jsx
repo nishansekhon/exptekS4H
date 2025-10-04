@@ -158,11 +158,11 @@ const HomePage = () => {
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gradient-to-br group-hover:from-[#0A6ED1] group-hover:to-blue-600 transition-all duration-300">
                       <IconComponent className="w-8 h-8 text-[#0A6ED1] group-hover:text-white transition-colors" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#0A6ED1] transition-colors">{service.title}</h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                    <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-[#0A6ED1] transition-colors">{service.title}</h3>
+                    <p className="text-slate-600 mb-6 leading-relaxed">{service.description}</p>
                     <ul className="space-y-3 mb-6">
                       {service.features.slice(0, 3).map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-sm text-gray-600">
+                        <li key={idx} className="flex items-center text-sm text-slate-600">
                           <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center mr-3">
                             <CheckCircle className="w-3 h-3 text-green-600" />
                           </div>
