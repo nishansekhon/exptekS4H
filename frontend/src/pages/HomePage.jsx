@@ -86,7 +86,69 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Services Preview */}
+      {/* SAP Connect Section */}
+      <section className="py-20 lg:py-32 bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-800 relative overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(59,130,246,0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_50%,rgba(168,85,247,0.08),transparent_50%)]"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Content */}
+            <div>
+              <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm border border-blue-500/20 text-blue-300 text-sm font-medium mb-8">
+                <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full mr-3 animate-pulse"></span>
+                Connect with SAP Experts
+              </div>
+              
+              <h2 className="text-4xl lg:text-6xl font-bold mb-8 tracking-tight leading-tight">
+                <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+                  Transform Your
+                </span>
+                <br />
+                <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                  Finance Journey
+                </span>
+              </h2>
+              
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed font-light">
+                Join hundreds of finance leaders who have transformed their operations with our <span className="text-blue-400 font-medium">proven SAP expertise</span> and industry-leading methodologies.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  asChild
+                  size="lg"
+                  className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-10 py-5 text-lg font-bold rounded-2xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
+                >
+                  <Link to="/contact">Start Your Journey</Link>
+                </Button>
+                <Button 
+                  asChild
+                  variant="outline" 
+                  size="lg"
+                  className="border-2 border-gray-600 text-gray-300 hover:bg-white/5 hover:border-blue-400 hover:text-blue-400 px-10 py-5 text-lg font-bold rounded-2xl transition-all duration-300 backdrop-blur-sm"
+                >
+                  <Link to="/case-studies">View Success Stories</Link>
+                </Button>
+              </div>
+            </div>
+            
+            {/* Right Image */}
+            <div className="relative">
+              <div className="relative bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/injmaruu_image.png"
+                  alt="SAP Connect - Transform Your Finance Journey"
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                />
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full opacity-20 blur-xl"></div>
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full opacity-15 blur-xl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="py-20 lg:py-32 bg-gradient-to-br from-slate-50 via-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
