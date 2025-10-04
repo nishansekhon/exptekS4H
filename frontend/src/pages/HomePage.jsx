@@ -138,8 +138,8 @@ const HomePage = () => {
             <div className="relative">
               <div className="relative bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/injmaruu_image.png"
-                  alt="SAP Connect - Transform Your Finance Journey"
+                  src="https://images.unsplash.com/photo-1758691736975-9f7f643d178e"
+                  alt="Diverse Business Team Collaboration - Transform Your Finance Journey"
                   className="w-full h-auto rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full opacity-20 blur-xl"></div>
