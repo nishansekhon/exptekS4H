@@ -424,8 +424,10 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      </section>
     </div>
   );
 };
 
+export default HomePage;
 export default HomePage;
