@@ -183,7 +183,7 @@ const HomePage = () => {
           </div>
           
           <div className="text-center mt-16">
-            <Button asChild variant="outline" size="lg" className="border-2 border-gray-200 text-gray-700 hover:bg-[#0A6ED1] hover:border-[#0A6ED1] hover:text-white px-10 py-4 rounded-2xl font-semibold transition-all duration-300 backdrop-blur-sm">
+            <Button asChild variant="outline" size="lg" className="border-2 border-slate-300 text-slate-700 hover:bg-[#0A6ED1] hover:border-[#0A6ED1] hover:text-white px-12 py-4 rounded-2xl font-bold transition-all duration-300 backdrop-blur-sm shadow-lg hover:shadow-blue-500/25">
               <Link to="/services">View All Services <ArrowRight className="ml-3 w-5 h-5" /></Link>
             </Button>
           </div>
