@@ -149,6 +149,26 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Services Preview */}
+      <section className="py-20 lg:py-32 bg-gradient-to-br from-slate-50 via-white to-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-50 to-cyan-50 text-slate-700 text-sm font-semibold mb-8 border border-blue-100">
+              <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-3"></span>
+              Our Expertise
+            </div>
+            <h2 className="text-4xl lg:text-6xl font-bold mb-8 tracking-tight">
+              <span className="bg-gradient-to-r from-slate-900 via-gray-800 to-slate-900 bg-clip-text text-transparent">
+                SAP Public Cloud Finance
+              </span>
+              <br />
+              <span className="text-[#0A6ED1]">Services</span>
+            </h2>
+            <p className="text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto font-light leading-relaxed">
+              Comprehensive SAP S/4HANA Public Cloud Finance consulting services to transform your financial operations
+            </p>
+          </div>
       <section className="py-20 lg:py-32 bg-gradient-to-br from-slate-50 via-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
