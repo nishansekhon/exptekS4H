@@ -373,6 +373,297 @@ const FinanceImplementationPage = () => {
         <CustomRoadmap />
       </section>
 
+      {/* PHASE 3: ADVANCED FEATURES */}
+      
+      {/* Fit-to-Standard Workshops Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            Comprehensive Fit-to-Standard Workshop Program
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Our structured workshop approach ensures 95% fit-to-standard outcomes through proven SAP best practices and industry expertise.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <Card className="p-6 text-center bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-0">
+            <div className="text-3xl mb-4">📊</div>
+            <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">25+</div>
+            <div className="text-gray-600 dark:text-gray-300 text-sm">Discovery Workshops</div>
+          </Card>
+          
+          <Card className="p-6 text-center bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-0">
+            <div className="text-3xl mb-4">🔧</div>
+            <div className="text-2xl font-bold text-green-600 dark:text-green-400 mb-2">40+</div>
+            <div className="text-gray-600 dark:text-gray-300 text-sm">Configuration Sessions</div>
+          </Card>
+          
+          <Card className="p-6 text-center bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-950/30 dark:to-indigo-950/30 border-0">
+            <div className="text-3xl mb-4">✅</div>
+            <div className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-2">35+</div>
+            <div className="text-gray-600 dark:text-gray-300 text-sm">Testing Workshops</div>
+          </Card>
+          
+          <Card className="p-6 text-center bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/30 dark:to-red-950/30 border-0">
+            <div className="text-3xl mb-4">🎓</div>
+            <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 mb-2">20+</div>
+            <div className="text-gray-600 dark:text-gray-300 text-sm">Training Sessions</div>
+          </Card>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8">
+          <Card className="p-6">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Workshop Categories</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+                <span className="text-gray-600 dark:text-gray-300">Financial Accounting (FI)</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+                <span className="text-gray-600 dark:text-gray-300">Controlling (CO)</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+                <span className="text-gray-600 dark:text-gray-300">Asset Accounting (AA)</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+                <span className="text-gray-600 dark:text-gray-300">Accounts Payable/Receivable</span>
+              </li>
+            </ul>
+          </Card>
+
+          <Card className="p-6">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Workshop Outcomes</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <Target className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
+                <span className="text-gray-600 dark:text-gray-300">95% Standard Functionality Coverage</span>
+              </li>
+              <li className="flex items-start">
+                <Target className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
+                <span className="text-gray-600 dark:text-gray-300">Validated Configuration Decisions</span>
+              </li>
+              <li className="flex items-start">
+                <Target className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
+                <span className="text-gray-600 dark:text-gray-300">Documented Business Requirements</span>
+              </li>
+              <li className="flex items-start">
+                <Target className="h-5 w-5 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
+                <span className="text-gray-600 dark:text-gray-300">Stakeholder Sign-off & Approval</span>
+              </li>
+            </ul>
+          </Card>
+
+          <Card className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-0">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Workshop Benefits</h3>
+            <div className="space-y-4">
+              <div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">50%</div>
+                <div className="text-sm text-gray-600 dark:text-gray-300">Faster Implementation</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-green-600 dark:text-green-400">85%</div>
+                <div className="text-sm text-gray-600 dark:text-gray-300">Requirement Accuracy</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">100%</div>
+                <div className="text-sm text-gray-600 dark:text-gray-300">SAP Best Practices</div>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      {/* Finance Modules Section */}
+      <section className="bg-gray-50 dark:bg-gray-800/50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              Complete Finance Module Coverage
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Our implementation covers all core SAP S/4HANA Finance modules with deep configuration and integration capabilities.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">💰</div>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">General Ledger</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Chart of Accounts, Posting Logic, Period-End Close</p>
+            </Card>
+
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">📋</div>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Accounts Payable</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Vendor Management, Invoice Processing, Payment Automation</p>
+            </Card>
+
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">💳</div>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Accounts Receivable</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Customer Billing, Collections, Cash Application</p>
+            </Card>
+
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🏢</div>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Asset Accounting</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Fixed Assets, Depreciation, Asset Lifecycle Management</p>
+            </Card>
+
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">📊</div>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Controlling</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Cost Centers, Profit Centers, Internal Orders</p>
+            </Card>
+
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">📈</div>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Financial Reporting</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Financial Statements, Management Reporting, Analytics</p>
+            </Card>
+
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">💱</div>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Treasury</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Cash Management, Foreign Exchange, Bank Integration</p>
+            </Card>
+
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">⚖️</div>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Compliance</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Tax Compliance, Audit Trail, Regulatory Reporting</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Integration Capabilities Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            Seamless Integration Capabilities
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Connect SAP S/4HANA Finance with your existing business applications through our proven integration framework.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+          <Card className="p-8">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">CRM Integration</h3>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-blue-600 dark:text-blue-400 font-bold text-sm">SF</span>
+                </div>
+                <span className="text-gray-600 dark:text-gray-300">Salesforce</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-orange-100 dark:bg-orange-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-orange-600 dark:text-orange-400 font-bold text-sm">HS</span>
+                </div>
+                <span className="text-gray-600 dark:text-gray-300">HubSpot</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-purple-100 dark:bg-purple-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-purple-600 dark:text-purple-400 font-bold text-sm">MS</span>
+                </div>
+                <span className="text-gray-600 dark:text-gray-300">Microsoft Dynamics</span>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="p-8">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Expense Management</h3>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-green-100 dark:bg-green-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-green-600 dark:text-green-400 font-bold text-sm">CO</span>
+                </div>
+                <span className="text-gray-600 dark:text-gray-300">SAP Concur</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-red-100 dark:bg-red-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-red-600 dark:text-red-400 font-bold text-sm">EX</span>
+                </div>
+                <span className="text-gray-600 dark:text-gray-300">Expensify</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-indigo-100 dark:bg-indigo-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-indigo-600 dark:text-indigo-400 font-bold text-sm">CO</span>
+                </div>
+                <span className="text-gray-600 dark:text-gray-300">Coupa Expense</span>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="p-8">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Business Intelligence</h3>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-yellow-100 dark:bg-yellow-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-yellow-600 dark:text-yellow-400 font-bold text-sm">PB</span>
+                </div>
+                <span className="text-gray-600 dark:text-gray-300">Power BI</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-cyan-100 dark:bg-cyan-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-cyan-600 dark:text-cyan-400 font-bold text-sm">TB</span>
+                </div>
+                <span className="text-gray-600 dark:text-gray-300">Tableau</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-8 h-8 bg-teal-100 dark:bg-teal-900/50 rounded-lg flex items-center justify-center">
+                  <span className="text-teal-600 dark:text-teal-400 font-bold text-sm">QK</span>
+                </div>
+                <span className="text-gray-600 dark:text-gray-300">Qlik Sense</span>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-2xl p-8">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Integration Benefits</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-300">Real-time data synchronization</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-300">Automated workflow processing</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-300">Reduced manual data entry</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-300">Enhanced data accuracy</span>
+                </li>
+              </ul>
+            </div>
+            <div className="text-center lg:text-right">
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">200+</div>
+              <div className="text-gray-600 dark:text-gray-300">Successful Integrations Delivered</div>
+              <Button 
+                className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2"
+                onClick={() => handleCTAClick('integration-consultation')}
+              >
+                Discuss Your Integration Needs
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-800 dark:to-blue-900 py-16">
         <div className="container mx-auto px-4 text-center">
