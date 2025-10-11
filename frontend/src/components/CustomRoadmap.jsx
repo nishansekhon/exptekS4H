@@ -18,7 +18,7 @@ const CustomRoadmap = () => {
       description: 'Business Assessment & Project Initiation',
       milestones: [
         'Project Kickoff & Charter Development',
-        'Current State Assessment', 
+        'Current State Assessment',
         'Cloud Trial Environment Setup',
         'Stakeholder Alignment Sessions',
         'Business Case Validation',
@@ -28,7 +28,9 @@ const CustomRoadmap = () => {
         'Business process assessment',
         'Solution scoping & sizing',
         'Project team formation',
-        'Initial system access setup'
+        'Initial system access setup',
+        'Workshop schedule planning',
+        'Risk & dependency identification'
       ]
     },
     {
@@ -40,18 +42,20 @@ const CustomRoadmap = () => {
       icon: '📋',
       description: 'Foundation Setup & Configuration Design',
       milestones: [
-        'Governance Structure Establishment',
-        'Fit-to-Standard Workshop Series (25+ sessions)',
-        'Chart of Accounts Design',
-        'Integration Architecture Blueprint',
-        'Data Migration Strategy',
-        'Configuration Workbook Creation'
+        'Fit-to-Standard Analysis Completion',
+        'Configuration Workbook Development',
+        'Integration Architecture Design',
+        'Data Migration Strategy Approval',
+        'Test Plan Creation',
+        'Training Approach Finalized'
       ],
       activities: [
-        'Fit-to-Standard analysis',
-        'Configuration planning',
-        'Integration architecture design',
-        'Data strategy development'
+        'Business process mapping',
+        'Gap analysis documentation',
+        'Solution design workshops',
+        'Technical architecture planning',
+        'Security & authorization design',
+        'Change management planning'
       ]
     },
     {
@@ -64,17 +68,19 @@ const CustomRoadmap = () => {
       description: 'System Build & Configuration Execution',
       milestones: [
         'Development System Configuration',
-        'Finance Module Workshop Completion (40+ sessions)',
-        'Integration Development & Testing',
-        'Master Data Template Creation',
-        'Security & Authorization Setup',
-        'Initial Data Load & Validation'
+        'Master Data Templates Created',
+        'Integration Prototypes Built',
+        'Data Extraction Completed',
+        'Test Case Library Developed',
+        'Training Materials Drafted'
       ],
       activities: [
-        'Core system configuration',
-        'Finance workshop execution',
+        'Finance module configuration',
+        'GL, AP, AR setup',
+        'Asset accounting configuration',
         'Integration development',
-        'Master data preparation'
+        'Data cleansing & validation',
+        'User training preparation'
       ]
     },
     {
@@ -87,17 +93,19 @@ const CustomRoadmap = () => {
       description: 'Testing, Training & Final Preparation',
       milestones: [
         'Quality System Configuration Complete',
-        'End-to-End Testing Execution',
-        'User Acceptance Testing (UAT)',
-        'Training Program Delivery (20+ sessions)',
-        'Cutover Rehearsal Execution',
-        'Go-Live Readiness Assessment'
+        'End-to-End Testing Executed',
+        'User Training Delivered',
+        'UAT Sign-off Obtained',
+        'Cutover Plan Approved',
+        'Production Readiness Confirmed'
       ],
       activities: [
-        'System & integration testing',
-        'User training delivery',
-        'Data migration execution',
-        'UAT completion & sign-off'
+        'System testing & validation',
+        'Integration testing',
+        'Performance testing',
+        'User acceptance testing',
+        'Training delivery',
+        'Documentation finalization'
       ]
     },
     {
@@ -109,18 +117,20 @@ const CustomRoadmap = () => {
       icon: '🚀',
       description: 'Production Go-Live & Immediate Support',
       milestones: [
-        'Production System Activation',
-        'Final Data Cutover Execution',
-        'Go-Live Weekend Support',
-        'First Month-End Close Support',
-        'Issue Resolution & Optimization',
-        'Go-Live Success Confirmation'
+        'Production System Provisioned',
+        'Final Data Migration Completed',
+        'Go-Live Cutover Executed',
+        'Production Validation Passed',
+        'Hypercare Support Activated',
+        'Go-Live Sign-off Received'
       ],
       activities: [
-        'Production system cutover',
-        'Go-live execution support',
-        'Hypercare support (2-4 weeks)',
-        'Performance monitoring'
+        'Cutover execution',
+        'Production data load',
+        'System validation',
+        'User support & issue resolution',
+        'Performance monitoring',
+        'Stabilization activities'
       ]
     },
     {
@@ -132,18 +142,20 @@ const CustomRoadmap = () => {
       icon: '🔄',
       description: 'Continuous Support & Optimization',
       milestones: [
-        'Ongoing Support Services',
-        'Monthly System Health Checks',
+        'Month-End Close Support',
+        'Enhancement Backlog Prioritized',
+        'System Health Checks Completed',
         'Quarterly Business Reviews',
-        'SAP Release Management',
-        'Enhancement Backlog Management',
-        'Value Realization Tracking'
+        'Release Updates Managed',
+        'Continuous Improvement Initiatives'
       ],
       activities: [
-        'Continuous system optimization',
+        'Ongoing support & maintenance',
+        'Issue resolution & troubleshooting',
         'Enhancement delivery',
-        'Support services',
-        'Value realization tracking'
+        'SAP release management',
+        'Performance optimization',
+        'User adoption monitoring'
       ]
     }
   ];
