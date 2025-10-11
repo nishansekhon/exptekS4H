@@ -9,6 +9,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '../componen
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '../components/ui/breadcrumb';
 import CustomRoadmap from '../components/CustomRoadmap';
 import FinanceModules from '../components/FinanceModules';
+import FinanceImplementationDetail from '../components/FinanceImplementationDetail';
 import financeData from '../data/finance-implementation.json';
 
 // Icon mapping for statistics
