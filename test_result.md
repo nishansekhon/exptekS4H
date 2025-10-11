@@ -154,8 +154,7 @@
   run_ui: false
 
 ## test_plan:
-  current_focus:
-    - "Finance Implementation End-to-End Detailed Section"
+  current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
