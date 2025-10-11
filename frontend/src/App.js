@@ -6,6 +6,7 @@ import ModernFooter from './components/ModernFooter';
 import EnhancedHomePage from './pages/EnhancedHomePage';
 import FinanceImplementationPage from './pages/FinanceImplementationPage';
 import DigitalPaymentsPage from './pages/DigitalPaymentsPage';
+import APIIntegrationPage from './pages/APIIntegrationPage';
 import ServicesOverviewPage from './pages/ServicesOverviewPage';
 import ComingSoonPage from './components/ComingSoonPage';
 import './App.css';
