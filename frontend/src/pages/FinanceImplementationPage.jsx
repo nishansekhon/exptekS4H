@@ -110,93 +110,137 @@ const FinanceImplementationPage = () => {
           </div>
 
           <div className="relative">
-            {/* ExpTek Custom Implementation Roadmap Hero Visual */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-2xl">
-              <div className="aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900 dark:to-cyan-900 rounded-xl p-8 overflow-hidden">
-                {/* Professional Roadmap Visualization */}
-                <div className="w-full h-full flex flex-col justify-center">
-                  {/* Timeline Header */}
-                  <div className="text-center mb-6">
-                    <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-2">ExpTek Implementation Methodology</h3>
-                    <div className="w-full h-1 bg-gradient-to-r from-yellow-400 via-green-400 via-teal-400 via-blue-400 via-orange-400 to-purple-400 rounded-full"></div>
-                  </div>
-                  
-                  {/* Phase Cards */}
-                  <div className="grid grid-cols-6 gap-3">
-                    {/* Phase 1: DISCOVER */}
-                    <div className="bg-gradient-to-br from-yellow-400 to-orange-400 rounded-lg p-3 text-center shadow-md">
-                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
-                        <span className="text-xs font-bold text-yellow-600">🔍</span>
-                      </div>
-                      <div className="text-xs font-bold text-white mb-1">DISCOVER</div>
-                      <div className="text-xs text-yellow-100">Weeks 1-2</div>
+            {/* ExpTek Comprehensive Implementation Roadmap */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-2xl">
+              <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950 dark:to-cyan-950 rounded-xl p-6 overflow-auto">
+                {/* Roadmap Header */}
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">ExpTek Finance Implementation Framework</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Comprehensive SAP S/4HANA Cloud Methodology with Detailed Milestones</p>
+                </div>
+                
+                {/* Swimlane Roadmap */}
+                <div className="min-w-[1000px]">
+                  {/* Phase Timeline Header */}
+                  <div className="grid grid-cols-6 gap-2 mb-4">
+                    <div className="bg-gradient-to-r from-yellow-400 to-orange-400 text-white p-3 rounded-lg text-center">
+                      <div className="font-bold text-sm">DISCOVER</div>
+                      <div className="text-xs opacity-90">Weeks 1-3</div>
                     </div>
-                    
-                    {/* Phase 2: PREPARE */}
-                    <div className="bg-gradient-to-br from-green-400 to-emerald-400 rounded-lg p-3 text-center shadow-md">
-                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
-                        <span className="text-xs font-bold text-green-600">📋</span>
-                      </div>
-                      <div className="text-xs font-bold text-white mb-1">PREPARE</div>
-                      <div className="text-xs text-green-100">Weeks 3-4</div>
+                    <div className="bg-gradient-to-r from-green-400 to-emerald-400 text-white p-3 rounded-lg text-center">
+                      <div className="font-bold text-sm">PREPARE</div>
+                      <div className="text-xs opacity-90">Weeks 4-6</div>
                     </div>
-                    
-                    {/* Phase 3: EXPLORE */}
-                    <div className="bg-gradient-to-br from-teal-400 to-cyan-400 rounded-lg p-3 text-center shadow-md">
-                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
-                        <span className="text-xs font-bold text-teal-600">🔧</span>
-                      </div>
-                      <div className="text-xs font-bold text-white mb-1">EXPLORE</div>
-                      <div className="text-xs text-teal-100">Weeks 5-8</div>
+                    <div className="bg-gradient-to-r from-teal-400 to-cyan-400 text-white p-3 rounded-lg text-center">
+                      <div className="font-bold text-sm">EXPLORE</div>
+                      <div className="text-xs opacity-90">Weeks 8-12</div>
                     </div>
-                    
-                    {/* Phase 4: REALIZE */}
-                    <div className="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg p-3 text-center shadow-md">
-                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
-                        <span className="text-xs font-bold text-blue-600">⚡</span>
-                      </div>
-                      <div className="text-xs font-bold text-white mb-1">REALIZE</div>
-                      <div className="text-xs text-blue-100">Weeks 9-11</div>
+                    <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white p-3 rounded-lg text-center">
+                      <div className="font-bold text-sm">REALIZE</div>
+                      <div className="text-xs opacity-90">Weeks 13-16</div>
                     </div>
-                    
-                    {/* Phase 5: DEPLOY */}
-                    <div className="bg-gradient-to-br from-orange-400 to-red-400 rounded-lg p-3 text-center shadow-md">
-                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
-                        <span className="text-xs font-bold text-orange-600">🚀</span>
-                      </div>
-                      <div className="text-xs font-bold text-white mb-1">DEPLOY</div>
-                      <div className="text-xs text-orange-100">Week 12</div>
+                    <div className="bg-gradient-to-r from-orange-400 to-red-400 text-white p-3 rounded-lg text-center">
+                      <div className="font-bold text-sm">DEPLOY</div>
+                      <div className="text-xs opacity-90">Week 17</div>
                     </div>
-                    
-                    {/* Phase 6: RUN */}
-                    <div className="bg-gradient-to-br from-purple-400 to-indigo-400 rounded-lg p-3 text-center shadow-md">
-                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
-                        <span className="text-xs font-bold text-purple-600">🔄</span>
-                      </div>
-                      <div className="text-xs font-bold text-white mb-1">RUN</div>
-                      <div className="text-xs text-purple-100">Ongoing</div>
+                    <div className="bg-gradient-to-r from-purple-400 to-indigo-400 text-white p-3 rounded-lg text-center">
+                      <div className="font-bold text-sm">RUN</div>
+                      <div className="text-xs opacity-90">Ongoing</div>
                     </div>
                   </div>
-                  
-                  {/* Key Benefits */}
-                  <div className="mt-6 grid grid-cols-3 gap-4 text-center">
-                    <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-2">
-                      <div className="text-lg font-bold text-blue-600">12 Weeks</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Implementation</div>
+
+                  {/* Workstream Rows */}
+                  <div className="space-y-2">
+                    {/* Project Management Row */}
+                    <div className="grid grid-cols-7 gap-2 items-center">
+                      <div className="text-xs font-semibold text-gray-700 dark:text-gray-300 p-2">Project Management</div>
+                      <div className="bg-yellow-100 dark:bg-yellow-900/30 p-2 rounded text-xs text-center">Project Kickoff & Charter</div>
+                      <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded text-xs text-center">Governance Setup</div>
+                      <div className="bg-teal-100 dark:bg-teal-900/30 p-2 rounded text-xs text-center">Sprint Planning & Execution</div>
+                      <div className="bg-blue-100 dark:bg-blue-900/30 p-2 rounded text-xs text-center">Quality Assurance</div>
+                      <div className="bg-orange-100 dark:bg-orange-900/30 p-2 rounded text-xs text-center">Go-Live Management</div>
+                      <div className="bg-purple-100 dark:bg-purple-900/30 p-2 rounded text-xs text-center">Continuous Support</div>
                     </div>
-                    <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-2">
+
+                    {/* Business Process Row */}
+                    <div className="grid grid-cols-7 gap-2 items-center">
+                      <div className="text-xs font-semibold text-gray-700 dark:text-gray-300 p-2">Business Process</div>
+                      <div className="bg-yellow-100 dark:bg-yellow-900/30 p-2 rounded text-xs text-center">As-Is Analysis</div>
+                      <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded text-xs text-center">Fit-to-Standard Analysis</div>
+                      <div className="bg-teal-100 dark:bg-teal-900/30 p-2 rounded text-xs text-center">Process Configuration</div>
+                      <div className="bg-blue-100 dark:bg-blue-900/30 p-2 rounded text-xs text-center">Testing & Validation</div>
+                      <div className="bg-orange-100 dark:bg-orange-900/30 p-2 rounded text-xs text-center">Process Cutover</div>
+                      <div className="bg-purple-100 dark:bg-purple-900/30 p-2 rounded text-xs text-center">Process Optimization</div>
+                    </div>
+
+                    {/* Technical Setup Row */}
+                    <div className="grid grid-cols-7 gap-2 items-center">
+                      <div className="text-xs font-semibold text-gray-700 dark:text-gray-300 p-2">Technical Setup</div>
+                      <div className="bg-yellow-100 dark:bg-yellow-900/30 p-2 rounded text-xs text-center">Cloud Trial Setup</div>
+                      <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded text-xs text-center">Development System</div>
+                      <div className="bg-teal-100 dark:bg-teal-900/30 p-2 rounded text-xs text-center">Configuration Build</div>
+                      <div className="bg-blue-100 dark:bg-blue-900/30 p-2 rounded text-xs text-center">Quality System Setup</div>
+                      <div className="bg-orange-100 dark:bg-orange-900/30 p-2 rounded text-xs text-center">Production Activation</div>
+                      <div className="bg-purple-100 dark:bg-purple-900/30 p-2 rounded text-xs text-center">System Maintenance</div>
+                    </div>
+
+                    {/* Finance Configuration Row */}
+                    <div className="grid grid-cols-7 gap-2 items-center">
+                      <div className="text-xs font-semibold text-gray-700 dark:text-gray-300 p-2">Finance Config</div>
+                      <div className="bg-yellow-100 dark:bg-yellow-900/30 p-2 rounded text-xs text-center">Chart of Accounts</div>
+                      <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded text-xs text-center">GL Configuration</div>
+                      <div className="bg-teal-100 dark:bg-teal-900/30 p-2 rounded text-xs text-center">AP/AR Setup</div>
+                      <div className="bg-blue-100 dark:bg-blue-900/30 p-2 rounded text-xs text-center">Asset Accounting</div>
+                      <div className="bg-orange-100 dark:bg-orange-900/30 p-2 rounded text-xs text-center">Period Close Setup</div>
+                      <div className="bg-purple-100 dark:bg-purple-900/30 p-2 rounded text-xs text-center">Financial Reporting</div>
+                    </div>
+
+                    {/* Data Migration Row */}
+                    <div className="grid grid-cols-7 gap-2 items-center">
+                      <div className="text-xs font-semibold text-gray-700 dark:text-gray-300 p-2">Data Migration</div>
+                      <div className="bg-yellow-100 dark:bg-yellow-900/30 p-2 rounded text-xs text-center">Data Assessment</div>
+                      <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded text-xs text-center">Migration Strategy</div>
+                      <div className="bg-teal-100 dark:bg-teal-900/30 p-2 rounded text-xs text-center">Data Preparation</div>
+                      <div className="bg-blue-100 dark:bg-blue-900/30 p-2 rounded text-xs text-center">Migration Testing</div>
+                      <div className="bg-orange-100 dark:bg-orange-900/30 p-2 rounded text-xs text-center">Production Load</div>
+                      <div className="bg-purple-100 dark:bg-purple-900/30 p-2 rounded text-xs text-center">Data Quality</div>
+                    </div>
+
+                    {/* Testing & Training Row */}
+                    <div className="grid grid-cols-7 gap-2 items-center">
+                      <div className="text-xs font-semibold text-gray-700 dark:text-gray-300 p-2">Testing & Training</div>
+                      <div className="bg-yellow-100 dark:bg-yellow-900/30 p-2 rounded text-xs text-center">Test Planning</div>
+                      <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded text-xs text-center">Test Case Design</div>
+                      <div className="bg-teal-100 dark:bg-teal-900/30 p-2 rounded text-xs text-center">System Testing</div>
+                      <div className="bg-blue-100 dark:bg-blue-900/30 p-2 rounded text-xs text-center">UAT & Training</div>
+                      <div className="bg-orange-100 dark:bg-orange-900/30 p-2 rounded text-xs text-center">Go-Live Support</div>
+                      <div className="bg-purple-100 dark:bg-purple-900/30 p-2 rounded text-xs text-center">Knowledge Transfer</div>
+                    </div>
+                  </div>
+
+                  {/* Key Milestones */}
+                  <div className="mt-6 grid grid-cols-4 gap-4 text-center">
+                    <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-3">
+                      <div className="text-lg font-bold text-blue-600">17 Weeks</div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">Total Implementation</div>
+                    </div>
+                    <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-3">
                       <div className="text-lg font-bold text-green-600">100+</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Workshops</div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">Fit-to-Standard Workshops</div>
                     </div>
-                    <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-2">
-                      <div className="text-lg font-bold text-purple-600">95%</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Success Rate</div>
+                    <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-3">
+                      <div className="text-lg font-bold text-purple-600">6</div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">Parallel Workstreams</div>
+                    </div>
+                    <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-3">
+                      <div className="text-lg font-bold text-orange-600">95%</div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">On-Time Delivery</div>
                     </div>
                   </div>
                 </div>
               </div>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">
-                ExpTek Finance Implementation Methodology - Proven 6 Phase Approach
+                ExpTek Proprietary Implementation Framework - Comprehensive 6-Phase Methodology with Detailed Workstream Breakdown
               </p>
             </div>
           </div>
