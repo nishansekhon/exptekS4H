@@ -330,39 +330,76 @@ const CustomRoadmap = () => {
               </CardHeader>
             </Card>
             
-            {/* Mobile Expanded Content - Vertical Stacked Layout */}
+            {/* Mobile Expanded Content - Compact Layout */}
             {activePhase === phase.id && (
-              <div className="mt-4 p-8 rounded-xl bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border-t-4 shadow-lg animate-in slide-in-from-top-2" 
-                   style={{ borderTopColor: phase.color }}>
+              <div className="mt-4 rounded-xl bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border-t-4 shadow-lg animate-in slide-in-from-top-2" 
+                   style={{ 
+                     borderTopColor: phase.color,
+                     padding: '16px'
+                   }}>
                 
-                {/* Key Milestones Section - Full Width */}
-                <div className="milestones-section mb-8">
-                  <h4 className="text-xl font-semibold mb-6" style={{ color: phase.color }}>
+                {/* Key Milestones Section - Compact */}
+                <div className="milestones-section" style={{ marginBottom: '16px' }}>
+                  <h4 style={{ 
+                    color: phase.color,
+                    fontSize: '14px',
+                    fontWeight: '600',
+                    marginBottom: '12px',
+                    textTransform: 'none'
+                  }}>
                     Key Milestones:
                   </h4>
-                  <ul className="space-y-4">
+                  <ul>
                     {phase.milestones.map((milestone, i) => (
-                      <li key={i} className="flex items-start text-gray-700 dark:text-gray-300">
+                      <li key={i} className="flex items-start" style={{ marginBottom: '8px' }}>
                         <div 
-                          className="w-2 h-2 rounded-full mt-2.5 mr-4 flex-shrink-0"
-                          style={{ backgroundColor: phase.color }}
+                          className="rounded-full mt-1 mr-3 flex-shrink-0"
+                          style={{ 
+                            backgroundColor: phase.color,
+                            width: '4px',
+                            height: '4px'
+                          }}
                         />
-                        <span className="text-base leading-relaxed">{milestone}</span>
+                        <span style={{ 
+                          fontSize: '13px',
+                          lineHeight: '1.4',
+                          color: '#b0b0b0'
+                        }}>
+                          {milestone}
+                        </span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                {/* Core Activities Section - Full Width, Below Milestones */}
+                {/* Core Activities Section - Compact */}
                 <div className="activities-section">
-                  <h4 className="text-xl font-semibold text-green-600 dark:text-green-400 mb-6">
+                  <h4 style={{ 
+                    color: '#52C41A',
+                    fontSize: '14px',
+                    fontWeight: '600',
+                    marginBottom: '12px',
+                    textTransform: 'none'
+                  }}>
                     Core Activities:
                   </h4>
-                  <ul className="space-y-4">
+                  <ul>
                     {phase.activities.map((activity, i) => (
-                      <li key={i} className="flex items-start text-gray-700 dark:text-gray-300">
-                        <CheckCircle2 className="h-5 w-5 mt-0.5 mr-4 text-green-500 flex-shrink-0" />
-                        <span className="text-base leading-relaxed">{activity}</span>
+                      <li key={i} className="flex items-start" style={{ marginBottom: '8px' }}>
+                        <CheckCircle2 className="flex-shrink-0" style={{ 
+                          width: '14px',
+                          height: '14px',
+                          marginTop: '1px',
+                          marginRight: '12px',
+                          color: '#52C41A'
+                        }} />
+                        <span style={{ 
+                          fontSize: '13px',
+                          lineHeight: '1.4',
+                          color: '#b0b0b0'
+                        }}>
+                          {activity}
+                        </span>
                       </li>
                     ))}
                   </ul>
