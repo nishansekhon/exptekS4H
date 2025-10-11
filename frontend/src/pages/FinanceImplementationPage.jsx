@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '../components/ui/collapsible';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '../components/ui/breadcrumb';
 import CustomRoadmap from '../components/CustomRoadmap';
+import FinanceModules from '../components/FinanceModules';
 import financeData from '../data/finance-implementation.json';
 
 // Icon mapping for statistics
