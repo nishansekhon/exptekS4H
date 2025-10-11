@@ -16,6 +16,7 @@ function App() {
           <main>
             <Routes>
               <Route path="/" element={<EnhancedHomePage />} />
+              <Route path="/services/finance-implementation" element={<FinanceImplementationPage />} />
               {/* Additional routes will be added here */}
             </Routes>
           </main>
