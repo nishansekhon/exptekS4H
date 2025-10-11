@@ -94,7 +94,7 @@ const ContactPage = () => {
     },
     {
       question: 'What is your typical project timeline?',
-      answer: 'Our implementations typically range from 8-17 weeks depending on scope and complexity. Simple integrations can be completed in 4-8 weeks.'
+      answer: 'Our implementations typically range from 3-8 months depending on scope and complexity. Small focused projects can be completed in 3-4 months, while large global implementations take 6-8 months. We deliver 40% faster than traditional Big 4 consulting firms.'
     },
     {
       question: 'Do you provide ongoing support?',
