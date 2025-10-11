@@ -13,79 +13,124 @@ const CustomRoadmap = () => {
       id: 'discover',
       number: 1,
       name: 'DISCOVER',
-      duration: 'Weeks 1-2',
+      duration: 'Weeks 1-3',
       color: '#F4B942',
       bgGradient: 'from-yellow-400 to-orange-400',
       bgLight: 'bg-yellow-50 dark:bg-yellow-950/20',
       icon: Search,
+      description: 'Business Assessment & Project Initiation',
+      milestones: [
+        'Project Kickoff & Charter Development',
+        'Current State Assessment',
+        'Cloud Trial Environment Setup',
+        'Stakeholder Alignment Sessions',
+        'Business Case Validation',
+        'Implementation Roadmap Finalization'
+      ],
       activities: [
         'Business process assessment',
-        'Solution scoping',
-        'Project kickoff',
-        'Team enablement'
+        'Solution scoping & sizing',
+        'Project team formation',
+        'Initial system access setup'
       ]
     },
     {
       id: 'prepare',
       number: 2,
       name: 'PREPARE',
-      duration: 'Weeks 3-4',
+      duration: 'Weeks 4-6',
       color: '#52C41A',
       bgGradient: 'from-green-400 to-emerald-400',
       bgLight: 'bg-green-50 dark:bg-green-950/20',
       icon: Clipboard,
+      description: 'Foundation Setup & Configuration Design',
+      milestones: [
+        'Governance Structure Establishment',
+        'Fit-to-Standard Workshop Series (25+ sessions)',
+        'Chart of Accounts Design',
+        'Integration Architecture Blueprint',
+        'Data Migration Strategy',
+        'Configuration Workbook Creation'
+      ],
       activities: [
         'Fit-to-Standard analysis',
         'Configuration planning',
-        'Integration design',
-        'Data strategy'
+        'Integration architecture design',
+        'Data strategy development'
       ]
     },
     {
       id: 'explore',
       number: 3,
       name: 'EXPLORE',
-      duration: 'Weeks 5-8',
+      duration: 'Weeks 8-12',
       color: '#17A2B8',
       bgGradient: 'from-teal-400 to-cyan-400',
       bgLight: 'bg-teal-50 dark:bg-teal-950/20',
       icon: Settings,
+      description: 'System Build & Configuration Execution',
+      milestones: [
+        'Development System Configuration',
+        'Finance Module Workshop Completion (40+ sessions)',
+        'Integration Development & Testing',
+        'Master Data Template Creation',
+        'Security & Authorization Setup',
+        'Initial Data Load & Validation'
+      ],
       activities: [
-        'System configuration',
-        'Workshop execution',
-        'Integration build',
-        'Data preparation'
+        'Core system configuration',
+        'Finance workshop execution',
+        'Integration development',
+        'Master data preparation'
       ]
     },
     {
       id: 'realize',
       number: 4,
       name: 'REALIZE',
-      duration: 'Weeks 9-11',
+      duration: 'Weeks 13-16',
       color: '#0A6ED1',
       bgGradient: 'from-blue-400 to-blue-600',
       bgLight: 'bg-blue-50 dark:bg-blue-950/20',
       icon: Zap,
+      description: 'Testing, Training & Final Preparation',
+      milestones: [
+        'Quality System Configuration Complete',
+        'End-to-End Testing Execution',
+        'User Acceptance Testing (UAT)',
+        'Training Program Delivery (20+ sessions)',
+        'Cutover Rehearsal Execution',
+        'Go-Live Readiness Assessment'
+      ],
       activities: [
-        'Testing & validation',
-        'User training',
-        'Data migration',
-        'UAT completion'
+        'System & integration testing',
+        'User training delivery',
+        'Data migration execution',
+        'UAT completion & sign-off'
       ]
     },
     {
       id: 'deploy',
       number: 5,
       name: 'DEPLOY',
-      duration: 'Week 12',
+      duration: 'Week 17',
       color: '#FF8C00',
       bgGradient: 'from-orange-400 to-red-400',
       bgLight: 'bg-orange-50 dark:bg-orange-950/20',
       icon: Rocket,
+      description: 'Production Go-Live & Immediate Support',
+      milestones: [
+        'Production System Activation',
+        'Final Data Cutover Execution',
+        'Go-Live Weekend Support',
+        'First Month-End Close Support',
+        'Issue Resolution & Optimization',
+        'Go-Live Success Confirmation'
+      ],
       activities: [
-        'Production cutover',
-        'Go-live execution',
-        'Hypercare support',
+        'Production system cutover',
+        'Go-live execution support',
+        'Hypercare support (2-4 weeks)',
         'Performance monitoring'
       ]
     },
@@ -98,11 +143,20 @@ const CustomRoadmap = () => {
       bgGradient: 'from-purple-400 to-indigo-400',
       bgLight: 'bg-purple-50 dark:bg-purple-950/20',
       icon: RefreshCw,
+      description: 'Continuous Support & Optimization',
+      milestones: [
+        'Ongoing Support Services',
+        'Monthly System Health Checks',
+        'Quarterly Business Reviews',
+        'SAP Release Management',
+        'Enhancement Backlog Management',
+        'Value Realization Tracking'
+      ],
       activities: [
-        'Continuous optimization',
+        'Continuous system optimization',
         'Enhancement delivery',
         'Support services',
-        'Value realization'
+        'Value realization tracking'
       ]
     }
   ];
