@@ -375,6 +375,9 @@ const FinanceImplementationPage = () => {
         <CustomRoadmap />
       </section>
 
+      {/* Finance Implementation End-to-End Detailed Section */}
+      <FinanceImplementationDetail />
+
       {/* PHASE 3 & 4: HIGH PRIORITY SECTIONS */}
 
       {/* Why Choose ExpTek Section - HIGH PRIORITY #1 */}
