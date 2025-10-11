@@ -762,7 +762,7 @@ const APIIntegrationPage = () => {
                 Total Project Timeline
               </h3>
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                6-12 Weeks
+                7-17 Weeks
               </div>
               <p className="text-gray-600 dark:text-gray-300">
                 From initial discovery to production deployment with ongoing support
