@@ -329,10 +329,10 @@ const CustomRoadmap = () => {
                 <CollapsibleContent>
                   <CardContent className="pt-0 pb-4 space-y-4">
                     <div>
-                      <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Key Milestones:</h4>
-                      <ul className="space-y-2">
+                      <h4 className="text-xs font-semibold text-gray-900 dark:text-white mb-2">Key Milestones:</h4>
+                      <ul className="space-y-1">
                         {phase.milestones.map((milestone, i) => (
-                          <li key={i} className="flex items-start text-sm text-gray-600 dark:text-gray-400">
+                          <li key={i} className="text-xs text-gray-600 dark:text-gray-400 flex items-start">
                             <div 
                               className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
                               style={{ backgroundColor: phase.color }}
@@ -344,11 +344,11 @@ const CustomRoadmap = () => {
                     </div>
                     
                     <div>
-                      <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Core Activities:</h4>
-                      <ul className="space-y-2">
+                      <h4 className="text-xs font-semibold text-gray-900 dark:text-white mb-2">Core Activities:</h4>
+                      <ul className="space-y-1">
                         {phase.activities.map((activity, i) => (
-                          <li key={i} className="flex items-start text-sm text-gray-600 dark:text-gray-400">
-                            <CheckCircle2 className="h-4 w-4 mt-0.5 mr-2 text-green-500 flex-shrink-0" />
+                          <li key={i} className="text-xs text-gray-600 dark:text-gray-400 flex items-start">
+                            <CheckCircle2 className="h-3 w-3 mt-0.5 mr-1 text-green-500 flex-shrink-0" />
                             {activity}
                           </li>
                         ))}
