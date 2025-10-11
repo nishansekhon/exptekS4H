@@ -148,18 +148,7 @@ const CustomRoadmap = () => {
     }
   ];
 
-  const currentPhase = phases.find(phase => phase.id === activePhase);
-  const currentIndex = phases.findIndex(phase => phase.id === activePhase);
-
-  const nextPhase = () => {
-    const nextIndex = (currentIndex + 1) % phases.length;
-    setActivePhase(phases[nextIndex].id);
-  };
-
-  const prevPhase = () => {
-    const prevIndex = currentIndex === 0 ? phases.length - 1 : currentIndex - 1;
-    setActivePhase(phases[prevIndex].id);
-  };
+  const currentPhase = phases.find(phase => phase.id === activePhase) || phases[0];
 
   return (
     <div className="w-full">
