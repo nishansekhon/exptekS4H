@@ -1,22 +1,22 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
+import NewHeader from './components/NewHeader';
+import NewFooter from './components/NewFooter';
+import NewHomePage from './pages/NewHomePage';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        <NewHeader />
         <main>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<NewHomePage />} />
             {/* Additional routes will be added here */}
           </Routes>
         </main>
-        <Footer />
+        <NewFooter />
       </BrowserRouter>
     </div>
   );
