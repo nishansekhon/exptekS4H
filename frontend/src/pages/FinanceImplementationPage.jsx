@@ -514,7 +514,7 @@ const FinanceImplementationPage = () => {
               <div className="space-y-3 text-gray-600 dark:text-gray-300">
                 <div className="flex items-center">
                   <CheckCircle2 className="h-4 w-4 text-green-500 mr-3" />
-                  <span className="text-sm">8-12 week implementations</span>
+                  <span className="text-sm">40% faster than Big 4 firms</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle2 className="h-4 w-4 text-green-500 mr-3" />
@@ -526,7 +526,7 @@ const FinanceImplementationPage = () => {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle2 className="h-4 w-4 text-green-500 mr-3" />
-                  <span className="text-sm">40% cost savings</span>
+                  <span className="text-sm">50% cost savings vs Big 4</span>
                 </div>
               </div>
             </div>
