@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import ModernHeader from './components/ModernHeader';
 import ModernFooter from './components/ModernFooter';
-import ModernHomePage from './pages/ModernHomePage';
+import EnhancedHomePage from './pages/EnhancedHomePage';
 import './App.css';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
           <ModernHeader />
           <main>
             <Routes>
-              <Route path="/" element={<ModernHomePage />} />
+              <Route path="/" element={<EnhancedHomePage />} />
               {/* Additional routes will be added here */}
             </Routes>
           </main>
