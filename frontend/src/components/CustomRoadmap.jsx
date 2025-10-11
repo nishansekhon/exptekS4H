@@ -152,95 +152,154 @@ const CustomRoadmap = () => {
 
   return (
     <div className="w-full">
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-          ExpTek Finance Implementation Framework
-        </h2>
-        <p className="text-lg text-gray-600 dark:text-gray-300">
-          Comprehensive SAP S/4HANA Cloud Methodology
-        </p>
-      </div>
-
-      {/* Horizontal Timeline with Inline Details */}
-      <div className="relative mb-16">
+      {/* Desktop Timeline */}
+      <div className="hidden lg:block relative">
         {/* Timeline Line */}
-        <div className="absolute top-12 left-0 right-0 h-2 bg-gradient-to-r from-yellow-400 via-green-400 via-teal-400 via-blue-400 via-orange-400 to-purple-400 rounded-full shadow-lg mx-8"></div>
+        <div className="absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-yellow-400 via-green-400 via-teal-400 via-blue-400 via-orange-400 to-purple-400 rounded-full"></div>
         
-        {/* Phase Cards with Inline Details */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        {/* Phase Cards Grid */}
+        <div className="grid grid-cols-6 gap-4 relative">
           {phases.map((phase, index) => (
             <div key={phase.id} className="relative">
               {/* Connection Dot */}
               <div 
-                className="absolute top-8 left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full border-4 border-white dark:border-gray-900 shadow-lg z-20 flex items-center justify-center"
+                className="absolute top-20 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full border-4 border-white dark:border-gray-900 z-10"
                 style={{ backgroundColor: phase.color }}
-              >
-                <span className="text-white font-bold text-sm">{index + 1}</span>
-              </div>
+              ></div>
               
               {/* Phase Card */}
-              <div className="mt-20 bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
-                {/* Icon */}
-                <div 
-                  className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${phase.bgGradient} flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg`}
-                >
-                  {phase.icon}
-                </div>
-                
-                {/* Duration Badge */}
-                <div 
-                  className="inline-block px-4 py-2 rounded-full text-sm font-semibold text-white mb-4 mx-auto block text-center"
-                  style={{ backgroundColor: phase.color }}
-                >
-                  {phase.duration}
-                </div>
-                
-                {/* Phase Name */}
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">
-                  {phase.name}
-                </h3>
-                
-                {/* Key Milestones */}
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-600 dark:text-gray-300 mb-3">
-                    Key Milestones:
-                  </h4>
-                  <ul className="space-y-2">
-                    {phase.milestones.slice(0, 4).map((milestone, i) => (
-                      <li key={i} className="flex items-start text-xs text-gray-600 dark:text-gray-400">
-                        <div 
-                          className="w-1.5 h-1.5 rounded-full mt-1.5 mr-2 flex-shrink-0"
-                          style={{ backgroundColor: phase.color }}
-                        />
-                        <span className="leading-relaxed">{milestone}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Core Activities */}
-                <div>
-                  <h4 className="text-sm font-semibold text-gray-600 dark:text-gray-300 mb-3">
-                    Core Activities:
-                  </h4>
-                  <ul className="space-y-2">
-                    {phase.activities.map((activity, i) => (
-                      <li key={i} className="flex items-start text-xs text-gray-600 dark:text-gray-400">
-                        <CheckCircle2 className="h-3 w-3 mt-0.5 mr-2 text-green-500 flex-shrink-0" />
-                        <span className="leading-relaxed">{activity}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              <Card 
+                className={`mt-32 cursor-pointer transition-all duration-300 hover:shadow-xl ${activePhase === phase.id ? 'shadow-2xl scale-105' : ''}`}
+                onClick={() => setActivePhase(phase.id)}
+              >
+                <CardHeader className="text-center pb-4">
+                  <div className="mx-auto w-12 h-12 rounded-lg flex items-center justify-center mb-3" style={{ backgroundColor: phase.color + '20' }}>
+                    <span className="text-xl font-bold" style={{ color: phase.color }}>
+                      {index + 1}
+                    </span>
+                  </div>
+                  <Badge variant="outline" style={{ borderColor: phase.color, color: phase.color }} className="mb-2">
+                    {phase.duration}
+                  </Badge>
+                  <CardTitle className="text-sm font-bold text-gray-900 dark:text-white">
+                    {phase.name}
+                  </CardTitle>
+                  <p className="text-xs text-gray-600 dark:text-gray-400">
+                    {phase.description}
+                  </p>
+                </CardHeader>
+              </Card>
             </div>
           ))}
         </div>
       </div>
 
+      {/* Mobile Timeline */}
+      <div className="lg:hidden space-y-6">
+        {phases.map((phase, index) => (
+          <Card key={phase.id} className="overflow-hidden">
+            <div 
+              className="h-2 w-full"
+              style={{ backgroundColor: phase.color }}
+            ></div>
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <div>
+                  <Badge variant="outline" style={{ borderColor: phase.color, color: phase.color }} className="mb-2">
+                    {phase.duration}
+                  </Badge>
+                  <CardTitle className="text-lg font-bold text-gray-900 dark:text-white">
+                    Phase {index + 1}: {phase.name}
+                  </CardTitle>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    {phase.description}
+                  </p>
+                </div>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setActivePhase(phase.id)}
+                  className="ml-4"
+                >
+                  <ChevronRight className="h-4 w-4" />
+                </Button>
+              </div>
+            </CardHeader>
+          </Card>
+        ))}
+      </div>
+
+      {/* Selected Phase Details */}
+      {currentPhase && (
+        <div className="mt-12">
+          <Card className="bg-white dark:bg-gray-800 shadow-xl">
+            <CardContent className="p-8">
+              <div className="text-center mb-8">
+                <div 
+                  className={`w-20 h-20 rounded-full bg-gradient-to-br ${currentPhase.bgGradient} flex items-center justify-center text-4xl mx-auto mb-4 shadow-lg`}
+                >
+                  {currentPhase.icon}
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                  {currentPhase.name}
+                </h3>
+                <Badge 
+                  variant="outline" 
+                  className="text-sm px-4 py-1 border-2"
+                  style={{ 
+                    borderColor: currentPhase.color, 
+                    color: currentPhase.color, 
+                    backgroundColor: currentPhase.color + '15' 
+                  }}
+                >
+                  {currentPhase.duration}
+                </Badge>
+                <p className="text-gray-600 dark:text-gray-300 mt-3 text-lg">
+                  {currentPhase.description}
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                    <Target className="h-5 w-5 mr-2" style={{ color: currentPhase.color }} />
+                    Key Milestones
+                  </h4>
+                  <ul className="space-y-3">
+                    {currentPhase.milestones.map((milestone, i) => (
+                      <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
+                        <div 
+                          className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0"
+                          style={{ backgroundColor: currentPhase.color }}
+                        />
+                        <span className="text-base leading-relaxed">{milestone}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                    <CheckCircle2 className="h-5 w-5 mr-2 text-green-500" />
+                    Core Activities
+                  </h4>
+                  <ul className="space-y-3">
+                    {currentPhase.activities.map((activity, i) => (
+                      <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
+                        <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
+                        <span className="text-base leading-relaxed">{activity}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )}
+
       {/* Framework Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 mb-8">
         <Card className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 border-0">
           <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">17 Weeks</div>
           <div className="text-gray-600 dark:text-gray-300">Total Implementation</div>
@@ -258,11 +317,10 @@ const CustomRoadmap = () => {
       </div>
 
       {/* Legal Disclaimer */}
-      <div className="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
-        <p className="text-sm text-gray-600 dark:text-gray-400 text-center leading-relaxed">
-          ExpTek Proprietary Implementation Framework - Comprehensive 6-Phase Methodology with Detailed Workstream Breakdown. 
-          Based on industry best practices and SAP-recommended approaches. SAP Activate is a trademark of SAP SE. 
-          ExpTek is an independent consulting firm and this roadmap represents our proprietary implementation framework.
+      <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
+        <p className="text-xs text-gray-600 dark:text-gray-400 text-center">
+          ExpTek's implementation methodology is based on industry best practices and SAP-recommended approaches. 
+          SAP Activate is a trademark of SAP SE. ExpTek is an independent consulting firm and this roadmap represents our proprietary implementation framework.
         </p>
       </div>
     </div>
