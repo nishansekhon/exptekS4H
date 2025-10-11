@@ -896,9 +896,321 @@ const APIIntegrationPage = () => {
         </div>
       </section>
 
-      {/* Continue with remaining sections... */}
-      {/* I'll add FAQ, Case Study, Disclaimer, and Final CTA in the next update */}
-      
+      {/* SECTION 10 - SECURITY & COMPLIANCE */}
+      <section className="bg-gray-50 dark:bg-gray-800/50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              Integration Security & Compliance
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Enterprise-grade security measures and compliance standards for all API integrations.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: 'Authentication & Authorization',
+                icon: <Lock className="h-8 w-8" />,
+                features: ['OAuth 2.0 / SAML 2.0', 'API key management', 'Certificate-based auth', 'Role-based access control'],
+                color: 'blue'
+              },
+              {
+                title: 'Data Encryption',
+                icon: <Shield className="h-8 w-8" />,
+                features: ['TLS 1.2+ in transit', 'AES-256 at rest', 'Tokenization for sensitive data', 'PCI-DSS compliance'],
+                color: 'green'
+              },
+              {
+                title: 'Monitoring & Auditing',
+                icon: <Eye className="h-8 w-8" />,
+                features: ['Real-time API monitoring', 'Error logging & alerting', 'Audit trail maintenance', 'Performance metrics'],
+                color: 'purple'
+              },
+              {
+                title: 'Compliance Standards',
+                icon: <CheckCircle2 className="h-8 w-8" />,
+                features: ['SOC 2 Type II', 'GDPR compliance', 'ISO 27001', 'Industry-specific regulations'],
+                color: 'orange'
+              }
+            ].map((security, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
+                <div className={`w-16 h-16 bg-${security.color}-100 dark:bg-${security.color}-900/50 rounded-full flex items-center justify-center mx-auto mb-4 text-${security.color}-600 dark:text-${security.color}-400`}>
+                  {security.icon}
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 text-center">
+                  {security.title}
+                </h3>
+                <ul className="space-y-2">
+                  {security.features.map((feature, fIndex) => (
+                    <li key={fIndex} className="flex items-start">
+                      <CheckCircle2 className="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
+                      <span className="text-gray-600 dark:text-gray-300 text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 11 - FAQ */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            API Integration FAQ
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Common questions about SAP S/4HANA API integrations and implementation approach.
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto space-y-4">
+          {faqData.map((faq, index) => (
+            <Card key={index} className="overflow-hidden">
+              <Collapsible open={expandedFAQ === index} onOpenChange={() => toggleFAQ(index)}>
+                <CollapsibleTrigger asChild>
+                  <button className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white pr-4">
+                      {faq.question}
+                    </h3>
+                    {expandedFAQ === index ? (
+                      <ChevronUp className="h-5 w-5 text-gray-600 dark:text-gray-400 flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="h-5 w-5 text-gray-600 dark:text-gray-400 flex-shrink-0" />
+                    )}
+                  </button>
+                </CollapsibleTrigger>
+                
+                <CollapsibleContent className="px-6 pb-6 border-t border-gray-100 dark:border-gray-700">
+                  <div className="pt-4">
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </CollapsibleContent>
+              </Collapsible>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* SECTION 12 - CASE STUDY */}
+      <section className="bg-white dark:bg-gray-800 py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="text-green-600 border-green-200 bg-green-50 dark:text-green-400 dark:border-green-800 dark:bg-green-950/50 mb-6">
+              INTEGRATION SUCCESS STORY
+            </Badge>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              Global Manufacturing Company API Integration
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              {/* [CONTENT TO BE UPDATED] */}
+              How we connected SAP S/4HANA with Salesforce, Concur, and Worldpay for seamless financial operations.
+            </p>
+          </div>
+
+          <div className="max-w-6xl mx-auto">
+            <Card className="overflow-hidden shadow-xl">
+              <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-8 text-white">
+                <div className="flex flex-col lg:flex-row items-center justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">Global Manufacturing Company</h3>
+                    <p className="text-blue-100">Manufacturing Industry</p>
+                    <div className="flex items-center mt-4 space-x-4">
+                      <span className="text-sm bg-blue-700/50 px-3 py-1 rounded-full">SAP S/4HANA</span>
+                      <span className="text-sm bg-blue-700/50 px-3 py-1 rounded-full">Salesforce</span>
+                      <span className="text-sm bg-blue-700/50 px-3 py-1 rounded-full">Concur</span>
+                      <span className="text-sm bg-blue-700/50 px-3 py-1 rounded-full">Worldpay</span>
+                    </div>
+                  </div>
+                  <div className="mt-6 lg:mt-0 text-center lg:text-right">
+                    <div className="text-3xl font-bold">80%</div>
+                    <div className="text-blue-200">Reduction in Manual Data Entry</div>
+                  </div>
+                </div>
+              </div>
+
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Challenge</h4>
+                    <ul className="space-y-2 mb-6">
+                      {[
+                        'Manual data entry across 4 systems',
+                        '5-day invoice processing cycle',
+                        'Payment reconciliation delays',
+                        'No real-time financial visibility'
+                      ].map((challenge, index) => (
+                        <li key={index} className="flex items-start">
+                          <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                          <span className="text-gray-600 dark:text-gray-300">{challenge}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Solution Implemented</h4>
+                    <ul className="space-y-2">
+                      {[
+                        'Salesforce to SAP order-to-cash integration',
+                        'Concur expense automation',
+                        'Worldpay payment gateway integration',
+                        'Real-time financial reporting APIs'
+                      ].map((solution, index) => (
+                        <li key={index} className="flex items-start">
+                          <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
+                          <span className="text-gray-600 dark:text-gray-300">{solution}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="border-t border-gray-200 dark:border-gray-700 pt-8">
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-6 text-center">Results</h4>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+                    {[
+                      { value: '80%', label: 'Reduction in manual data entry' },
+                      { value: '6 hours', label: 'Invoice processing (from 5 days)' },
+                      { value: 'Same-day', label: 'Payment reconciliation' },
+                      { value: 'Real-time', label: 'Revenue visibility' },
+                      { value: '$750K', label: 'Annual cost savings' }
+                    ].map((result, index) => (
+                      <Card key={index} className="p-4 text-center bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-0">
+                        <div className="text-2xl font-bold text-green-600 dark:text-green-400 mb-1">{result.value}</div>
+                        <div className="text-xs text-gray-600 dark:text-gray-300">{result.label}</div>
+                      </Card>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-lg p-6">
+                  <div className="text-center">
+                    <div className="text-4xl text-blue-600 dark:text-blue-400 mb-4">"</div>
+                    <p className="text-lg text-gray-700 dark:text-gray-300 italic mb-4">
+                      {/* [CONTENT TO BE UPDATED] */}
+                      ExpTek's API integration expertise transformed our finance operations. The seamless connectivity 
+                      between our systems has eliminated errors and provided real-time visibility.
+                    </p>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                      - VP Finance, Global Manufacturing Company
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 13 - SAP TRADEMARK DISCLAIMER */}
+      <section className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-950/20 dark:to-orange-950/20 py-12">
+        <div className="container mx-auto px-4">
+          <Card className="max-w-6xl mx-auto border-2 border-yellow-200 dark:border-yellow-800">
+            <CardContent className="p-8">
+              <div className="flex items-start space-x-4">
+                <AlertTriangle className="h-8 w-8 text-yellow-600 dark:text-yellow-400 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                    ⚠️ Important Disclaimer
+                  </h3>
+                  <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-3">
+                    <p>
+                      <strong>SAP, SAP S/4HANA, SAP Business Technology Platform, SAP API Business Hub</strong>, and all related 
+                      SAP products and services mentioned on this page are trademarks or registered trademarks of 
+                      <strong> SAP SE</strong> in Germany and other countries.
+                    </p>
+                    <p>
+                      ExpTek is an independent SAP consulting partner and is <strong>not affiliated with, endorsed by, or sponsored by SAP SE</strong>. 
+                      All API package names, product names, and technologies referenced are used for informational purposes only to describe our integration expertise.
+                    </p>
+                    <p>
+                      For official SAP API documentation, please visit the SAP API Business Hub at{' '}
+                      <a href="https://api.sap.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">
+                        https://api.sap.com
+                      </a>
+                    </p>
+                    <p>
+                      All third-party trademarks (<strong>Salesforce, Concur, Worldpay, Stripe, PayPal, Adyen, Vertex, Avalara</strong>) 
+                      are the property of their respective owners.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* SECTION 14 - FINAL CTA */}
+      <section className="bg-gradient-to-r from-blue-600 via-blue-700 to-cyan-600 dark:from-blue-800 dark:via-blue-900 dark:to-cyan-800 py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">
+            Ready to Connect Your Finance Systems?
+          </h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            {/* [CONTENT TO BE UPDATED] */}
+            Let's build seamless integrations that transform your financial operations with proven API expertise and SAP specialization.
+          </p>
+
+          <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-12">
+            <Button 
+              size="lg" 
+              variant="secondary"
+              className="bg-white text-blue-600 hover:bg-blue-50 px-12 py-6 text-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
+              onClick={() => handleCTAClick('schedule-integration-assessment')}
+            >
+              Schedule Integration Assessment
+              <Calendar className="ml-3 h-6 w-6" />
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-12 py-6 text-xl font-semibold transition-all duration-300"
+              onClick={() => handleDownloadClick('api-integration-guide')}
+            >
+              Download API Integration Guide
+              <Download className="ml-3 h-6 w-6" />
+            </Button>
+            <Button 
+              size="lg" 
+              variant="ghost"
+              className="text-white hover:bg-white/10 px-12 py-6 text-xl font-semibold transition-all duration-300"
+              onClick={() => handleCTAClick('view-integration-architecture')}
+            >
+              View Integration Architecture
+              <ArrowRight className="ml-3 h-6 w-6" />
+            </Button>
+          </div>
+
+          <div className="border-t border-blue-500/30 pt-8">
+            <h3 className="text-xl font-bold text-white mb-6">Trust Indicators</h3>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">100+</div>
+                <div className="text-blue-200 text-sm">API Integrations Completed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">SAP-Certified</div>
+                <div className="text-blue-200 text-sm">Integration Specialists</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">99.9%</div>
+                <div className="text-blue-200 text-sm">Integration Uptime</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">24/7</div>
+                <div className="text-blue-200 text-sm">Monitoring & Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
