@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
+import ExpTekLogo from './ExpTekLogo';
 
 const ModernHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
