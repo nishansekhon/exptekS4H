@@ -1,0 +1,170 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "John Peterson",
+      "title": "CFO",
+      "company": "TechFlow Industries",
+      "industry": "Manufacturing",
+      "quote": "ExpTek's expertise in SAP Public Cloud Finance transformed our month-end close from 10 days to 3 days. Their focused approach and deep knowledge made all the difference.",
+      "rating": 5,
+      "image": "/images/testimonials/john-peterson.jpg",
+      "logo": "/images/logos/techflow.png",
+      "caseStudyLink": "/case-studies/techflow-transformation"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Williams",
+      "title": "Finance Director",
+      "company": "RetailMax Global",
+      "industry": "Retail",
+      "quote": "The EBRR implementation by ExpTek enabled us to achieve IFRS 15 compliance seamlessly. Their team's attention to detail and industry expertise exceeded our expectations.",
+      "rating": 5,
+      "image": "/images/testimonials/sarah-williams.jpg",
+      "logo": "/images/logos/retailmax.png",
+      "caseStudyLink": "/case-studies/retailmax-ebrr"
+    },
+    {
+      "id": 3,
+      "name": "Michael Chen",
+      "title": "VP of Finance",
+      "company": "ServicePro Solutions",
+      "industry": "Professional Services",
+      "quote": "ExpTek's API integration expertise connected our Salesforce and SAP systems flawlessly. The automation they delivered saved us 20 hours per week in manual processes.",
+      "rating": 5,
+      "image": "/images/testimonials/michael-chen.jpg",
+      "logo": "/images/logos/servicepro.png",
+      "caseStudyLink": "/case-studies/servicepro-integration"
+    },
+    {
+      "id": 4,
+      "name": "Emma Rodriguez",
+      "title": "Controller",
+      "company": "GlobalTech Innovations",
+      "industry": "Technology",
+      "quote": "Working with ExpTek was refreshing. Unlike big consultancies, they provided dedicated experts who understood our business needs and delivered practical solutions quickly.",
+      "rating": 5,
+      "image": "/images/testimonials/emma-rodriguez.jpg",
+      "logo": "/images/logos/globaltech.png",
+      "caseStudyLink": "/case-studies/globaltech-implementation"
+    },
+    {
+      "id": 5,
+      "name": "David Kumar",
+      "title": "Finance Manager",
+      "company": "MedDevice Corp",
+      "industry": "Healthcare",
+      "quote": "ExpTek's multi-country tax compliance setup helped us expand into 8 new markets with confidence. Their knowledge of regulatory requirements is exceptional.",
+      "rating": 5,
+      "image": "/images/testimonials/david-kumar.jpg",
+      "logo": "/images/logos/meddevice.png",
+      "caseStudyLink": "/case-studies/meddevice-compliance"
+    },
+    {
+      "id": 6,
+      "name": "Jennifer Liu",
+      "title": "Chief Accounting Officer",
+      "company": "EcoEnergy Systems",
+      "industry": "Energy",
+      "quote": "The digital payment integration ExpTek implemented streamlined our customer payment processes and improved cash flow by 25%. Outstanding technical expertise and project management.",
+      "rating": 5,
+      "image": "/images/testimonials/jennifer-liu.jpg",
+      "logo": "/images/logos/ecoenergy.png",
+      "caseStudyLink": "/case-studies/ecoenergy-payments"
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "How is SAP S/4HANA Public Cloud different from Private Cloud?",
+      "answer": "SAP S/4HANA Public Cloud is a multi-tenant SaaS solution managed by SAP with quarterly updates and pre-configured best practices. Private Cloud offers more customization but requires additional maintenance. Public Cloud provides faster implementation, lower TCO, and automatic updates while maintaining enterprise-grade security and compliance."
+    },
+    {
+      "id": 2,
+      "question": "What is your implementation methodology?",
+      "answer": "We use SAP Activate methodology combined with our proven Fit-to-Standard approach. This includes Discovery & Planning (2 weeks), Fit-to-Standard workshops (4-6 weeks), Configuration & Testing (6-8 weeks), and Go-Live support (2 weeks). Our methodology has delivered 100+ successful implementations with 50% faster deployment than traditional approaches."
+    },
+    {
+      "id": 3,
+      "question": "Do you provide post-go-live support?",
+      "answer": "Yes, we provide comprehensive 24/7 post-go-live support including hypercare, ongoing optimization, quarterly update assistance, and continuous improvement initiatives. Our 95% client retention rate reflects our commitment to long-term partnership and success."
+    },
+    {
+      "id": 4,
+      "question": "Can you integrate with Salesforce and Concur?",
+      "answer": "Absolutely. We specialize in API integrations with major enterprise systems including Salesforce CRM, Concur expense management, Worldpay payment processing, and other third-party applications. Our integration expertise ensures seamless data flow and process automation across your entire technology stack."
+    },
+    {
+      "id": 5,
+      "question": "What industries do you specialize in?",
+      "answer": "We serve 30+ industries with deep expertise in Manufacturing, Retail, Professional Services, Healthcare, Technology, and Public Sector. Our industry-specific accelerators and pre-configured solutions enable faster implementation while addressing unique regulatory and operational requirements."
+    },
+    {
+      "id": 6,
+      "question": "How long does a typical project take?",
+      "answer": "Implementation timeline varies by scope: Standard finance implementation (3-4 months), Complex multi-entity deployments (6-8 months), API integration projects (2-3 months). Our Fit-to-Standard approach and proven methodology consistently deliver 50% faster implementation compared to traditional consulting firms."
+    },
+    {
+      "id": 7,
+      "question": "What's included in Fit-to-Standard workshops?",
+      "answer": "Our Fit-to-Standard workshops cover complete business process mapping, SAP best practice configuration, gap analysis, data migration planning, integration requirements, testing scenarios, and change management strategy. These interactive sessions ensure your team understands the solution and accelerate user adoption."
+    },
+    {
+      "id": 8,
+      "question": "Do you handle IFRS 15 and ASC 606 compliance?",
+      "answer": "Yes, we're experts in Event-Based Revenue Recognition (EBRR) for IFRS 15 and ASC 606 compliance. Our team has implemented revenue recognition solutions across various industries including software, manufacturing, professional services, and retail with complex revenue streams."
+    },
+    {
+      "id": 9,
+      "question": "What makes ExpTek different from Big 4 consulting firms?",
+      "answer": "ExpTek offers focused SAP Public Cloud Finance expertise, 50% faster implementation, 40% cost savings, and dedicated specialist teams rather than generalist consultants. Our lean structure enables faster decision-making, personalized attention, and deep technical expertise that large firms often lack."
+    },
+    {
+      "id": 10,
+      "question": "Can you help with digital transformation beyond finance?",
+      "answer": "While our core expertise is SAP Public Cloud Finance, we collaborate with your existing teams on broader digital transformation initiatives. Our API integration capabilities enable connection with HR, procurement, and operational systems to create unified digital experiences."
+    }
+  ],
+  "resources": [
+    {
+      "id": 1,
+      "title": "SAP Finance Readiness Checklist",
+      "description": "Complete checklist to assess your organization's readiness for SAP S/4HANA Public Cloud Finance implementation.",
+      "type": "PDF Guide",
+      "category": "Implementation",
+      "downloadLink": "/downloads/sap-finance-readiness-checklist.pdf",
+      "pages": 12,
+      "image": "/images/resources/readiness-checklist.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Cloud Migration Roadmap",
+      "description": "30-day detailed roadmap for successful migration from legacy systems to SAP Public Cloud Finance.",
+      "type": "PDF Guide",
+      "category": "Migration",
+      "downloadLink": "/downloads/cloud-migration-roadmap.pdf",
+      "pages": 18,
+      "image": "/images/resources/migration-roadmap.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Compliance Automation Toolkit",
+      "description": "Tools and templates for automating multi-country tax compliance and regulatory reporting in SAP.",
+      "type": "Toolkit",
+      "category": "Compliance",
+      "downloadLink": "/downloads/compliance-automation-toolkit.zip",
+      "pages": 24,
+      "image": "/images/resources/compliance-toolkit.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Future of Cloud Finance Whitepaper",
+      "description": "Industry research on emerging trends, technologies, and best practices in cloud-based financial management.",
+      "type": "Whitepaper",
+      "category": "Research",
+      "downloadLink": "/downloads/future-cloud-finance-whitepaper.pdf",
+      "pages": 32,
+      "image": "/images/resources/future-finance.jpg"
+    }
+  ]
+}
