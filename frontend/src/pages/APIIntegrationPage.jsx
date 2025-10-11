@@ -33,7 +33,6 @@ import {
   Layers
 } from 'lucide-react';
 import APICapabilitiesSection from '../components/APICapabilitiesSection';
-import APISecuritySection from '../components/APISecuritySection';
 
 const APIIntegrationPage = () => {
   const [expandedFAQ, setExpandedFAQ] = useState(null);
