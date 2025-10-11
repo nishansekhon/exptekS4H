@@ -223,8 +223,8 @@ const FinanceImplementationPage = () => {
                   {/* Key Milestones */}
                   <div className="mt-6 grid grid-cols-4 gap-4 text-center">
                     <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-3">
-                      <div className="text-lg font-bold text-blue-600">17 Weeks</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Total Implementation</div>
+                      <div className="text-lg font-bold text-blue-600">3-8 Months</div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">Typical Timeline</div>
                     </div>
                     <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-3">
                       <div className="text-lg font-bold text-green-600">100+</div>
