@@ -1,0 +1,171 @@
+{
+  "siteMetadata": {
+    "title": "ExpTek - SAP S/4HANA Public Cloud Finance Consulting",
+    "description": "Leading SAP Public Cloud Finance consulting with 100+ Fit-to-Standard workshops. Expert implementation, integration, and compliance services.",
+    "keywords": ["SAP S/4HANA Public Cloud Finance", "SAP Finance Implementation", "SAP Public Cloud Consulting", "EBRR Implementation", "SAP Revenue Recognition", "Digital Payments SAP", "SAP API Integration"],
+    "author": "ExpTek",
+    "url": "https://exptek.com",
+    "logo": "/images/exptek-logo.png",
+    "address": {
+      "street": "ExpTek LLC",
+      "city": "Michigan",
+      "state": "MI",
+      "country": "USA",
+      "postalCode": "48000"
+    },
+    "contact": {
+      "phone": "+1 (555) 123-4567",
+      "email": "info@exptek.com"
+    },
+    "social": {
+      "linkedin": "https://linkedin.com/company/exptek",
+      "twitter": "https://twitter.com/exptek"
+    }
+  },
+  "metrics": [
+    {
+      "id": 1,
+      "value": 50,
+      "suffix": "M+",
+      "label": "Revenue Managed",
+      "prefix": "$",
+      "icon": "TrendingUp"
+    },
+    {
+      "id": 2,
+      "value": 95,
+      "suffix": "%",
+      "label": "Client Retention Rate",
+      "icon": "Users"
+    },
+    {
+      "id": 3,
+      "value": 30,
+      "suffix": "+",
+      "label": "Industries Served",
+      "icon": "Building"
+    },
+    {
+      "id": 4,
+      "value": 15,
+      "suffix": "+",
+      "label": "Countries Deployed",
+      "icon": "Globe"
+    }
+  ],
+  "comparison": {
+    "title": "ExpTek vs Big 4 Consulting",
+    "categories": [
+      {
+        "name": "Implementation Speed",
+        "exptek": "50% Faster",
+        "bigFour": "Standard Timeline",
+        "advantage": "exptek"
+      },
+      {
+        "name": "Cost Savings",
+        "exptek": "40% Less Cost",
+        "bigFour": "Premium Pricing",
+        "advantage": "exptek"
+      },
+      {
+        "name": "Expertise Focus",
+        "exptek": "SAP Finance Specialist",
+        "bigFour": "Generalist Approach",
+        "advantage": "exptek"
+      },
+      {
+        "name": "Post-Go-Live Support",
+        "exptek": "24/7 Dedicated Support",
+        "bigFour": "Limited Support",
+        "advantage": "exptek"
+      }
+    ]
+  },
+  "industries": [
+    {
+      "id": "manufacturing",
+      "name": "Manufacturing",
+      "icon": "Factory",
+      "painPoints": [
+        "Complex multi-entity reporting",
+        "Supply chain finance integration",
+        "Regulatory compliance across regions"
+      ],
+      "modules": ["Financial Accounting", "Cost Center Accounting", "Product Costing", "Treasury Management"],
+      "caseStudies": [
+        {
+          "title": "Global Auto Manufacturer Finance Transformation",
+          "result": "30% faster month-end close across 15 countries"
+        },
+        {
+          "title": "Electronics Company API Integration",
+          "result": "Automated 90% of intercompany transactions"
+        }
+      ]
+    },
+    {
+      "id": "retail",
+      "name": "Retail",
+      "icon": "ShoppingBag",
+      "painPoints": [
+        "Revenue recognition for subscriptions",
+        "Multi-channel payment processing",
+        "Seasonal financial planning"
+      ],
+      "modules": ["Revenue Accounting", "Digital Payments", "Cash Management", "Financial Planning"],
+      "caseStudies": [
+        {
+          "title": "E-commerce Platform Revenue Recognition",
+          "result": "IFRS 15 compliance achieved in 4 months"
+        },
+        {
+          "title": "Omnichannel Payment Integration",
+          "result": "Unified payment processing across all channels"
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "name": "Professional Services",
+      "icon": "Briefcase",
+      "painPoints": [
+        "Project-based revenue recognition",
+        "Resource utilization tracking",
+        "Client billing automation"
+      ],
+      "modules": ["Project Accounting", "EBRR", "Time & Expense", "Client Billing"],
+      "caseStudies": [
+        {
+          "title": "Consulting Firm EBRR Implementation",
+          "result": "Automated revenue recognition for 500+ projects"
+        },
+        {
+          "title": "Law Firm Billing Automation",
+          "result": "50% reduction in billing cycle time"
+        }
+      ]
+    },
+    {
+      "id": "public",
+      "name": "Public Sector",
+      "icon": "Building2",
+      "painPoints": [
+        "Grant funding management",
+        "Regulatory reporting requirements",
+        "Multi-fund accounting"
+      ],
+      "modules": ["Fund Accounting", "Grant Management", "Regulatory Reporting", "Budget Planning"],
+      "caseStudies": [
+        {
+          "title": "State Agency Fund Management",
+          "result": "Streamlined reporting for 50+ funding sources"
+        },
+        {
+          "title": "Municipal Budget Planning",
+          "result": "Real-time budget tracking and variance analysis"
+        }
+      ]
+    }
+  ]
+}
