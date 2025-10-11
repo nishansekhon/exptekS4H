@@ -171,7 +171,7 @@
     file: "/app/frontend/src/pages/DigitalPaymentsPage.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         -working: true
         -agent: "testing"
