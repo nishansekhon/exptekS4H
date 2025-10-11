@@ -41,10 +41,8 @@ const ModernHeader = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 touch-manipulation">
-            <div className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white transition-colors">
-              ExpTek
-            </div>
+          <Link to="/" className="flex items-center space-x-4 touch-manipulation">
+            <ExpTekLogo size={isScrolled ? "small" : "default"} />
             <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 hidden sm:block transition-colors">
               SAP Finance Experts
             </div>
