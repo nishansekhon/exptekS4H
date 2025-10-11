@@ -414,7 +414,7 @@ const CustomRoadmap = () => {
       {/* Framework Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 mb-8">
         <Card className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 border-0">
-          <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">17 Weeks</div>
+          <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">20 Weeks</div>
           <div className="text-gray-600 dark:text-gray-300">Total Implementation</div>
         </Card>
         
