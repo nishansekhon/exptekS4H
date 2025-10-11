@@ -1082,13 +1082,13 @@ const FinanceImplementationPage = () => {
           {/* Contact Information */}
           <div className="text-center mt-8">
             <p className="text-blue-100 mb-2">
-              Need immediate assistance? Call our SAP Finance experts directly:
+              Need immediate assistance? Contact our SAP Finance experts:
             </p>
             <a 
-              href="tel:+1-555-EXPTEK1" 
-              className="text-2xl font-bold text-white hover:text-blue-200 transition-colors"
+              href="mailto:hr@exptek.com" 
+              className="text-xl font-bold text-white hover:text-blue-200 transition-colors"
             >
-              +1 (555) EXPTEK-1
+              Email: hr@exptek.com
             </a>
           </div>
         </div>
