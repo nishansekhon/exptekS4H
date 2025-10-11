@@ -10,152 +10,128 @@ const CustomRoadmap = () => {
   const phases = [
     {
       id: 'discover',
-      number: 1,
       name: 'DISCOVER',
-      duration: 'Weeks 1-3',
+      duration: 'Weeks 1-2',
       color: '#F4B942',
       bgGradient: 'from-yellow-400 to-orange-400',
-      bgLight: 'bg-yellow-50 dark:bg-yellow-950/20',
-      icon: Search,
+      icon: '🔍',
       description: 'Business Assessment & Project Initiation',
-      milestones: [
-        'Project Kickoff & Charter Development',
-        'Current State Assessment',
-        'Cloud Trial Environment Setup',
-        'Stakeholder Alignment Sessions',
-        'Business Case Validation',
-        'Implementation Roadmap Finalization'
-      ],
       activities: [
         'Business process assessment',
-        'Solution scoping & sizing',
-        'Project team formation',
-        'Initial system access setup'
+        'Solution scoping & definition',
+        'Project kickoff & governance',
+        'Team enablement & access setup'
+      ],
+      deliverables: [
+        'Project charter',
+        'Scope document',
+        'Initial system access',
+        'Workshop schedule'
       ]
     },
     {
       id: 'prepare',
-      number: 2,
       name: 'PREPARE',
-      duration: 'Weeks 4-6',
+      duration: 'Weeks 3-4',
       color: '#52C41A',
       bgGradient: 'from-green-400 to-emerald-400',
-      bgLight: 'bg-green-50 dark:bg-green-950/20',
-      icon: Clipboard,
+      icon: '📋',
       description: 'Foundation Setup & Configuration Design',
-      milestones: [
-        'Governance Structure Establishment',
-        'Fit-to-Standard Workshop Series (25+ sessions)',
-        'Chart of Accounts Design',
-        'Integration Architecture Blueprint',
-        'Data Migration Strategy',
-        'Configuration Workbook Creation'
-      ],
       activities: [
         'Fit-to-Standard analysis',
         'Configuration planning',
         'Integration architecture design',
-        'Data strategy development'
+        'Data migration strategy'
+      ],
+      deliverables: [
+        'Fit-Gap analysis report',
+        'Configuration workbook',
+        'Integration design doc',
+        'Data migration plan'
       ]
     },
     {
       id: 'explore',
-      number: 3,
       name: 'EXPLORE',
-      duration: 'Weeks 8-12',
+      duration: 'Weeks 5-8',
       color: '#17A2B8',
       bgGradient: 'from-teal-400 to-cyan-400',
-      bgLight: 'bg-teal-50 dark:bg-teal-950/20',
-      icon: Settings,
+      icon: '🔧',
       description: 'System Build & Configuration Execution',
-      milestones: [
-        'Development System Configuration',
-        'Finance Module Workshop Completion (40+ sessions)',
-        'Integration Development & Testing',
-        'Master Data Template Creation',
-        'Security & Authorization Setup',
-        'Initial Data Load & Validation'
-      ],
       activities: [
-        'Core system configuration',
-        'Finance workshop execution',
+        'System configuration workshops',
+        'Development system build',
         'Integration development',
-        'Master data preparation'
+        'Data extraction & cleansing'
+      ],
+      deliverables: [
+        'Configured DEV system',
+        'Integration prototypes',
+        'Cleansed data sets',
+        'Test case library'
       ]
     },
     {
       id: 'realize',
-      number: 4,
       name: 'REALIZE',
-      duration: 'Weeks 13-16',
+      duration: 'Weeks 9-11',
       color: '#0A6ED1',
       bgGradient: 'from-blue-400 to-blue-600',
-      bgLight: 'bg-blue-50 dark:bg-blue-950/20',
-      icon: Zap,
+      icon: '⚡',
       description: 'Testing, Training & Final Preparation',
-      milestones: [
-        'Quality System Configuration Complete',
-        'End-to-End Testing Execution',
-        'User Acceptance Testing (UAT)',
-        'Training Program Delivery (20+ sessions)',
-        'Cutover Rehearsal Execution',
-        'Go-Live Readiness Assessment'
-      ],
       activities: [
-        'System & integration testing',
+        'Quality system configuration',
+        'End-to-end testing',
         'User training delivery',
-        'Data migration execution',
-        'UAT completion & sign-off'
+        'UAT execution'
+      ],
+      deliverables: [
+        'Configured QA system',
+        'Test results & sign-off',
+        'Training materials',
+        'UAT approval'
       ]
     },
     {
       id: 'deploy',
-      number: 5,
       name: 'DEPLOY',
-      duration: 'Week 17',
+      duration: 'Week 12',
       color: '#FF8C00',
       bgGradient: 'from-orange-400 to-red-400',
-      bgLight: 'bg-orange-50 dark:bg-orange-950/20',
-      icon: Rocket,
+      icon: '🚀',
       description: 'Production Go-Live & Immediate Support',
-      milestones: [
-        'Production System Activation',
-        'Final Data Cutover Execution',
-        'Go-Live Weekend Support',
-        'First Month-End Close Support',
-        'Issue Resolution & Optimization',
-        'Go-Live Success Confirmation'
-      ],
       activities: [
-        'Production system cutover',
-        'Go-live execution support',
-        'Hypercare support (2-4 weeks)',
-        'Performance monitoring'
+        'Production cutover',
+        'Go-live execution',
+        'Hypercare support',
+        'Issue resolution'
+      ],
+      deliverables: [
+        'Live production system',
+        'Cutover completion report',
+        'Support documentation',
+        'Go-live sign-off'
       ]
     },
     {
       id: 'run',
-      number: 6,
       name: 'RUN',
       duration: 'Ongoing',
       color: '#9C27B0',
       bgGradient: 'from-purple-400 to-indigo-400',
-      bgLight: 'bg-purple-50 dark:bg-purple-950/20',
-      icon: RefreshCw,
+      icon: '🔄',
       description: 'Continuous Support & Optimization',
-      milestones: [
-        'Ongoing Support Services',
-        'Monthly System Health Checks',
-        'Quarterly Business Reviews',
-        'SAP Release Management',
-        'Enhancement Backlog Management',
-        'Value Realization Tracking'
-      ],
       activities: [
-        'Continuous system optimization',
+        'Continuous optimization',
         'Enhancement delivery',
-        'Support services',
-        'Value realization tracking'
+        'Monthly health checks',
+        'Release management'
+      ],
+      deliverables: [
+        'Support SLA reports',
+        'Enhancement roadmap',
+        'Performance analytics',
+        'Quarterly reviews'
       ]
     }
   ];
