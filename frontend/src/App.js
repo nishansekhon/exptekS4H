@@ -24,7 +24,7 @@ function App() {
               <Route path="/services/finance-implementation" element={<FinanceImplementationPage />} />
               <Route path="/services/digital-payments" element={<DigitalPaymentsPage />} />
               {/* Service Pages - Coming Soon */}
-              <Route path="/services/api-integration" element={<ComingSoonPage title="API & External System Integration" description="Seamless integration with Salesforce, Concur, Worldpay and other enterprise systems." features={["Salesforce connectivity", "Concur integration", "Worldpay & PSP links", "Custom API development"]} />} />
+              <Route path="/services/api-integration" element={<APIIntegrationPage />} />
               <Route path="/services/revenue-recognition" element={<ComingSoonPage title="Revenue Recognition & Compliance (EBRR)" description="Event-Based Revenue Recognition implementation and IFRS 15/ASC 606 compliance automation." features={["EBRR configuration", "IFRS 15 compliance", "ASC 606 implementation", "Automated revenue posting"]} />} />
               <Route path="/services/banking-treasury" element={<ComingSoonPage title="Banking & Treasury Optimization" description="Optimize cash management, bank connectivity, and treasury operations." features={["Multi-bank connectivity", "Cash positioning", "Treasury workflows", "Liquidity management"]} />} />
               <Route path="/services/tax-compliance" element={<ComingSoonPage title="Tax & Compliance Automation" description="Multi-country tax compliance and automated reporting solutions." features={["Tax determination", "SOX compliance", "Regulatory reporting", "Multi-jurisdiction support"]} />} />
