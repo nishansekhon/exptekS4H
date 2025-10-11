@@ -7,8 +7,6 @@ import { ChevronLeft, ChevronRight, Search, Clipboard, Settings, Zap, Rocket, Re
 const CustomRoadmap = () => {
   const [activePhase, setActivePhase] = useState('discover');
 
-  const currentPhase = phases.find(phase => phase.id === activePhase) || phases[0];
-
   const phases = [
     {
       id: 'discover',
