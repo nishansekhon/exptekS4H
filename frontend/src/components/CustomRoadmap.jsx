@@ -217,44 +217,44 @@ const CustomRoadmap = () => {
                 </CardHeader>
               </Card>
               
-              {/* Expanded Phase Details - Fixed Layout */}
+              {/* Expanded Phase Details - Vertical Stacked Layout */}
               {activePhase === phase.id && (
                 <div className="mt-8 mx-4 p-8 rounded-xl transition-all duration-300 ease-in-out bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border-t-4 shadow-lg animate-in slide-in-from-top-2" 
                      style={{ borderTopColor: phase.color }}>
-                  <div className="details-grid grid md:grid-cols-2 gap-12">
-                    {/* Milestones Column */}
-                    <div className="milestones-column">
-                      <h4 className="text-xl font-semibold mb-6" style={{ color: phase.color }}>
-                        Key Milestones:
-                      </h4>
-                      <ul className="space-y-4">
-                        {phase.milestones.map((milestone, i) => (
-                          <li key={i} className="flex items-start text-gray-700 dark:text-gray-300">
-                            <div 
-                              className="w-2 h-2 rounded-full mt-2.5 mr-4 flex-shrink-0"
-                              style={{ backgroundColor: phase.color }}
-                            />
-                            <span className="text-base leading-relaxed">{milestone}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {/* Activities Column */}
-                    <div className="activities-column">
-                      <h4 className="text-xl font-semibold text-green-600 dark:text-green-400 mb-6">
-                        Core Activities:
-                      </h4>
-                      <ul className="space-y-4">
-                        {phase.activities.map((activity, i) => (
-                          <li key={i} className="flex items-start text-gray-700 dark:text-gray-300">
-                            <CheckCircle2 className="h-5 w-5 mt-0.5 mr-4 text-green-500 flex-shrink-0" />
-                            <span className="text-base leading-relaxed">{activity}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                  
+                  {/* Key Milestones Section - Full Width */}
+                  <div className="milestones-section mb-8">
+                    <h4 className="text-xl font-semibold mb-6" style={{ color: phase.color }}>
+                      Key Milestones:
+                    </h4>
+                    <ul className="space-y-4">
+                      {phase.milestones.map((milestone, i) => (
+                        <li key={i} className="flex items-start text-gray-700 dark:text-gray-300">
+                          <div 
+                            className="w-2 h-2 rounded-full mt-2.5 mr-4 flex-shrink-0"
+                            style={{ backgroundColor: phase.color }}
+                          />
+                          <span className="text-base leading-relaxed">{milestone}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
+
+                  {/* Core Activities Section - Full Width, Below Milestones */}
+                  <div className="activities-section">
+                    <h4 className="text-xl font-semibold text-green-600 dark:text-green-400 mb-6">
+                      Core Activities:
+                    </h4>
+                    <ul className="space-y-4">
+                      {phase.activities.map((activity, i) => (
+                        <li key={i} className="flex items-start text-gray-700 dark:text-gray-300">
+                          <CheckCircle2 className="h-5 w-5 mt-0.5 mr-4 text-green-500 flex-shrink-0" />
+                          <span className="text-base leading-relaxed">{activity}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
                 </div>
               )}
             </div>
