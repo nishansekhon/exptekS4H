@@ -302,65 +302,6 @@ const CustomRoadmap = () => {
         ))}
       </div>
 
-      {/* Simple Content Below Cards - No Boxes */}
-      <div className="mt-16 grid md:grid-cols-2 gap-12">
-        <div>
-          <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
-            Key Milestones:
-          </h4>
-          <ul className="space-y-3">
-            <li className="flex items-start text-gray-600 dark:text-gray-300">
-              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
-              <span>Project Kickoff & Charter Development</span>
-            </li>
-            <li className="flex items-start text-gray-600 dark:text-gray-300">
-              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
-              <span>Current State Assessment</span>
-            </li>
-            <li className="flex items-start text-gray-600 dark:text-gray-300">
-              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
-              <span>Cloud Trial Environment Setup</span>
-            </li>
-            <li className="flex items-start text-gray-600 dark:text-gray-300">
-              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
-              <span>Stakeholder Alignment Sessions</span>
-            </li>
-            <li className="flex items-start text-gray-600 dark:text-gray-300">
-              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
-              <span>Business Case Validation</span>
-            </li>
-            <li className="flex items-start text-gray-600 dark:text-gray-300">
-              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
-              <span>Implementation Roadmap Finalization</span>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
-            Core Activities:
-          </h4>
-          <ul className="space-y-3">
-            <li className="flex items-start text-gray-600 dark:text-gray-300">
-              <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
-              <span>Business process assessment</span>
-            </li>
-            <li className="flex items-start text-gray-600 dark:text-gray-300">
-              <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
-              <span>Solution scoping & sizing</span>
-            </li>
-            <li className="flex items-start text-gray-600 dark:text-gray-300">
-              <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
-              <span>Project team formation</span>
-            </li>
-            <li className="flex items-start text-gray-600 dark:text-gray-300">
-              <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
-              <span>Initial system access setup</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
       {/* Framework Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 mb-8">
         <Card className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 border-0">
