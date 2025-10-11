@@ -149,151 +149,151 @@ const CustomRoadmap = () => {
     setActivePhase(phases[prevIndex].id);
   };
 
+  const togglePhase = (phaseId) => {
+    setActivePhase(activePhase === phaseId ? null : phaseId);
+  };
+
   return (
     <div className="w-full">
-      {/* Implementation Framework */}
-      <div className="implementation-framework">
+      {/* Implementation Framework - Accordion Style */}
+      <div className="implementation-accordion">
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
             ExpTek Finance Implementation Framework
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300">
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-2">
             Comprehensive SAP S/4HANA Cloud Methodology
+          </p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            Click any phase below to view detailed activities and deliverables
           </p>
         </div>
 
-        {/* Tab Navigation */}
-        <div className="phase-tabs bg-slate-800/90 dark:bg-slate-900/90 backdrop-blur-sm rounded-2xl p-2 mb-8 overflow-x-auto">
-          <div className="flex space-x-1 min-w-max">
-            {phases.map((phase) => (
-              <button
-                key={phase.id}
-                onClick={() => setActivePhase(phase.id)}
-                className={`flex-1 min-w-[120px] px-4 py-3 rounded-xl text-center transition-all duration-300 ${
-                  activePhase === phase.id
-                    ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-lg'
-                    : 'text-gray-300 hover:text-white hover:bg-white/10'
-                }`}
-              >
-                <div className="font-bold text-sm">{phase.name}</div>
-                <div className="text-xs opacity-75">{phase.duration}</div>
-                {activePhase === phase.id && (
-                  <div 
-                    className="w-full h-1 rounded-full mt-2"
-                    style={{ backgroundColor: phase.color }}
-                  />
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Phase Content Area */}
-        <Card className="phase-content bg-white dark:bg-gray-800 shadow-xl border-0 rounded-2xl mb-8">
-          <CardContent className="p-8">
-            {/* Phase Icon & Title */}
-            <div className="text-center mb-8">
+        {/* Accordion Phases */}
+        <div className="accordion-phases space-y-4 mb-8">
+          {phases.map((phase, index) => (
+            <div 
+              key={phase.id} 
+              className={`phase-item bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 ${
+                activePhase === phase.id ? 'shadow-xl scale-[1.02]' : 'hover:shadow-xl'
+              }`}
+            >
+              {/* Phase Header */}
               <div 
-                className={`w-20 h-20 rounded-full bg-gradient-to-br ${currentPhase.bgGradient} flex items-center justify-center text-4xl mx-auto mb-4 shadow-lg`}
-              >
-                {currentPhase.icon}
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                {currentPhase.name}
-              </h3>
-              <Badge 
-                variant="outline" 
-                className="text-sm px-4 py-1 border-2"
-                style={{ 
-                  borderColor: currentPhase.color, 
-                  color: currentPhase.color, 
-                  backgroundColor: currentPhase.color + '15' 
+                className={`phase-header cursor-pointer transition-all duration-300 ${
+                  activePhase === phase.id 
+                    ? 'bg-gradient-to-r text-white shadow-lg'
+                    : 'bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700'
+                }`}
+                style={{
+                  ...(activePhase === phase.id && { 
+                    backgroundImage: `linear-gradient(135deg, ${phase.color}, ${phase.color}dd)` 
+                  }),
+                  borderLeft: activePhase !== phase.id ? `4px solid ${phase.color}` : 'none'
                 }}
+                onClick={() => togglePhase(phase.id)}
               >
-                {currentPhase.duration}
-              </Badge>
-              <p className="text-gray-600 dark:text-gray-300 mt-3 text-lg">
-                {currentPhase.description}
-              </p>
-            </div>
-
-            {/* Content Grid */}
-            <div className="content-grid grid md:grid-cols-2 gap-8">
-              {/* Activities Column */}
-              <div className="activities">
-                <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                  <Target className="h-5 w-5 mr-2" style={{ color: currentPhase.color }} />
-                  Key Activities
-                </h4>
-                <ul className="space-y-3">
-                  {currentPhase.activities.map((activity, i) => (
-                    <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
-                      <div 
-                        className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0"
-                        style={{ backgroundColor: currentPhase.color }}
-                      />
-                      <span className="text-base leading-relaxed">{activity}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Deliverables Column */}
-              <div className="deliverables">
-                <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                  <CheckCircle2 className="h-5 w-5 mr-2 text-green-500" />
-                  Deliverables
-                </h4>
-                <ul className="space-y-3">
-                  {currentPhase.deliverables.map((deliverable, i) => (
-                    <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
-                      <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
-                      <span className="text-base leading-relaxed">{deliverable}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Navigation Buttons */}
-            <div className="flex justify-between items-center mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-              <Button
-                variant="outline"
-                onClick={prevPhase}
-                className="flex items-center space-x-2 hover:bg-gray-50 dark:hover:bg-gray-700"
-              >
-                <ChevronLeft className="h-4 w-4" />
-                <span>Previous Phase</span>
-              </Button>
-              
-              <div className="flex items-center space-x-2">
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  {currentIndex + 1} of {phases.length}
-                </span>
-                <div className="flex space-x-1">
-                  {phases.map((_, index) => (
-                    <div
-                      key={index}
-                      className={`w-2 h-2 rounded-full transition-colors ${
-                        index === currentIndex ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'
+                <div className="flex items-center justify-between p-6">
+                  <div className="phase-info flex items-center space-x-4 flex-1">
+                    {/* Phase Icon */}
+                    <div 
+                      className={`phase-icon text-3xl w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 ${
+                        activePhase === phase.id 
+                          ? 'bg-white/20 backdrop-blur-sm' 
+                          : `bg-gradient-to-br ${phase.bgGradient}`
                       }`}
-                    />
-                  ))}
+                    >
+                      <span className={activePhase === phase.id ? 'text-white' : 'text-white'}>
+                        {phase.icon}
+                      </span>
+                    </div>
+                    
+                    {/* Phase Details */}
+                    <div className="flex-1">
+                      <div className="flex items-center space-x-4 mb-1">
+                        <span className={`phase-name text-xl font-bold ${
+                          activePhase === phase.id ? 'text-white' : 'text-gray-900 dark:text-white'
+                        }`}>
+                          Phase {index + 1}: {phase.name}
+                        </span>
+                        <Badge 
+                          variant="outline" 
+                          className={`phase-duration ${
+                            activePhase === phase.id 
+                              ? 'border-white/30 text-white bg-white/10' 
+                              : 'border-gray-300 text-gray-600 dark:border-gray-600 dark:text-gray-300'
+                          }`}
+                        >
+                          {phase.duration}
+                        </Badge>
+                      </div>
+                      <p className={`text-sm ${
+                        activePhase === phase.id ? 'text-white/90' : 'text-gray-600 dark:text-gray-400'
+                      }`}>
+                        {phase.description}
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Expand Icon */}
+                  <div className={`expand-icon text-2xl transition-transform duration-300 ${
+                    activePhase === phase.id ? 'rotate-90 text-white' : 'text-gray-400'
+                  }`}>
+                    ▶
+                  </div>
                 </div>
               </div>
 
-              <Button
-                variant="outline"
-                onClick={nextPhase}
-                className="flex items-center space-x-2 hover:bg-gray-50 dark:hover:bg-gray-700"
-              >
-                <span>Next Phase</span>
-                <ChevronRight className="h-4 w-4" />
-              </Button>
+              {/* Phase Content */}
+              {activePhase === phase.id && (
+                <div className="phase-content bg-gray-50 dark:bg-gray-900/50 p-6 animate-in slide-in-from-top duration-300">
+                  <div className="content-columns grid md:grid-cols-2 gap-8">
+                    {/* Activities Column */}
+                    <div className="activities">
+                      <h4 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                        <Target className="h-5 w-5 mr-2" style={{ color: phase.color }} />
+                        Key Activities
+                      </h4>
+                      <ul className="space-y-3">
+                        {phase.activities.map((activity, i) => (
+                          <li key={i} className="flex items-start text-gray-700 dark:text-gray-300">
+                            <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
+                            <span className="text-base leading-relaxed">{activity}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Deliverables Column */}
+                    <div className="deliverables">
+                      <h4 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                        <div 
+                          className="h-5 w-5 mr-2 rounded flex items-center justify-center text-white text-xs font-bold"
+                          style={{ backgroundColor: phase.color }}
+                        >
+                          📄
+                        </div>
+                        Deliverables
+                      </h4>
+                      <ul className="space-y-3">
+                        {phase.deliverables.map((deliverable, i) => (
+                          <li key={i} className="flex items-start text-gray-700 dark:text-gray-300">
+                            <div 
+                              className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0"
+                              style={{ backgroundColor: phase.color }}
+                            />
+                            <span className="text-base leading-relaxed">{deliverable}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
-          </CardContent>
-        </Card>
+          ))}
+        </div>
 
         {/* Framework Stats */}
         <div className="framework-stats grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
