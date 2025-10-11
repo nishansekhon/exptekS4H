@@ -327,13 +327,28 @@ const CustomRoadmap = () => {
               {/* Expandable Content */}
               <Collapsible open={expandedPhase === phase.id}>
                 <CollapsibleContent>
-                  <CardContent className="pt-0 pb-4">
+                  <CardContent className="pt-0 pb-4 space-y-4">
                     <div>
-                      <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Key Activities:</h4>
+                      <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Key Milestones:</h4>
+                      <ul className="space-y-2">
+                        {phase.milestones.map((milestone, i) => (
+                          <li key={i} className="flex items-start text-sm text-gray-600 dark:text-gray-400">
+                            <div 
+                              className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
+                              style={{ backgroundColor: phase.color }}
+                            ></div>
+                            {milestone}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Core Activities:</h4>
                       <ul className="space-y-2">
                         {phase.activities.map((activity, i) => (
                           <li key={i} className="flex items-start text-sm text-gray-600 dark:text-gray-400">
-                            <ChevronRight className="h-4 w-4 mt-0.5 mr-2 flex-shrink-0" style={{ color: phase.color }} />
+                            <CheckCircle2 className="h-4 w-4 mt-0.5 mr-2 text-green-500 flex-shrink-0" />
                             {activity}
                           </li>
                         ))}
