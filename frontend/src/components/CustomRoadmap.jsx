@@ -247,16 +247,14 @@ const CustomRoadmap = () => {
                   </div>
                   
                   {/* Expand Button */}
-                  <CollapsibleTrigger asChild>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => togglePhase(phase.id)}
-                      className="ml-4"
-                    >
-                      <ChevronDown className={`h-4 w-4 transition-transform ${expandedPhase === phase.id ? 'rotate-180' : ''}`} />
-                    </Button>
-                  </CollapsibleTrigger>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => togglePhase(phase.id)}
+                    className="ml-4"
+                  >
+                    <ChevronDown className={`h-4 w-4 transition-transform ${expandedPhase === phase.id ? 'rotate-180' : ''}`} />
+                  </Button>
                 </div>
               </CardHeader>
               
