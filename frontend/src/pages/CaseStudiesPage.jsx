@@ -19,14 +19,14 @@ const CaseStudiesPage = () => {
       industry: 'Manufacturing',
       icon: <Building2 className="h-8 w-8" />,
       challenge: 'Legacy ERP replacement across 15 legal entities with complex intercompany processes',
-      solution: 'SAP S/4HANA Public Cloud Finance - 12 week implementation using SAP Activate methodology',
+      solution: 'SAP S/4HANA Public Cloud Finance - Global implementation using SAP Activate methodology',
       results: [
-        { metric: '60%', description: 'Faster month-end close (10 days → 4 days)' },
-        { metric: '40%', description: 'Reduction in finance headcount needs' },
+        { metric: '60%', description: 'Faster month-end close (18 days → 7 days)' },
+        { metric: '$2.8M', description: 'Annual cost savings achieved' },
         { metric: '100%', description: 'Real-time financial visibility across all entities' },
-        { metric: '99.9%', description: 'System uptime since go-live' }
+        { metric: '85%', description: 'Process automation achieved' }
       ],
-      timeline: '12 weeks',
+      timeline: '7 months',
       color: 'from-blue-500 to-cyan-600'
     },
     {
@@ -43,7 +43,7 @@ const CaseStudiesPage = () => {
         { metric: '$500K', description: 'Annual cost savings achieved' },
         { metric: 'Same-day', description: 'Payment reconciliation process' }
       ],
-      timeline: '8 weeks',
+      timeline: '5 months',
       color: 'from-green-500 to-teal-600'
     },
     {
@@ -60,7 +60,7 @@ const CaseStudiesPage = () => {
         { metric: 'Automated', description: 'Compliance reporting workflow' },
         { metric: 'Real-time', description: 'Revenue visibility dashboard' }
       ],
-      timeline: '10 weeks',
+      timeline: '4 months',
       color: 'from-purple-500 to-indigo-600'
     },
     {
@@ -77,7 +77,7 @@ const CaseStudiesPage = () => {
         { metric: 'Real-time', description: 'Tax determination capability' },
         { metric: '20 countries', description: 'Automated reporting coverage' }
       ],
-      timeline: '14 weeks',
+      timeline: '3 months',
       color: 'from-orange-500 to-red-600'
     }
   ];
