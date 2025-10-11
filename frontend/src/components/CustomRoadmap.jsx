@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
-import { ChevronDown, ChevronRight, Search, Clipboard, Settings, Zap, Rocket, RefreshCw } from 'lucide-react';
+import { ChevronDown, ChevronRight, Search, Clipboard, Settings, Zap, Rocket, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible';
 
 const CustomRoadmap = () => {
