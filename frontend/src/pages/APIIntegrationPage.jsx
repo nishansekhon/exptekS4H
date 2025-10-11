@@ -257,7 +257,7 @@ const APIIntegrationPage = () => {
     {
       number: 1,
       title: 'Discovery & Mapping',
-      duration: '1-2 weeks',
+      duration: '1-4 weeks',
       tasks: [
         'Identify integration touchpoints',
         'Document data flows',
@@ -268,7 +268,7 @@ const APIIntegrationPage = () => {
     {
       number: 2,
       title: 'Design & Architecture',
-      duration: '1-2 weeks', 
+      duration: '2-4 weeks', 
       tasks: [
         'Integration architecture design',
         'Security & authentication setup',
@@ -279,7 +279,7 @@ const APIIntegrationPage = () => {
     {
       number: 3,
       title: 'Development & Configuration',
-      duration: '2-4 weeks',
+      duration: '2-6 weeks',
       tasks: [
         'API connection setup',
         'Data mapping configuration',
