@@ -824,67 +824,20 @@ const FinanceImplementationPage = () => {
         </div>
       </section>
 
-      {/* Finance Modules Section */}
+      {/* Finance Modules Section - HIGH PRIORITY #2 */}
       <section className="bg-gray-50 dark:bg-gray-800/50 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Complete Finance Module Coverage
+              Complete SAP S/4HANA Finance Module Coverage
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Our implementation covers all core SAP S/4HANA Finance modules with deep configuration and integration capabilities.
+              {/* [CONTENT TO BE UPDATED] */}
+              Our implementation covers all core SAP S/4HANA Finance modules with deep configuration and integration capabilities. Click any module to explore detailed features and benefits.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">💰</div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">General Ledger</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Chart of Accounts, Posting Logic, Period-End Close</p>
-            </Card>
-
-            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">📋</div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Accounts Payable</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Vendor Management, Invoice Processing, Payment Automation</p>
-            </Card>
-
-            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">💳</div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Accounts Receivable</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Customer Billing, Collections, Cash Application</p>
-            </Card>
-
-            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🏢</div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Asset Accounting</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Fixed Assets, Depreciation, Asset Lifecycle Management</p>
-            </Card>
-
-            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">📊</div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Controlling</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Cost Centers, Profit Centers, Internal Orders</p>
-            </Card>
-
-            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">📈</div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Financial Reporting</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Financial Statements, Management Reporting, Analytics</p>
-            </Card>
-
-            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">💱</div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Treasury</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Cash Management, Foreign Exchange, Bank Integration</p>
-            </Card>
-
-            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group cursor-pointer">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">⚖️</div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Compliance</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Tax Compliance, Audit Trail, Regulatory Reporting</p>
-            </Card>
-          </div>
+          <FinanceModules />
         </div>
       </section>
 
