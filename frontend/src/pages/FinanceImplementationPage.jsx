@@ -373,7 +373,354 @@ const FinanceImplementationPage = () => {
         <CustomRoadmap />
       </section>
 
-      {/* PHASE 3: ADVANCED FEATURES */}
+      {/* PHASE 3 & 4: HIGH PRIORITY SECTIONS */}
+
+      {/* Why Choose ExpTek Section - HIGH PRIORITY #1 */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            Why Choose ExpTek for Your Finance Transformation?
+          </h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            Unlike traditional consulting firms, ExpTek specializes exclusively in SAP S/4HANA Public Cloud Finance implementations. 
+            Our focused expertise delivers superior results with faster timelines and proven success rates.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          {/* Differentiation Card 1 */}
+          <Card className="p-8 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-0 hover:shadow-xl transition-all duration-300">
+            <div className="text-center mb-6">
+              <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Exclusive Focus</h3>
+            </div>
+            <div className="space-y-4">
+              <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+                100% dedicated to SAP S/4HANA Cloud Finance - not a side service
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">Implementation Speed</span>
+                  <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">50% faster</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">Success Rate</span>
+                  <span className="text-2xl font-bold text-green-600 dark:text-green-400">98%</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">Cost Savings</span>
+                  <span className="text-2xl font-bold text-purple-600 dark:text-purple-400">40%</span>
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          {/* Differentiation Card 2 */}
+          <Card className="p-8 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-0 hover:shadow-xl transition-all duration-300">
+            <div className="text-center mb-6">
+              <div className="w-16 h-16 bg-green-100 dark:bg-green-900/50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users2 className="h-8 w-8 text-green-600 dark:text-green-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Expert Team</h3>
+            </div>
+            <div className="space-y-4">
+              <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+                SAP-certified consultants with 15+ years average experience
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">SAP Certifications</span>
+                  <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">150+</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">Avg. Experience</span>
+                  <span className="text-2xl font-bold text-green-600 dark:text-green-400">15+ yrs</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</span>
+                  <span className="text-2xl font-bold text-purple-600 dark:text-purple-400">500+</span>
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          {/* Differentiation Card 3 */}
+          <Card className="p-8 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-950/30 dark:to-indigo-950/30 border-0 hover:shadow-xl transition-all duration-300">
+            <div className="text-center mb-6">
+              <div className="w-16 h-16 bg-purple-100 dark:bg-purple-900/50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle2 className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Proven Results</h3>
+            </div>
+            <div className="space-y-4">
+              <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+                Consistent delivery excellence with measurable business outcomes
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">ROI Achievement</span>
+                  <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">300%+</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">Client Retention</span>
+                  <span className="text-2xl font-bold text-green-600 dark:text-green-400">95%</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">Budget Adherence</span>
+                  <span className="text-2xl font-bold text-purple-600 dark:text-purple-400">100%</span>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Why ExpTek vs Big 4 Comparison */}
+        <div className="bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-800/50 dark:to-blue-950/50 rounded-3xl p-8 lg:p-12">
+          <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
+            ExpTek vs Traditional Consulting Firms
+          </h3>
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="text-center">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Traditional Firms</h4>
+              <div className="space-y-3 text-gray-600 dark:text-gray-300">
+                <div className="flex items-center">
+                  <div className="w-4 h-4 bg-red-200 dark:bg-red-900/50 rounded mr-3"></div>
+                  <span className="text-sm">18-24 month implementations</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-4 h-4 bg-red-200 dark:bg-red-900/50 rounded mr-3"></div>
+                  <span className="text-sm">Junior consultants on projects</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-4 h-4 bg-red-200 dark:bg-red-900/50 rounded mr-3"></div>
+                  <span className="text-sm">Multiple technology focus</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-4 h-4 bg-red-200 dark:bg-red-900/50 rounded mr-3"></div>
+                  <span className="text-sm">Higher cost structure</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center lg:border-l lg:border-r lg:border-gray-200 dark:lg:border-gray-700 lg:px-8">
+              <h4 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-4">ExpTek Advantage</h4>
+              <div className="space-y-3 text-gray-600 dark:text-gray-300">
+                <div className="flex items-center">
+                  <CheckCircle2 className="h-4 w-4 text-green-500 mr-3" />
+                  <span className="text-sm">8-12 week implementations</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle2 className="h-4 w-4 text-green-500 mr-3" />
+                  <span className="text-sm">Senior consultants only</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle2 className="h-4 w-4 text-green-500 mr-3" />
+                  <span className="text-sm">SAP Finance exclusive focus</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle2 className="h-4 w-4 text-green-500 mr-3" />
+                  <span className="text-sm">40% cost savings</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Business Impact</h4>
+              <div className="space-y-3">
+                <div className="bg-green-100 dark:bg-green-900/30 rounded-lg p-3">
+                  <div className="text-2xl font-bold text-green-600 dark:text-green-400">$2.5M+</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-300">Avg. Annual Savings</div>
+                </div>
+                <div className="bg-blue-100 dark:bg-blue-900/30 rounded-lg p-3">
+                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">60%</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-300">Faster Month-End Close</div>
+                </div>
+                <div className="bg-purple-100 dark:bg-purple-900/30 rounded-lg p-3">
+                  <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">85%</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-300">Process Automation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <Button 
+              size="lg" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
+              onClick={() => handleCTAClick('why-exptek-demo')}
+            >
+              See Why Companies Choose ExpTek
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Study Spotlight Section - HIGH PRIORITY #3 */}
+      <section className="bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-blue-950/30 py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="text-blue-600 border-blue-200 bg-blue-50 dark:text-blue-400 dark:border-blue-800 dark:bg-blue-950/50 mb-6">
+              CLIENT SUCCESS SPOTLIGHT
+            </Badge>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+              Fortune 500 Manufacturing Company Transformation
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              {/* [CONTENT TO BE UPDATED] */}
+              See how TechFlow Manufacturing achieved 60% faster month-end close and $2.8M annual savings with ExpTek's SAP S/4HANA Cloud Finance implementation.
+            </p>
+          </div>
+
+          <div className="max-w-6xl mx-auto">
+            {/* Case Study Header */}
+            <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden">
+              <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-8 text-white">
+                <div className="flex flex-col lg:flex-row items-center justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">TechFlow Manufacturing</h3>
+                    <p className="text-blue-100">Global Industrial Equipment Manufacturer</p>
+                    <div className="flex items-center mt-2 space-x-4">
+                      <span className="text-sm bg-blue-700/50 px-3 py-1 rounded-full">$1.2B Revenue</span>
+                      <span className="text-sm bg-blue-700/50 px-3 py-1 rounded-full">15 Countries</span>
+                      <span className="text-sm bg-blue-700/50 px-3 py-1 rounded-full">3,500 Employees</span>
+                    </div>
+                  </div>
+                  <div className="mt-6 lg:mt-0">
+                    <div className="text-4xl font-bold">11 Weeks</div>
+                    <div className="text-blue-200">Implementation Time</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-8">
+                {/* Challenge & Solution */}
+                <div className="grid lg:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                      <div className="w-6 h-6 bg-red-100 dark:bg-red-900/50 rounded mr-3 flex items-center justify-center">
+                        <div className="w-3 h-3 bg-red-500 rounded"></div>
+                      </div>
+                      The Challenge
+                    </h4>
+                    <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-4 w-4 text-red-500 mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-sm">Legacy ERP system causing 18-day month-end close</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-4 w-4 text-red-500 mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-sm">Manual processes across 15 global subsidiaries</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-4 w-4 text-red-500 mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-sm">Inconsistent financial reporting and compliance issues</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-4 w-4 text-red-500 mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-sm">High operational costs due to process inefficiencies</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                      <div className="w-6 h-6 bg-green-100 dark:bg-green-900/50 rounded mr-3 flex items-center justify-center">
+                        <CheckCircle2 className="w-4 h-4 text-green-500" />
+                      </div>
+                      ExpTek Solution
+                    </h4>
+                    <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+                      <li className="flex items-start">
+                        <CheckCircle2 className="h-4 w-4 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-sm">SAP S/4HANA Cloud Finance with global template</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle2 className="h-4 w-4 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-sm">95% fit-to-standard processes using SAP best practices</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle2 className="h-4 w-4 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-sm">Automated intercompany processing and consolidation</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle2 className="h-4 w-4 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-sm">Integrated financial planning and analytics</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Results Grid */}
+                <div className="border-t border-gray-200 dark:border-gray-700 pt-8">
+                  <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+                    Measurable Business Results
+                  </h4>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <Card className="p-6 text-center bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-0 hover:shadow-lg transition-all duration-300">
+                      <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">60%</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">Faster Month-End Close</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">From 18 days to 7 days</div>
+                    </Card>
+
+                    <Card className="p-6 text-center bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-0 hover:shadow-lg transition-all duration-300">
+                      <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">$2.8M</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">Annual Cost Savings</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">ROI achieved in 8 months</div>
+                    </Card>
+
+                    <Card className="p-6 text-center bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-950/30 dark:to-indigo-950/30 border-0 hover:shadow-lg transition-all duration-300">
+                      <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">85%</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">Process Automation</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">Reduced manual work</div>
+                    </Card>
+
+                    <Card className="p-6 text-center bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/30 dark:to-red-950/30 border-0 hover:shadow-lg transition-all duration-300">
+                      <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">100%</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">Compliance Achievement</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">All regulatory requirements</div>
+                    </Card>
+                  </div>
+                </div>
+
+                {/* Quote Section */}
+                <div className="mt-8 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-2xl p-8">
+                  <div className="text-center">
+                    <div className="text-4xl text-blue-600 dark:text-blue-400 mb-4">"</div>
+                    <p className="text-lg text-gray-700 dark:text-gray-300 italic mb-6">
+                      {/* [CONTENT TO BE UPDATED] */}
+                      ExpTek delivered exactly what they promised - faster implementation, lower costs, and superior results. 
+                      Our finance team now operates at a level we never thought possible with our previous system.
+                    </p>
+                    <div className="flex items-center justify-center space-x-4">
+                      <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                        JM
+                      </div>
+                      <div className="text-left">
+                        <div className="font-semibold text-gray-900 dark:text-white">Jennifer Martinez</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-400">CFO, TechFlow Manufacturing</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-center mt-8">
+                  <Button 
+                    size="lg" 
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
+                    onClick={() => handleCTAClick('case-study-details')}
+                  >
+                    View Complete Case Study
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
       {/* Fit-to-Standard Workshops Section */}
       <section className="container mx-auto px-4 py-16">
