@@ -249,157 +249,19 @@ const FinanceImplementationPage = () => {
         </div>
       </section>
 
-      {/* SAP Activate Phases Timeline - Interactive */}
+      {/* ExpTek Finance Implementation Roadmap - Custom Design */}
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            SAP Activate Implementation Roadmap
+            ExpTek Finance Implementation Roadmap
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Our proven 6-phase methodology ensures systematic, risk-free implementation of your SAP S/4HANA Cloud Finance solution.
+            Our proven 6-phase methodology ensures systematic, risk-free implementation of your SAP S/4HANA Cloud Finance solution using industry best practices.
           </p>
         </div>
 
-        {/* Desktop Timeline */}
-        <div className="hidden lg:block relative">
-          {/* Timeline Line */}
-          <div className="absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-blue-500 via-green-500 via-yellow-500 via-red-500 to-indigo-500 rounded-full"></div>
-          
-          {/* Phase Cards */}
-          <div className="grid grid-cols-6 gap-4 relative">
-            {financeImplementation.sapActivatePhases.map((phase, index) => (
-              <div key={phase.id} className="relative">
-                {/* Phase Connector Dot */}
-                <div 
-                  className="absolute top-20 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full border-4 border-white dark:border-gray-900 z-10"
-                  style={{ backgroundColor: phase.color }}
-                ></div>
-                
-                {/* Phase Card */}
-                <Card 
-                  className={`mt-32 cursor-pointer transition-all duration-300 hover:shadow-xl ${expandedPhase === phase.id ? 'shadow-2xl scale-105' : ''}`}
-                  onClick={() => togglePhaseExpansion(phase.id)}
-                >
-                  <CardHeader className="text-center pb-4">
-                    <div className="mx-auto w-12 h-12 rounded-lg flex items-center justify-center mb-3" style={{ backgroundColor: phase.color + '20' }}>
-                      <span className="text-xl font-bold" style={{ color: phase.color }}>
-                        {index + 1}
-                      </span>
-                    </div>
-                    <Badge variant="outline" style={{ borderColor: phase.color, color: phase.color }} className="mb-2">
-                      {phase.duration}
-                    </Badge>
-                    <CardTitle className="text-sm font-bold text-gray-900 dark:text-white">
-                      {phase.name}
-                    </CardTitle>
-                    <CardDescription className="text-xs text-gray-600 dark:text-gray-400">
-                      {phase.description}
-                    </CardDescription>
-                  </CardHeader>
-                  
-                  <Collapsible open={expandedPhase === phase.id}>
-                    <CollapsibleContent>
-                      <CardContent className="pt-0 space-y-4">
-                        <div>
-                          <h4 className="text-xs font-semibold text-gray-900 dark:text-white mb-2">Key Activities:</h4>
-                          <ul className="space-y-1">
-                            {phase.activities.map((activity, i) => (
-                              <li key={i} className="text-xs text-gray-600 dark:text-gray-400 flex items-start">
-                                <ChevronRight className="h-3 w-3 mt-0.5 mr-1 flex-shrink-0" />
-                                {activity}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        
-                        {phase.deliverables && (
-                          <div>
-                            <h4 className="text-xs font-semibold text-gray-900 dark:text-white mb-2">Deliverables:</h4>
-                            <ul className="space-y-1">
-                              {phase.deliverables.map((deliverable, i) => (
-                                <li key={i} className="text-xs text-gray-600 dark:text-gray-400 flex items-start">
-                                  <CheckCircle2 className="h-3 w-3 mt-0.5 mr-1 text-green-500 flex-shrink-0" />
-                                  {deliverable}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                      </CardContent>
-                    </CollapsibleContent>
-                  </Collapsible>
-                </Card>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Mobile Timeline */}
-        <div className="lg:hidden space-y-6">
-          {financeImplementation.sapActivatePhases.map((phase, index) => (
-            <Card key={phase.id} className="overflow-hidden">
-              <div 
-                className="h-2 w-full"
-                style={{ backgroundColor: phase.color }}
-              ></div>
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <Badge variant="outline" style={{ borderColor: phase.color, color: phase.color }} className="mb-2">
-                      {phase.duration}
-                    </Badge>
-                    <CardTitle className="text-lg font-bold text-gray-900 dark:text-white">
-                      Phase {index + 1}: {phase.name}
-                    </CardTitle>
-                    <CardDescription className="text-gray-600 dark:text-gray-400">
-                      {phase.description}
-                    </CardDescription>
-                  </div>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => togglePhaseExpansion(phase.id)}
-                    className="ml-4"
-                  >
-                    <ArrowDown className={`h-4 w-4 transition-transform ${expandedPhase === phase.id ? 'rotate-180' : ''}`} />
-                  </Button>
-                </div>
-              </CardHeader>
-              
-              <Collapsible open={expandedPhase === phase.id}>
-                <CollapsibleContent>
-                  <CardContent className="pt-0 space-y-4">
-                    <div>
-                      <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Key Activities:</h4>
-                      <ul className="space-y-2">
-                        {phase.activities.map((activity, i) => (
-                          <li key={i} className="text-sm text-gray-600 dark:text-gray-400 flex items-start">
-                            <ChevronRight className="h-4 w-4 mt-0.5 mr-2 flex-shrink-0" />
-                            {activity}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    {phase.deliverables && (
-                      <div>
-                        <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Key Deliverables:</h4>
-                        <ul className="space-y-2">
-                          {phase.deliverables.map((deliverable, i) => (
-                            <li key={i} className="text-sm text-gray-600 dark:text-gray-400 flex items-start">
-                              <CheckCircle2 className="h-4 w-4 mt-0.5 mr-2 text-green-500 flex-shrink-0" />
-                              {deliverable}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </CardContent>
-                </CollapsibleContent>
-              </Collapsible>
-            </Card>
-          ))}
-        </div>
+        {/* Custom Roadmap Component */}
+        <CustomRoadmap />
       </section>
 
       {/* Call to Action Section */}
