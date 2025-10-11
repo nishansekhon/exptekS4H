@@ -34,9 +34,11 @@ function App() {
               <Route path="/services/tax-compliance" element={<ComingSoonPage title="Tax & Compliance Automation" description="Multi-country tax compliance and automated reporting solutions." features={["Tax determination", "SOX compliance", "Regulatory reporting", "Multi-jurisdiction support"]} />} />
               <Route path="/services/analytics-reporting" element={<ComingSoonPage title="Analytics & Reporting" description="SAP Fiori apps, custom dashboards, and financial analytics solutions." features={["Financial statements", "Management reporting", "Embedded analytics", "Real-time dashboards"]} />} />
               <Route path="/services/support-optimization" element={<ComingSoonPage title="Post-Go-Live Support & Optimization" description="24/7 support, continuous improvement, and system optimization services." features={["24/7 support", "Performance tuning", "Continuous optimization", "User training"]} />} />
-              {/* Other placeholder routes */}
-              <Route path="/contact" element={<div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900"><div className="text-center"><h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Contact Us</h1><p className="text-gray-600 dark:text-gray-400">Contact Form - Coming Soon</p></div></div>} />
-              <Route path="/case-studies" element={<div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900"><div className="text-center"><h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Case Studies</h1><p className="text-gray-600 dark:text-gray-400">Success Stories - Coming Soon</p></div></div>} />
+              {/* Core Navigation Pages */}
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/case-studies" element={<CaseStudiesPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/insights" element={<InsightsPage />} />
             </Routes>
           </main>
           <ModernFooter />
