@@ -50,7 +50,7 @@ const ServicesOverviewPage = () => {
       description: "Seamless integration with Salesforce, Concur, Worldpay and other enterprise systems.",
       link: "/services/api-integration",
       features: ["Salesforce connectivity", "Concur integration", "Worldpay & PSP links"],
-      status: "Coming Soon",
+      status: "Available",
       color: "from-purple-500 to-indigo-600"
     },
     {
