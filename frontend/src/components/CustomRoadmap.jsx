@@ -11,7 +11,7 @@ const CustomRoadmap = () => {
     {
       id: 'discover',
       name: 'DISCOVER',
-      duration: 'Weeks 1-3',
+      duration: 'Weeks 1-4',
       color: '#F4B942',
       bgGradient: 'from-yellow-400 to-orange-400',
       icon: '🔍',
@@ -36,7 +36,7 @@ const CustomRoadmap = () => {
     {
       id: 'prepare',
       name: 'PREPARE',
-      duration: 'Weeks 4-6',
+      duration: 'Weeks 4-8',
       color: '#52C41A',
       bgGradient: 'from-green-400 to-emerald-400',
       icon: '📋',
@@ -61,7 +61,7 @@ const CustomRoadmap = () => {
     {
       id: 'explore',
       name: 'EXPLORE',
-      duration: 'Weeks 8-12',
+      duration: 'Weeks 9-12',
       color: '#17A2B8',
       bgGradient: 'from-teal-400 to-cyan-400',
       icon: '🔧',
@@ -86,7 +86,7 @@ const CustomRoadmap = () => {
     {
       id: 'realize',
       name: 'REALIZE',
-      duration: 'Weeks 13-16',
+      duration: 'Weeks 12-16',
       color: '#0A6ED1',
       bgGradient: 'from-blue-400 to-blue-600',
       icon: '⚡',
@@ -111,7 +111,7 @@ const CustomRoadmap = () => {
     {
       id: 'deploy',
       name: 'DEPLOY',
-      duration: 'Week 17',
+      duration: 'Weeks 16-20',
       color: '#FF8C00',
       bgGradient: 'from-orange-400 to-red-400',
       icon: '🚀',
