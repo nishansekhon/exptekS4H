@@ -975,13 +975,12 @@ const FinanceImplementationPage = () => {
           {/* Main CTA Content */}
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6 leading-tight">
-              Transform Your Finance Operations in 8-12 Weeks
+              Transform Your Finance Operations Faster
             </h2>
             <p className="text-2xl text-blue-100 mb-4 max-w-4xl mx-auto leading-relaxed">
               Join 50+ companies who have achieved 60% faster month-end close and $2M+ annual savings with ExpTek's proven SAP S/4HANA Cloud Finance implementation.
             </p>
             <p className="text-lg text-blue-200 max-w-3xl mx-auto">
-              {/* [CONTENT TO BE UPDATED] */}
               Don't let outdated finance systems hold your business back. Get started with a free consultation today.
             </p>
           </div>
@@ -992,8 +991,8 @@ const FinanceImplementationPage = () => {
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">Fast Implementation</h3>
-              <p className="text-blue-100">8-12 weeks vs 18+ months with traditional firms</p>
+              <h3 className="text-2xl font-bold mb-2">Faster Implementation</h3>
+              <p className="text-blue-100">3-8 months vs 12-18+ months with traditional firms</p>
             </div>
             <div className="text-center text-white">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
