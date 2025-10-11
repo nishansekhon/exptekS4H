@@ -110,23 +110,93 @@ const FinanceImplementationPage = () => {
           </div>
 
           <div className="relative">
-            {/* ExpTek Custom Implementation Roadmap */}
+            {/* ExpTek Custom Implementation Roadmap Hero Visual */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-2xl">
-              <div className="aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900 dark:to-cyan-900 rounded-xl p-6 flex items-center justify-center overflow-hidden">
-                {/* Mini Preview of Custom Roadmap */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="grid grid-cols-6 gap-2 w-full max-w-md">
-                    <div className="h-8 bg-yellow-400 rounded flex items-center justify-center text-xs font-bold text-white">1</div>
-                    <div className="h-8 bg-green-400 rounded flex items-center justify-center text-xs font-bold text-white">2</div>
-                    <div className="h-8 bg-teal-400 rounded flex items-center justify-center text-xs font-bold text-white">3</div>
-                    <div className="h-8 bg-blue-400 rounded flex items-center justify-center text-xs font-bold text-white">4</div>
-                    <div className="h-8 bg-orange-400 rounded flex items-center justify-center text-xs font-bold text-white">5</div>
-                    <div className="h-8 bg-purple-400 rounded flex items-center justify-center text-xs font-bold text-white">6</div>
+              <div className="aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900 dark:to-cyan-900 rounded-xl p-8 overflow-hidden">
+                {/* Professional Roadmap Visualization */}
+                <div className="w-full h-full flex flex-col justify-center">
+                  {/* Timeline Header */}
+                  <div className="text-center mb-6">
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-2">ExpTek Implementation Methodology</h3>
+                    <div className="w-full h-1 bg-gradient-to-r from-yellow-400 via-green-400 via-teal-400 via-blue-400 via-orange-400 to-purple-400 rounded-full"></div>
+                  </div>
+                  
+                  {/* Phase Cards */}
+                  <div className="grid grid-cols-6 gap-3">
+                    {/* Phase 1: DISCOVER */}
+                    <div className="bg-gradient-to-br from-yellow-400 to-orange-400 rounded-lg p-3 text-center shadow-md">
+                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-xs font-bold text-yellow-600">🔍</span>
+                      </div>
+                      <div className="text-xs font-bold text-white mb-1">DISCOVER</div>
+                      <div className="text-xs text-yellow-100">Weeks 1-2</div>
+                    </div>
+                    
+                    {/* Phase 2: PREPARE */}
+                    <div className="bg-gradient-to-br from-green-400 to-emerald-400 rounded-lg p-3 text-center shadow-md">
+                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-xs font-bold text-green-600">📋</span>
+                      </div>
+                      <div className="text-xs font-bold text-white mb-1">PREPARE</div>
+                      <div className="text-xs text-green-100">Weeks 3-4</div>
+                    </div>
+                    
+                    {/* Phase 3: EXPLORE */}
+                    <div className="bg-gradient-to-br from-teal-400 to-cyan-400 rounded-lg p-3 text-center shadow-md">
+                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-xs font-bold text-teal-600">🔧</span>
+                      </div>
+                      <div className="text-xs font-bold text-white mb-1">EXPLORE</div>
+                      <div className="text-xs text-teal-100">Weeks 5-8</div>
+                    </div>
+                    
+                    {/* Phase 4: REALIZE */}
+                    <div className="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg p-3 text-center shadow-md">
+                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-xs font-bold text-blue-600">⚡</span>
+                      </div>
+                      <div className="text-xs font-bold text-white mb-1">REALIZE</div>
+                      <div className="text-xs text-blue-100">Weeks 9-11</div>
+                    </div>
+                    
+                    {/* Phase 5: DEPLOY */}
+                    <div className="bg-gradient-to-br from-orange-400 to-red-400 rounded-lg p-3 text-center shadow-md">
+                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-xs font-bold text-orange-600">🚀</span>
+                      </div>
+                      <div className="text-xs font-bold text-white mb-1">DEPLOY</div>
+                      <div className="text-xs text-orange-100">Week 12</div>
+                    </div>
+                    
+                    {/* Phase 6: RUN */}
+                    <div className="bg-gradient-to-br from-purple-400 to-indigo-400 rounded-lg p-3 text-center shadow-md">
+                      <div className="w-6 h-6 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-xs font-bold text-purple-600">🔄</span>
+                      </div>
+                      <div className="text-xs font-bold text-white mb-1">RUN</div>
+                      <div className="text-xs text-purple-100">Ongoing</div>
+                    </div>
+                  </div>
+                  
+                  {/* Key Benefits */}
+                  <div className="mt-6 grid grid-cols-3 gap-4 text-center">
+                    <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-2">
+                      <div className="text-lg font-bold text-blue-600">12 Weeks</div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">Implementation</div>
+                    </div>
+                    <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-2">
+                      <div className="text-lg font-bold text-green-600">100+</div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">Workshops</div>
+                    </div>
+                    <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-2">
+                      <div className="text-lg font-bold text-purple-600">95%</div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">Success Rate</div>
+                    </div>
                   </div>
                 </div>
               </div>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">
-                ExpTek Finance Implementation Methodology - 6 Phase Roadmap
+                ExpTek Finance Implementation Methodology - Proven 6 Phase Approach
               </p>
             </div>
           </div>
