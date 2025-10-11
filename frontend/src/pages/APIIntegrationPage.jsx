@@ -759,10 +759,10 @@ const APIIntegrationPage = () => {
           <Card className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-0 max-w-2xl mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Total Project Timeline
+                Typical Project Timeline
               </h3>
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                7-17 Weeks
+                2-6 Months
               </div>
               <p className="text-gray-600 dark:text-gray-300">
                 From initial discovery to production deployment with ongoing support
