@@ -20,17 +20,27 @@ const ModernFooter = () => {
               Leading SAP S/4HANA Public Cloud Finance consulting with 100+ Fit-to-Standard workshops delivered using proven SAP Activate methodology.
             </p>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 text-[#60d5ff] flex-shrink-0" />
-                <span className="text-gray-300 text-sm">ExpTek LLC, Michigan, USA</span>
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-4 h-4 text-[#60d5ff] flex-shrink-0 mt-1" />
+                <div className="text-gray-300 text-sm">
+                  <div className="font-semibold mb-1">ExpTek LLC</div>
+                  <div>28345 Beck Road, Suite 406</div>
+                  <div>Wixom, Michigan, 48393</div>
+                  <div>United States</div>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-[#60d5ff] flex-shrink-0" />
-                <span className="text-gray-300 text-sm">info@exptek.com</span>
+                <a href="mailto:hr@exptek.com" className="text-gray-300 hover:text-[#60d5ff] transition-colors text-sm">
+                  hr@exptek.com
+                </a>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-[#60d5ff] flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+1 (555) 123-4567</span>
+              <div className="mt-4 pt-4 border-t border-gray-700">
+                <div className="text-sm text-gray-400 font-semibold mb-2">Business Hours</div>
+                <div className="text-sm text-gray-300">
+                  <div>Monday - Friday: 9:00 AM - 6:00 PM EST</div>
+                  <div className="text-gray-400">Saturday - Sunday: Closed</div>
+                </div>
               </div>
             </div>
           </div>
