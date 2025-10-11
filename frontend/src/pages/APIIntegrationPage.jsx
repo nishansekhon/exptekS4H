@@ -357,7 +357,7 @@ const APIIntegrationPage = () => {
     },
     {
       question: 'What\'s the typical timeline for API integration?',
-      answer: 'Simple integrations take 4-8 weeks, while complex multi-system integrations require 8-17 weeks depending on scope, data volume, and transformation complexity.'
+      answer: 'Simple integrations typically take 2-3 months, while complex multi-system integrations require 4-6 months depending on scope, data volume, and transformation complexity.'
     },
     {
       question: 'Do you support real-time integrations?',
