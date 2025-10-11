@@ -229,77 +229,64 @@ const CustomRoadmap = () => {
         ))}
       </div>
 
-      {/* Selected Phase Details - Clean White Background */}
-      {currentPhase && (
-        <div className="mt-12">
-          <Card className="bg-white dark:bg-gray-800 shadow-xl border-0 rounded-2xl">
-            <CardContent className="p-8">
-              <div className="text-center mb-8">
-                <div 
-                  className={`w-20 h-20 rounded-full bg-gradient-to-br ${currentPhase.bgGradient} flex items-center justify-center text-4xl mx-auto mb-4 shadow-lg`}
-                >
-                  {currentPhase.icon}
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                  {currentPhase.name}
-                </h3>
-                <Badge 
-                  variant="outline" 
-                  className="text-sm px-4 py-1 border-2"
-                  style={{ 
-                    borderColor: currentPhase.color, 
-                    color: currentPhase.color, 
-                    backgroundColor: 'transparent'
-                  }}
-                >
-                  {currentPhase.duration}
-                </Badge>
-                <p className="text-gray-600 dark:text-gray-300 mt-3 text-lg">
-                  {currentPhase.description}
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                    <div 
-                      className="w-2 h-2 rounded-full mr-3"
-                      style={{ backgroundColor: currentPhase.color }}
-                    />
-                    Key Milestones
-                  </h4>
-                  <ul className="space-y-3">
-                    {currentPhase.milestones.map((milestone, i) => (
-                      <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
-                        <div 
-                          className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0"
-                          style={{ backgroundColor: currentPhase.color }}
-                        />
-                        <span className="text-base leading-relaxed">{milestone}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                    <CheckCircle2 className="h-5 w-5 mr-2 text-green-500" />
-                    Core Activities
-                  </h4>
-                  <ul className="space-y-3">
-                    {currentPhase.activities.map((activity, i) => (
-                      <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
-                        <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
-                        <span className="text-base leading-relaxed">{activity}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+      {/* Simple Content Below Cards - No Boxes */}
+      <div className="mt-16 grid md:grid-cols-2 gap-12">
+        <div>
+          <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+            Key Milestones:
+          </h4>
+          <ul className="space-y-3">
+            <li className="flex items-start text-gray-600 dark:text-gray-300">
+              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
+              <span>Project Kickoff & Charter Development</span>
+            </li>
+            <li className="flex items-start text-gray-600 dark:text-gray-300">
+              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
+              <span>Current State Assessment</span>
+            </li>
+            <li className="flex items-start text-gray-600 dark:text-gray-300">
+              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
+              <span>Cloud Trial Environment Setup</span>
+            </li>
+            <li className="flex items-start text-gray-600 dark:text-gray-300">
+              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
+              <span>Stakeholder Alignment Sessions</span>
+            </li>
+            <li className="flex items-start text-gray-600 dark:text-gray-300">
+              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
+              <span>Business Case Validation</span>
+            </li>
+            <li className="flex items-start text-gray-600 dark:text-gray-300">
+              <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3 mr-4 flex-shrink-0" />
+              <span>Implementation Roadmap Finalization</span>
+            </li>
+          </ul>
         </div>
-      )}
+
+        <div>
+          <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+            Core Activities:
+          </h4>
+          <ul className="space-y-3">
+            <li className="flex items-start text-gray-600 dark:text-gray-300">
+              <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
+              <span>Business process assessment</span>
+            </li>
+            <li className="flex items-start text-gray-600 dark:text-gray-300">
+              <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
+              <span>Solution scoping & sizing</span>
+            </li>
+            <li className="flex items-start text-gray-600 dark:text-gray-300">
+              <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
+              <span>Project team formation</span>
+            </li>
+            <li className="flex items-start text-gray-600 dark:text-gray-300">
+              <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
+              <span>Initial system access setup</span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       {/* Framework Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 mb-8">
