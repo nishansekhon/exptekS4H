@@ -137,7 +137,7 @@
 
 ## test_plan:
   current_focus:
-    - "Finance Implementation Page - Phase 1 & 2"
+    - "Finance Implementation Page - Phase 3 & 4 High Priority Sections"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
