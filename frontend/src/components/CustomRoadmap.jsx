@@ -217,10 +217,13 @@ const CustomRoadmap = () => {
                 </CardHeader>
               </Card>
               
-              {/* Expanded Phase Details - Vertical Stacked Layout */}
+              {/* Expanded Phase Details - Compact Layout */}
               {activePhase === phase.id && (
-                <div className="mt-8 mx-4 p-8 rounded-xl transition-all duration-300 ease-in-out bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border-t-4 shadow-lg animate-in slide-in-from-top-2" 
-                     style={{ borderTopColor: phase.color }}>
+                <div className="mt-8 mx-4 rounded-xl transition-all duration-300 ease-in-out bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border-t-4 shadow-lg animate-in slide-in-from-top-2" 
+                     style={{ 
+                       borderTopColor: phase.color,
+                       padding: '16px'
+                     }}>
                   
                   {/* Key Milestones Section - Compact */}
                   <div className="milestones-section" style={{ marginBottom: '16px' }}>
