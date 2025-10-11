@@ -445,7 +445,7 @@ const FinanceImplementationPage = () => {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</span>
-                  <span className="text-2xl font-bold text-purple-600 dark:text-purple-400">500+</span>
+                  <span className="text-2xl font-bold text-purple-600 dark:text-purple-400">50+</span>
                 </div>
               </div>
             </div>
