@@ -115,55 +115,70 @@ const EnhancedHomePage = () => {
           {/* Showcase Cards Row - Responsive Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
             {/* Finance Implementation */}
-            <Card className="group hover:shadow-2xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-500 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] dark:from-[#0f1b2d] dark:to-[#1a2332] border-0 text-white overflow-hidden touch-manipulation">
-              <div className="h-40 sm:h-48 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/x7ywqunq_Finance%20Implementation%20SAP.png"
-                  alt="Finance Implementation"
-                  className="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent"></div>
-              </div>
-              <CardContent className="p-6 sm:p-8">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-4">Finance Implementation</h3>
-                <p className="text-sm sm:text-base lg:text-lg mb-2 sm:mb-4 text-gray-300">End-to-End</p>
-                <p className="text-gray-300 leading-relaxed text-sm sm:text-base">Complete SAP S/4HANA Public Cloud Finance implementation with proven methodologies and best practices.</p>
-              </CardContent>
-            </Card>
+            <Link to="/services/finance-implementation" className="block">
+              <Card className="group hover:shadow-2xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-500 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] dark:from-[#0f1b2d] dark:to-[#1a2332] border-0 text-white overflow-hidden touch-manipulation cursor-pointer">
+                <div className="h-40 sm:h-48 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/x7ywqunq_Finance%20Implementation%20SAP.png"
+                    alt="Finance Implementation"
+                    className="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent"></div>
+                </div>
+                <CardContent className="p-6 sm:p-8">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-4">Finance Implementation</h3>
+                  <p className="text-sm sm:text-base lg:text-lg mb-2 sm:mb-4 text-gray-300">End-to-End</p>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base mb-4">Complete SAP S/4HANA Public Cloud Finance implementation with proven methodologies and best practices.</p>
+                  <div className="inline-flex items-center text-[#60d5ff] hover:text-white font-semibold text-sm sm:text-base">
+                    Explore the case study <ArrowRight className="ml-2 w-4 h-4" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
             {/* Digital Payment */}
-            <Card className="group hover:shadow-2xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-500 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] dark:from-[#0f1b2d] dark:to-[#1a2332] border-0 text-white overflow-hidden touch-manipulation">
-              <div className="h-40 sm:h-48 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/0frb3bcz_Digital%20Payment%20and%20Customer%20Payment%20image.png"
-                  alt="Digital Payment Services"
-                  className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent"></div>
-              </div>
-              <CardContent className="p-6 sm:p-8">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-4">Digital Payment &</h3>
-                <p className="text-sm sm:text-base lg:text-lg mb-2 sm:mb-4 text-gray-300">Customer Payment</p>
-                <p className="text-gray-300 leading-relaxed text-sm sm:text-base">Streamlined payment processes with integrated digital payment solutions and customer portals.</p>
-              </CardContent>
-            </Card>
+            <Link to="/services/digital-payments" className="block">
+              <Card className="group hover:shadow-2xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-500 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] dark:from-[#0f1b2d] dark:to-[#1a2332] border-0 text-white overflow-hidden touch-manipulation cursor-pointer">
+                <div className="h-40 sm:h-48 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/0frb3bcz_Digital%20Payment%20and%20Customer%20Payment%20image.png"
+                    alt="Digital Payment Services"
+                    className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent"></div>
+                </div>
+                <CardContent className="p-6 sm:p-8">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-4">Digital Payment &</h3>
+                  <p className="text-sm sm:text-base lg:text-lg mb-2 sm:mb-4 text-gray-300">Customer Payment</p>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base mb-4">Streamlined payment processes with integrated digital payment solutions and customer portals.</p>
+                  <div className="inline-flex items-center text-[#60d5ff] hover:text-white font-semibold text-sm sm:text-base">
+                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
             {/* API Integration */}
-            <Card className="group hover:shadow-2xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-500 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] dark:from-[#0f1b2d] dark:to-[#1a2332] border-0 text-white overflow-hidden touch-manipulation md:col-span-2 lg:col-span-1">
-              <div className="h-40 sm:h-48 bg-gradient-to-br from-blue-50 to-cyan-50 relative overflow-hidden">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/4ttxf48d_API%20Image.png"
-                  alt="API Integration"
-                  className="w-full h-full object-cover opacity-85 group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent"></div>
-              </div>
-              <CardContent className="p-6 sm:p-8">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-4">API & System</h3>
-                <p className="text-sm sm:text-base lg:text-lg mb-2 sm:mb-4 text-gray-300">Integration</p>
-                <p className="text-gray-300 leading-relaxed text-sm sm:text-base">Seamless integration with Salesforce, Concur, Worldpay and other enterprise systems.</p>
-              </CardContent>
-            </Card>
+            <Link to="/services/api-integration" className="block">
+              <Card className="group hover:shadow-2xl hover:-translate-y-1 sm:hover:-translate-y-2 transition-all duration-500 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] dark:from-[#0f1b2d] dark:to-[#1a2332] border-0 text-white overflow-hidden touch-manipulation cursor-pointer md:col-span-2 lg:col-span-1">
+                <div className="h-40 sm:h-48 bg-gradient-to-br from-blue-50 to-cyan-50 relative overflow-hidden">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/4ttxf48d_API%20Image.png"
+                    alt="API Integration"
+                    className="w-full h-full object-cover opacity-85 group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/80 to-transparent"></div>
+                </div>
+                <CardContent className="p-6 sm:p-8">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-4">API & System</h3>
+                  <p className="text-sm sm:text-base lg:text-lg mb-2 sm:mb-4 text-gray-300">Integration</p>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base mb-4">Seamless integration with Salesforce, Concur, Worldpay and other enterprise systems.</p>
+                  <div className="inline-flex items-center text-[#60d5ff] hover:text-white font-semibold text-sm sm:text-base">
+                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           {/* Detail Cards Row - Responsive Grid */}
