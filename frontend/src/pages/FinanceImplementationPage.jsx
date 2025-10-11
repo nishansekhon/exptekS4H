@@ -19,7 +19,6 @@ const iconMap = {
 };
 
 const FinanceImplementationPage = () => {
-  const [expandedPhase, setExpandedPhase] = useState(null);
   const [animatedStats, setAnimatedStats] = useState({});
   const { financeImplementation } = financeData;
 
