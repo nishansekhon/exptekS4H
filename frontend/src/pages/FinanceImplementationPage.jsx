@@ -1011,34 +1011,128 @@ const FinanceImplementationPage = () => {
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-800 dark:to-blue-900 py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Transform Your Finance Operations?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join 500+ companies who have successfully implemented SAP S/4HANA Cloud Finance with ExpTek.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      {/* Final CTA Section - HIGH PRIORITY #4 */}
+      <section className="bg-gradient-to-r from-blue-600 via-blue-700 to-cyan-600 dark:from-blue-800 dark:via-blue-900 dark:to-cyan-800 py-20">
+        <div className="container mx-auto px-4">
+          {/* Main CTA Content */}
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6 leading-tight">
+              Transform Your Finance Operations in 8-12 Weeks
+            </h2>
+            <p className="text-2xl text-blue-100 mb-4 max-w-4xl mx-auto leading-relaxed">
+              Join 500+ companies who have achieved 60% faster month-end close and $2M+ annual savings with ExpTek's proven SAP S/4HANA Cloud Finance implementation.
+            </p>
+            <p className="text-lg text-blue-200 max-w-3xl mx-auto">
+              {/* [CONTENT TO BE UPDATED] */}
+              Don't let outdated finance systems hold your business back. Get started with a free consultation today.
+            </p>
+          </div>
+
+          {/* Value Propositions Grid */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="text-center text-white">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Fast Implementation</h3>
+              <p className="text-blue-100">8-12 weeks vs 18+ months with traditional firms</p>
+            </div>
+            <div className="text-center text-white">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Proven Results</h3>
+              <p className="text-blue-100">98% success rate with 300%+ ROI achievement</p>
+            </div>
+            <div className="text-center text-white">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users2 className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Expert Team</h3>
+              <p className="text-blue-100">SAP-certified consultants with 15+ years experience</p>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-12">
             <Button 
               size="lg" 
               variant="secondary"
-              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-6 text-lg"
-              onClick={() => handleCTAClick('get-started')}
+              className="bg-white text-blue-600 hover:bg-blue-50 px-12 py-6 text-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
+              onClick={() => handleCTAClick('schedule-free-consultation')}
             >
-              Get Started Today
-              <ArrowRight className="ml-2 h-5 w-5" />
+              Schedule Free Consultation
+              <Calendar className="ml-3 h-6 w-6" />
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-6 text-lg"
-              onClick={() => handleCTAClick('speak-expert')}
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-12 py-6 text-xl font-semibold transition-all duration-300"
+              onClick={() => handleDownloadClick('implementation-blueprint')}
             >
-              Speak with an Expert
-              <Users className="ml-2 h-5 w-5" />
+              Download Implementation Blueprint
+              <Download className="ml-3 h-6 w-6" />
             </Button>
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="border-t border-blue-500/30 pt-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
+              <div>
+                <div className="text-3xl font-bold mb-1">500+</div>
+                <div className="text-blue-200 text-sm">Successful Implementations</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-1">$2.5M+</div>
+                <div className="text-blue-200 text-sm">Average Annual Savings</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-1">60%</div>
+                <div className="text-blue-200 text-sm">Faster Month-End Close</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-1">98%</div>
+                <div className="text-blue-200 text-sm">Client Success Rate</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Urgency & Guarantee */}
+          <div className="text-center mt-12">
+            <div className="bg-white/10 rounded-2xl p-8 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold text-white mb-4">Limited Time: Free Implementation Assessment</h3>
+              <p className="text-lg text-blue-100 mb-6">
+                {/* [CONTENT TO BE UPDATED] */}
+                Book your consultation in the next 7 days and receive a complimentary $15,000 implementation readiness assessment including ROI projections and timeline estimates.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div className="flex items-center text-blue-100">
+                  <CheckCircle2 className="h-5 w-5 mr-2 text-green-400" />
+                  <span>No obligation consultation</span>
+                </div>
+                <div className="flex items-center text-blue-100">
+                  <CheckCircle2 className="h-5 w-5 mr-2 text-green-400" />
+                  <span>100% satisfaction guarantee</span>
+                </div>
+                <div className="flex items-center text-blue-100">
+                  <CheckCircle2 className="h-5 w-5 mr-2 text-green-400" />
+                  <span>Fixed price implementation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Information */}
+          <div className="text-center mt-8">
+            <p className="text-blue-100 mb-2">
+              Need immediate assistance? Call our SAP Finance experts directly:
+            </p>
+            <a 
+              href="tel:+1-555-EXPTEK1" 
+              className="text-2xl font-bold text-white hover:text-blue-200 transition-colors"
+            >
+              +1 (555) EXPTEK-1
+            </a>
           </div>
         </div>
       </section>
