@@ -5,6 +5,7 @@ import ModernHeader from './components/ModernHeader';
 import ModernFooter from './components/ModernFooter';
 import EnhancedHomePage from './pages/EnhancedHomePage';
 import FinanceImplementationPage from './pages/FinanceImplementationPage';
+import DigitalPaymentsPage from './pages/DigitalPaymentsPage';
 import './App.css';
 
 function App() {
