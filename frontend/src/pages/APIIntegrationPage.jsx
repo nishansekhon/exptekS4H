@@ -602,8 +602,302 @@ const APIIntegrationPage = () => {
         </div>
       </section>
 
+      {/* SECTION 4 - INTEGRATION PATTERNS */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            Integration Architecture & Patterns
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Flexible integration patterns tailored to your business requirements and system capabilities.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8">
+          {integrationPatterns.map((pattern, index) => (
+            <Card key={index} className="p-8 text-center hover:shadow-lg transition-all duration-300 group">
+              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                {pattern.icon}
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                {pattern.title}
+              </h3>
+              <ul className="space-y-3 mb-6">
+                {pattern.features.map((feature, fIndex) => (
+                  <li key={fIndex} className="flex items-start">
+                    <CheckCircle2 className="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
+                    <span className="text-gray-600 dark:text-gray-300 text-sm text-left">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="bg-blue-50 dark:bg-blue-950/30 rounded-lg p-4">
+                <h4 className="font-semibold text-blue-900 dark:text-blue-100 text-sm mb-2">Use Cases:</h4>
+                <p className="text-xs text-blue-800 dark:text-blue-200">
+                  {pattern.useCases}
+                </p>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* SECTION 5 - KEY EXTERNAL SYSTEM INTEGRATIONS */}
+      <section className="bg-white dark:bg-gray-800 py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              Finance System Integration Ecosystem
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Pre-built integration solutions for leading enterprise systems in the finance ecosystem.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {externalSystems.map((system, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className={`h-2 bg-gradient-to-r ${system.color}`}></div>
+                
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl">{system.name}</CardTitle>
+                  <CardDescription className="text-gray-600 dark:text-gray-400">
+                    {system.subtitle}
+                  </CardDescription>
+                </CardHeader>
+
+                <CardContent>
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Connected Processes:</h4>
+                      <ul className="space-y-2">
+                        {system.processes.map((process, pIndex) => (
+                          <li key={pIndex} className="flex items-start">
+                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span className="text-gray-600 dark:text-gray-300 text-sm">{process}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-3">APIs Used:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {system.apis.map((api, aIndex) => (
+                          <Badge key={aIndex} variant="outline" className="text-xs">
+                            {api}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Benefits:</h4>
+                      <ul className="space-y-2">
+                        {system.benefits.map((benefit, bIndex) => (
+                          <li key={bIndex} className="flex items-start">
+                            <CheckCircle2 className="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
+                            <span className="text-gray-600 dark:text-gray-300 text-sm">{benefit}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 6 - API CAPABILITIES BY PROTOCOL */}
+      <APICapabilitiesSection />
+
+      {/* SECTION 7 - IMPLEMENTATION APPROACH */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            Our API Integration Methodology
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Proven 5-step process for successful API integration projects with predictable timelines and deliverables.
+          </p>
+        </div>
+
+        <div className="space-y-6 max-w-4xl mx-auto">
+          {implementationSteps.map((step, index) => (
+            <Card key={index} className="overflow-hidden hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                    {step.number}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                        {step.title}
+                      </h3>
+                      <Badge className="bg-green-500 text-white mt-2 md:mt-0">
+                        {step.duration}
+                      </Badge>
+                    </div>
+                    <ul className="grid md:grid-cols-2 gap-2">
+                      {step.tasks.map((task, taskIndex) => (
+                        <li key={taskIndex} className="flex items-start">
+                          <CheckCircle2 className="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
+                          <span className="text-gray-600 dark:text-gray-300 text-sm">{task}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Timeline Summary */}
+        <div className="mt-12 text-center">
+          <Card className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-0 max-w-2xl mx-auto">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Total Project Timeline
+              </h3>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                6-12 Weeks
+              </div>
+              <p className="text-gray-600 dark:text-gray-300">
+                From initial discovery to production deployment with ongoing support
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* SECTION 8 - SAP BTP & INTEGRATION SUITE */}
+      <section className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              SAP Business Technology Platform Integration
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              {/* [CONTENT TO BE UPDATED] */}
+              We leverage SAP BTP and Cloud Platform Integration (CPI) for complex integration scenarios requiring 
+              advanced orchestration, transformation, and routing.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <Card className="p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">BTP Capabilities</h3>
+              <div className="space-y-4">
+                {[
+                  { name: 'Cloud Integration (CPI)', icon: <Layers className="h-5 w-5" /> },
+                  { name: 'API Management', icon: <Globe className="h-5 w-5" /> },
+                  { name: 'Open Connectors', icon: <Link2 className="h-5 w-5" /> },
+                  { name: 'Integration Advisor', icon: <Target className="h-5 w-5" /> },
+                  { name: 'Process Integration', icon: <RefreshCw className="h-5 w-5" /> }
+                ].map((capability, index) => (
+                  <div key={index} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/30 transition-colors">
+                    <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center text-blue-600 dark:text-blue-400">
+                      {capability.icon}
+                    </div>
+                    <span className="font-medium text-gray-900 dark:text-white">{capability.name}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+
+            <Card className="p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Use Cases for BTP</h3>
+              <div className="space-y-4">
+                {[
+                  'Multi-step integration flows',
+                  'Complex data transformations',
+                  'Legacy system connectivity',
+                  'API governance and security',
+                  'Integration monitoring'
+                ].map((useCase, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600 dark:text-gray-300">{useCase}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="mt-6 bg-gradient-to-r from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-lg p-4">
+                <h4 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">When to Use BTP</h4>
+                <p className="text-sm text-blue-800 dark:text-blue-200">
+                  Complex integration scenarios involving multiple systems, data transformation requirements, 
+                  or enterprise-grade orchestration needs.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 9 - FINANCE API USE CASES */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            Real-World Finance Integration Scenarios
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Proven use cases demonstrating the business value of finance API integrations.
+          </p>
+        </div>
+
+        <div className="space-y-4 max-w-4xl mx-auto">
+          {useCases.map((useCase, index) => (
+            <Card key={index} className="overflow-hidden">
+              <Collapsible open={expandedUseCase === index} onOpenChange={() => toggleUseCase(index)}>
+                <CollapsibleTrigger asChild>
+                  <button className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-8 h-8 bg-blue-600 rounded-lg text-white font-bold flex items-center justify-center text-sm">
+                        {index + 1}
+                      </div>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                        {useCase.title}
+                      </h3>
+                    </div>
+                    {expandedUseCase === index ? (
+                      <ChevronUp className="h-5 w-5 text-gray-600 dark:text-gray-400" />
+                    ) : (
+                      <ChevronDown className="h-5 w-5 text-gray-600 dark:text-gray-400" />
+                    )}
+                  </button>
+                </CollapsibleTrigger>
+                
+                <CollapsibleContent className="px-6 pb-6 border-t border-gray-100 dark:border-gray-700">
+                  <div className="pt-4 grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Problem:</h4>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">{useCase.problem}</p>
+                      
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Solution:</h4>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">{useCase.solution}</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2">APIs Used:</h4>
+                      <p className="text-blue-600 dark:text-blue-400 text-sm mb-4">{useCase.apis}</p>
+                      
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Result:</h4>
+                      <div className="bg-green-50 dark:bg-green-950/30 rounded-lg p-3">
+                        <p className="text-green-700 dark:text-green-300 font-semibold text-sm">{useCase.result}</p>
+                      </div>
+                    </div>
+                  </div>
+                </CollapsibleContent>
+              </Collapsible>
+            </Card>
+          ))}
+        </div>
+      </section>
+
       {/* Continue with remaining sections... */}
-      {/* I'll add the rest in the next part to avoid hitting token limits */}
+      {/* I'll add FAQ, Case Study, Disclaimer, and Final CTA in the next update */}
       
     </div>
   );
