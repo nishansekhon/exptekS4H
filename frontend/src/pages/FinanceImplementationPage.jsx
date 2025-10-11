@@ -594,7 +594,7 @@ const FinanceImplementationPage = () => {
                     </div>
                   </div>
                   <div className="mt-6 lg:mt-0">
-                    <div className="text-4xl font-bold">11 Weeks</div>
+                    <div className="text-4xl font-bold">7 Months</div>
                     <div className="text-blue-200">Implementation Time</div>
                   </div>
                 </div>
