@@ -353,13 +353,13 @@ const ServicesOverviewPage = () => {
             {/* Contact Info */}
             <div className="mt-8 pt-8 border-t border-blue-400/30">
               <p className="text-blue-200 mb-2">
-                Have questions? Speak directly with our SAP Finance experts:
+                Have questions? Contact our SAP Finance experts:
               </p>
               <a 
-                href="tel:+1-555-EXPTEK1" 
-                className="text-2xl font-bold text-white hover:text-blue-200 transition-colors"
+                href="mailto:hr@exptek.com" 
+                className="text-xl font-bold text-white hover:text-blue-200 transition-colors"
               >
-                +1 (555) EXPTEK-1
+                Email: hr@exptek.com
               </a>
             </div>
           </CardContent>
