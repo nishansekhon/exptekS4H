@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
-import { ChevronDown, ChevronRight, Search, Clipboard, Settings, Zap, Rocket, RefreshCw, CheckCircle2 } from 'lucide-react';
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible';
+import { ChevronLeft, ChevronRight, Search, Clipboard, Settings, Zap, Rocket, RefreshCw, CheckCircle2, Target } from 'lucide-react';
 
 const CustomRoadmap = () => {
-  const [expandedPhase, setExpandedPhase] = useState(null);
+  const [activePhase, setActivePhase] = useState('discover');
 
   const phases = [
     {
