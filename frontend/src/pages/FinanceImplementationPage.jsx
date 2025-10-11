@@ -1036,7 +1036,7 @@ const FinanceImplementationPage = () => {
           <div className="border-t border-blue-500/30 pt-8">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
               <div>
-                <div className="text-3xl font-bold mb-1">500+</div>
+                <div className="text-3xl font-bold mb-1">50+</div>
                 <div className="text-blue-200 text-sm">Successful Implementations</div>
               </div>
               <div>
