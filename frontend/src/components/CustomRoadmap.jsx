@@ -136,221 +136,189 @@ const CustomRoadmap = () => {
     }
   ];
 
-  const togglePhase = (phaseId) => {
-    setExpandedPhase(expandedPhase === phaseId ? null : phaseId);
+  const currentPhase = phases.find(phase => phase.id === activePhase);
+  const currentIndex = phases.findIndex(phase => phase.id === activePhase);
+
+  const nextPhase = () => {
+    const nextIndex = (currentIndex + 1) % phases.length;
+    setActivePhase(phases[nextIndex].id);
+  };
+
+  const prevPhase = () => {
+    const prevIndex = currentIndex === 0 ? phases.length - 1 : currentIndex - 1;
+    setActivePhase(phases[prevIndex].id);
   };
 
   return (
     <div className="w-full">
-      {/* Desktop Timeline */}
-      <div className="hidden lg:block">
-        {/* Timeline Container */}
-        <div className="relative">
-          {/* Main Timeline Bar */}
-          <div className="absolute top-24 left-8 right-8 h-2 bg-gradient-to-r from-yellow-400 via-green-400 via-teal-400 via-blue-400 via-orange-400 to-purple-400 rounded-full shadow-lg"></div>
-          
-          {/* Phase Cards Grid */}
-          <div className="grid grid-cols-6 gap-4 relative">
-            {phases.map((phase, index) => {
-              const IconComponent = phase.icon;
-              
-              return (
-                <div key={phase.id} className="relative">
-                  {/* Connection Dot */}
-                  <div 
-                    className="absolute top-20 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full border-4 border-white dark:border-gray-900 shadow-lg z-20 flex items-center justify-center"
-                    style={{ backgroundColor: phase.color }}
-                  >
-                    <span className="text-white font-bold text-xs">{phase.number}</span>
-                  </div>
-                  
-                  {/* Arrow Connector (except for last phase) */}
-                  {index < phases.length - 1 && (
-                    <div className="absolute top-24 right-0 transform translate-x-2 z-10">
-                      <div 
-                        className="w-4 h-4 rotate-45 border-r-2 border-t-2"
-                        style={{ borderColor: phases[index + 1].color }}
-                      ></div>
-                    </div>
-                  )}
-                  
-                  {/* Phase Card */}
-                  <Card 
-                    className={`mt-32 cursor-pointer transition-all duration-300 hover:shadow-xl hover:scale-105 ${expandedPhase === phase.id ? 'shadow-2xl scale-105' : 'shadow-lg'} ${phase.bgLight} border-0`}
-                    onClick={() => togglePhase(phase.id)}
-                  >
-                    <CardHeader className="text-center pb-3">
-                      {/* Phase Icon */}
-                      <div className={`mx-auto w-14 h-14 rounded-xl bg-gradient-to-br ${phase.bgGradient} flex items-center justify-center mb-3 shadow-md`}>
-                        <IconComponent className="h-7 w-7 text-white" />
-                      </div>
-                      
-                      {/* Duration Badge */}
-                      <Badge 
-                        variant="outline" 
-                        className="mb-2 border-2"
-                        style={{ borderColor: phase.color, color: phase.color, backgroundColor: phase.color + '10' }}
-                      >
-                        {phase.duration}
-                      </Badge>
-                      
-                      {/* Phase Name */}
-                      <CardTitle className="text-lg font-bold text-gray-900 dark:text-white">
-                        {phase.name}
-                      </CardTitle>
-                    </CardHeader>
-                    
-                    {/* Expandable Content */}
-                    <Collapsible open={expandedPhase === phase.id}>
-                      <CollapsibleContent>
-                        <CardContent className="pt-0 space-y-4">
-                          <div>
-                            <h4 className="text-xs font-semibold text-gray-900 dark:text-white mb-2">Key Milestones:</h4>
-                            <ul className="space-y-1">
-                              {phase.milestones.map((milestone, i) => (
-                                <li key={i} className="text-xs text-gray-600 dark:text-gray-400 flex items-start">
-                                  <div 
-                                    className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
-                                    style={{ backgroundColor: phase.color }}
-                                  ></div>
-                                  {milestone}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                          
-                          <div>
-                            <h4 className="text-xs font-semibold text-gray-900 dark:text-white mb-2">Core Activities:</h4>
-                            <ul className="space-y-1">
-                              {phase.activities.map((activity, i) => (
-                                <li key={i} className="text-xs text-gray-600 dark:text-gray-400 flex items-start">
-                                  <CheckCircle2 className="h-3 w-3 mt-0.5 mr-1 text-green-500 flex-shrink-0" />
-                                  {activity}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </CardContent>
-                      </CollapsibleContent>
-                    </Collapsible>
-                  </Card>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        
-        {/* Legal Disclaimer */}
-        <div className="mt-12 p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
-          <p className="text-xs text-gray-600 dark:text-gray-400 text-center">
-            ExpTek's implementation methodology is based on industry best practices and SAP-recommended approaches. 
-            SAP Activate is a trademark of SAP SE. ExpTek is an independent consulting firm and this roadmap represents our proprietary implementation framework.
+      {/* Implementation Framework */}
+      <div className="implementation-framework">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            ExpTek Finance Implementation Framework
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300">
+            Comprehensive SAP S/4HANA Cloud Methodology
           </p>
         </div>
-      </div>
 
-      {/* Mobile Timeline */}
-      <div className="lg:hidden space-y-4">
-        {phases.map((phase, index) => {
-          const IconComponent = phase.icon;
-          
-          return (
-            <Card key={phase.id} className={`${phase.bgLight} border-0 shadow-lg overflow-hidden`}>
-              {/* Phase Header Bar */}
-              <div 
-                className="h-3 w-full"
-                style={{ backgroundColor: phase.color }}
-              ></div>
-              
-              <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-4">
-                    {/* Phase Icon */}
-                    <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${phase.bgGradient} flex items-center justify-center shadow-md`}>
-                      <IconComponent className="h-6 w-6 text-white" />
-                    </div>
-                    
-                    <div>
-                      {/* Duration Badge */}
-                      <Badge 
-                        variant="outline" 
-                        className="mb-1 text-xs border-2"
-                        style={{ borderColor: phase.color, color: phase.color, backgroundColor: phase.color + '10' }}
-                      >
-                        {phase.duration}
-                      </Badge>
-                      
-                      {/* Phase Title */}
-                      <CardTitle className="text-lg font-bold text-gray-900 dark:text-white">
-                        Phase {phase.number}: {phase.name}
-                      </CardTitle>
-                    </div>
-                  </div>
-                  
-                  {/* Expand Button */}
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => togglePhase(phase.id)}
-                    className="ml-4"
-                  >
-                    <ChevronDown className={`h-4 w-4 transition-transform ${expandedPhase === phase.id ? 'rotate-180' : ''}`} />
-                  </Button>
-                </div>
-              </CardHeader>
-              
-              {/* Expandable Content */}
-              <Collapsible open={expandedPhase === phase.id}>
-                <CollapsibleContent>
-                  <CardContent className="pt-0 pb-4 space-y-4">
-                    <div>
-                      <h4 className="text-xs font-semibold text-gray-900 dark:text-white mb-2">Key Milestones:</h4>
-                      <ul className="space-y-1">
-                        {phase.milestones.map((milestone, i) => (
-                          <li key={i} className="text-xs text-gray-600 dark:text-gray-400 flex items-start">
-                            <div 
-                              className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
-                              style={{ backgroundColor: phase.color }}
-                            ></div>
-                            {milestone}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    <div>
-                      <h4 className="text-xs font-semibold text-gray-900 dark:text-white mb-2">Core Activities:</h4>
-                      <ul className="space-y-1">
-                        {phase.activities.map((activity, i) => (
-                          <li key={i} className="text-xs text-gray-600 dark:text-gray-400 flex items-start">
-                            <CheckCircle2 className="h-3 w-3 mt-0.5 mr-1 text-green-500 flex-shrink-0" />
-                            {activity}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </CardContent>
-                </CollapsibleContent>
-              </Collapsible>
-              
-              {/* Connection Line to Next Phase (except last) */}
-              {index < phases.length - 1 && (
-                <div className="flex justify-center pb-4">
+        {/* Tab Navigation */}
+        <div className="phase-tabs bg-slate-800/90 dark:bg-slate-900/90 backdrop-blur-sm rounded-2xl p-2 mb-8 overflow-x-auto">
+          <div className="flex space-x-1 min-w-max">
+            {phases.map((phase) => (
+              <button
+                key={phase.id}
+                onClick={() => setActivePhase(phase.id)}
+                className={`flex-1 min-w-[120px] px-4 py-3 rounded-xl text-center transition-all duration-300 ${
+                  activePhase === phase.id
+                    ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-lg'
+                    : 'text-gray-300 hover:text-white hover:bg-white/10'
+                }`}
+              >
+                <div className="font-bold text-sm">{phase.name}</div>
+                <div className="text-xs opacity-75">{phase.duration}</div>
+                {activePhase === phase.id && (
                   <div 
-                    className="w-0.5 h-8 opacity-50"
-                    style={{ backgroundColor: phases[index + 1].color }}
-                  ></div>
+                    className="w-full h-1 rounded-full mt-2"
+                    style={{ backgroundColor: phase.color }}
+                  />
+                )}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Phase Content Area */}
+        <Card className="phase-content bg-white dark:bg-gray-800 shadow-xl border-0 rounded-2xl mb-8">
+          <CardContent className="p-8">
+            {/* Phase Icon & Title */}
+            <div className="text-center mb-8">
+              <div 
+                className={`w-20 h-20 rounded-full bg-gradient-to-br ${currentPhase.bgGradient} flex items-center justify-center text-4xl mx-auto mb-4 shadow-lg`}
+              >
+                {currentPhase.icon}
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                {currentPhase.name}
+              </h3>
+              <Badge 
+                variant="outline" 
+                className="text-sm px-4 py-1 border-2"
+                style={{ 
+                  borderColor: currentPhase.color, 
+                  color: currentPhase.color, 
+                  backgroundColor: currentPhase.color + '15' 
+                }}
+              >
+                {currentPhase.duration}
+              </Badge>
+              <p className="text-gray-600 dark:text-gray-300 mt-3 text-lg">
+                {currentPhase.description}
+              </p>
+            </div>
+
+            {/* Content Grid */}
+            <div className="content-grid grid md:grid-cols-2 gap-8">
+              {/* Activities Column */}
+              <div className="activities">
+                <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                  <Target className="h-5 w-5 mr-2" style={{ color: currentPhase.color }} />
+                  Key Activities
+                </h4>
+                <ul className="space-y-3">
+                  {currentPhase.activities.map((activity, i) => (
+                    <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
+                      <div 
+                        className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0"
+                        style={{ backgroundColor: currentPhase.color }}
+                      />
+                      <span className="text-base leading-relaxed">{activity}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Deliverables Column */}
+              <div className="deliverables">
+                <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                  <CheckCircle2 className="h-5 w-5 mr-2 text-green-500" />
+                  Deliverables
+                </h4>
+                <ul className="space-y-3">
+                  {currentPhase.deliverables.map((deliverable, i) => (
+                    <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
+                      <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
+                      <span className="text-base leading-relaxed">{deliverable}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Navigation Buttons */}
+            <div className="flex justify-between items-center mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+              <Button
+                variant="outline"
+                onClick={prevPhase}
+                className="flex items-center space-x-2 hover:bg-gray-50 dark:hover:bg-gray-700"
+              >
+                <ChevronLeft className="h-4 w-4" />
+                <span>Previous Phase</span>
+              </Button>
+              
+              <div className="flex items-center space-x-2">
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  {currentIndex + 1} of {phases.length}
+                </span>
+                <div className="flex space-x-1">
+                  {phases.map((_, index) => (
+                    <div
+                      key={index}
+                      className={`w-2 h-2 rounded-full transition-colors ${
+                        index === currentIndex ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'
+                      }`}
+                    />
+                  ))}
                 </div>
-              )}
-            </Card>
-          );
-        })}
-        
+              </div>
+
+              <Button
+                variant="outline"
+                onClick={nextPhase}
+                className="flex items-center space-x-2 hover:bg-gray-50 dark:hover:bg-gray-700"
+              >
+                <span>Next Phase</span>
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Framework Stats */}
+        <div className="framework-stats grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <Card className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 border-0">
+            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">17 Weeks</div>
+            <div className="text-gray-600 dark:text-gray-300">Total Implementation</div>
+          </Card>
+          
+          <Card className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950/30 dark:to-green-900/30 border-0">
+            <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">100+</div>
+            <div className="text-gray-600 dark:text-gray-300">Fit-to-Standard Workshops</div>
+          </Card>
+          
+          <Card className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/30 dark:to-purple-900/30 border-0">
+            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">6 Phases</div>
+            <div className="text-gray-600 dark:text-gray-300">Comprehensive Methodology</div>
+          </Card>
+        </div>
+
         {/* Legal Disclaimer */}
-        <div className="mt-8 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
-          <p className="text-xs text-gray-600 dark:text-gray-400 text-center">
-            ExpTek's implementation methodology is based on industry best practices and SAP-recommended approaches. 
-            SAP Activate is a trademark of SAP SE. ExpTek is an independent consulting firm and this roadmap represents our proprietary implementation framework.
+        <div className="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+          <p className="text-sm text-gray-600 dark:text-gray-400 text-center leading-relaxed">
+            ExpTek Proprietary Implementation Framework - Comprehensive 6-Phase Methodology with Detailed Workstream Breakdown. 
+            Based on industry best practices and SAP-recommended approaches. SAP Activate is a trademark of SAP SE. 
+            ExpTek is an independent consulting firm and this roadmap represents our proprietary implementation framework.
           </p>
         </div>
       </div>
