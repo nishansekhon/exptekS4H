@@ -293,44 +293,39 @@ const CustomRoadmap = () => {
               </CardHeader>
             </Card>
             
-            {/* Mobile Expanded Content */}
+            {/* Mobile Expanded Content - Fixed Layout */}
             {activePhase === phase.id && (
-              <div className="mt-4 p-6 rounded-xl bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border-t-4 shadow-lg animate-in slide-in-from-top-2" 
+              <div className="mt-4 p-8 rounded-xl bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border-t-4 shadow-lg animate-in slide-in-from-top-2" 
                    style={{ borderTopColor: phase.color }}>
-                <div className="space-y-6">
+                <div className="space-y-8">
                   {/* Key Milestones */}
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
-                      <div 
-                        className="w-3 h-3 rounded-full mr-3"
-                        style={{ backgroundColor: phase.color }}
-                      />
+                  <div className="milestones-column">
+                    <h4 className="text-xl font-semibold mb-6" style={{ color: phase.color }}>
                       Key Milestones:
                     </h4>
-                    <ul className="space-y-3">
+                    <ul className="space-y-4">
                       {phase.milestones.map((milestone, i) => (
-                        <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
+                        <li key={i} className="flex items-start text-gray-700 dark:text-gray-300">
                           <div 
-                            className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
+                            className="w-2 h-2 rounded-full mt-2.5 mr-4 flex-shrink-0"
                             style={{ backgroundColor: phase.color }}
                           />
-                          <span className="text-sm leading-relaxed">{milestone}</span>
+                          <span className="text-base leading-relaxed">{milestone}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
                   {/* Core Activities */}
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
-                      <CheckCircle2 className="h-5 w-5 mr-2 text-green-500" />
+                  <div className="activities-column">
+                    <h4 className="text-xl font-semibold text-green-600 dark:text-green-400 mb-6">
                       Core Activities:
                     </h4>
-                    <ul className="space-y-3">
+                    <ul className="space-y-4">
                       {phase.activities.map((activity, i) => (
-                        <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
-                          <CheckCircle2 className="h-4 w-4 mt-0.5 mr-3 text-green-500 flex-shrink-0" />
-                          <span className="text-sm leading-relaxed">{activity}</span>
+                        <li key={i} className="flex items-start text-gray-700 dark:text-gray-300">
+                          <CheckCircle2 className="h-5 w-5 mt-0.5 mr-4 text-green-500 flex-shrink-0" />
+                          <span className="text-base leading-relaxed">{activity}</span>
                         </li>
                       ))}
                     </ul>
