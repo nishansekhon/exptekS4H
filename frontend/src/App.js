@@ -4,6 +4,7 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import ModernHeader from './components/ModernHeader';
 import ModernFooter from './components/ModernFooter';
 import EnhancedHomePage from './pages/EnhancedHomePage';
+import FinanceImplementationPage from './pages/FinanceImplementationPage';
 import './App.css';
 
 function App() {
