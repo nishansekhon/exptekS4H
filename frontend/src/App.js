@@ -8,6 +8,10 @@ import FinanceImplementationPage from './pages/FinanceImplementationPage';
 import DigitalPaymentsPage from './pages/DigitalPaymentsPage';
 import APIIntegrationPage from './pages/APIIntegrationPage';
 import ServicesOverviewPage from './pages/ServicesOverviewPage';
+import ContactPage from './pages/ContactPage';
+import CaseStudiesPage from './pages/CaseStudiesPage';
+import AboutPage from './pages/AboutPage';
+import InsightsPage from './pages/InsightsPage';
 import ComingSoonPage from './components/ComingSoonPage';
 import './App.css';
 
