@@ -978,7 +978,7 @@ const FinanceImplementationPage = () => {
               Transform Your Finance Operations in 8-12 Weeks
             </h2>
             <p className="text-2xl text-blue-100 mb-4 max-w-4xl mx-auto leading-relaxed">
-              Join 500+ companies who have achieved 60% faster month-end close and $2M+ annual savings with ExpTek's proven SAP S/4HANA Cloud Finance implementation.
+              Join 50+ companies who have achieved 60% faster month-end close and $2M+ annual savings with ExpTek's proven SAP S/4HANA Cloud Finance implementation.
             </p>
             <p className="text-lg text-blue-200 max-w-3xl mx-auto">
               {/* [CONTENT TO BE UPDATED] */}
