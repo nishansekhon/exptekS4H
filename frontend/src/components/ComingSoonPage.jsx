@@ -140,18 +140,18 @@ const ComingSoonPage = ({
             <Card className="text-center hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-green-100 dark:bg-green-900/50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="h-6 w-6 text-green-600 dark:text-green-400" />
+                  <Mail className="h-6 w-6 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Call Our Experts</h3>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Email Our Experts</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                  Speak directly with our SAP Finance specialists.
+                  Contact our SAP Finance specialists directly.
                 </p>
                 <Button 
                   variant="outline" 
                   className="w-full"
-                  onClick={() => handleContactClick('call-experts')}
+                  onClick={() => handleContactClick('email-experts')}
                 >
-                  +1 (555) EXPTEK-1
+                  hr@exptek.com
                 </Button>
               </CardContent>
             </Card>
