@@ -229,10 +229,10 @@ const CustomRoadmap = () => {
         ))}
       </div>
 
-      {/* Selected Phase Details */}
+      {/* Selected Phase Details - Clean White Background */}
       {currentPhase && (
         <div className="mt-12">
-          <Card className="bg-white dark:bg-gray-800 shadow-xl">
+          <Card className="bg-white dark:bg-gray-800 shadow-xl border-0 rounded-2xl">
             <CardContent className="p-8">
               <div className="text-center mb-8">
                 <div 
@@ -249,7 +249,7 @@ const CustomRoadmap = () => {
                   style={{ 
                     borderColor: currentPhase.color, 
                     color: currentPhase.color, 
-                    backgroundColor: currentPhase.color + '15' 
+                    backgroundColor: 'transparent'
                   }}
                 >
                   {currentPhase.duration}
@@ -262,7 +262,10 @@ const CustomRoadmap = () => {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                    <Target className="h-5 w-5 mr-2" style={{ color: currentPhase.color }} />
+                    <div 
+                      className="w-2 h-2 rounded-full mr-3"
+                      style={{ backgroundColor: currentPhase.color }}
+                    />
                     Key Milestones
                   </h4>
                   <ul className="space-y-3">
