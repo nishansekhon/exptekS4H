@@ -192,8 +192,15 @@ const CustomRoadmap = () => {
                 <span className="text-white font-bold text-xs">{index + 1}</span>
               </div>
               
-              {/* Phase Card */}
-              <div className="mt-20 text-center">
+              {/* Phase Card - Clickable */}
+              <div 
+                className={`mt-20 text-center cursor-pointer transition-all duration-300 p-4 rounded-2xl ${
+                  activePhase === phase.id 
+                    ? 'bg-white dark:bg-gray-800 shadow-xl scale-105' 
+                    : 'hover:bg-white/50 dark:hover:bg-gray-800/50 hover:shadow-lg'
+                }`}
+                onClick={() => setActivePhase(phase.id)}
+              >
                 {/* Icon */}
                 <div 
                   className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${phase.bgGradient} flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg`}
@@ -218,10 +225,96 @@ const CustomRoadmap = () => {
                 <p className="text-sm text-gray-600 dark:text-gray-400 leading-tight">
                   {phase.description}
                 </p>
+                
+                {/* Active Indicator */}
+                {activePhase === phase.id && (
+                  <div 
+                    className="w-full h-1 rounded-full mt-4"
+                    style={{ backgroundColor: phase.color }}
+                  />
+                )}
               </div>
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Selected Phase Details */}
+      {currentPhase && (
+        <Card className="mb-16 bg-white dark:bg-gray-800 shadow-xl border-0 rounded-2xl overflow-hidden">
+          {/* Phase Header */}
+          <div 
+            className="h-2 w-full"
+            style={{ backgroundColor: currentPhase.color }}
+          />
+          
+          <CardContent className="p-8">
+            {/* Phase Title */}
+            <div className="text-center mb-8">
+              <div 
+                className={`w-20 h-20 rounded-full bg-gradient-to-br ${currentPhase.bgGradient} flex items-center justify-center text-4xl mx-auto mb-4 shadow-lg`}
+              >
+                {currentPhase.icon}
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                {currentPhase.name}
+              </h3>
+              <Badge 
+                variant="outline" 
+                className="text-sm px-4 py-1 border-2"
+                style={{ 
+                  borderColor: currentPhase.color, 
+                  color: currentPhase.color, 
+                  backgroundColor: currentPhase.color + '15' 
+                }}
+              >
+                {currentPhase.duration}
+              </Badge>
+              <p className="text-gray-600 dark:text-gray-300 mt-3 text-lg">
+                {currentPhase.description}
+              </p>
+            </div>
+
+            {/* Content Grid */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Key Milestones */}
+              <div>
+                <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-6">
+                  <Target className="h-5 w-5 mr-2" style={{ color: currentPhase.color }} />
+                  Key Milestones
+                </h4>
+                <ul className="space-y-3">
+                  {currentPhase.milestones.map((milestone, i) => (
+                    <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
+                      <div 
+                        className="w-2 h-2 rounded-full mt-3 mr-4 flex-shrink-0"
+                        style={{ backgroundColor: currentPhase.color }}
+                      />
+                      <span className="text-base leading-relaxed">{milestone}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Core Activities */}
+              <div>
+                <h4 className="flex items-center text-xl font-semibold text-gray-900 dark:text-white mb-6">
+                  <CheckCircle2 className="h-5 w-5 mr-2 text-green-500" />
+                  Core Activities
+                </h4>
+                <ul className="space-y-3">
+                  {currentPhase.activities.map((activity, i) => (
+                    <li key={i} className="flex items-start text-gray-600 dark:text-gray-300">
+                      <CheckCircle2 className="h-4 w-4 mt-1 mr-3 text-green-500 flex-shrink-0" />
+                      <span className="text-base leading-relaxed">{activity}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
       </div>
 
       {/* Framework Stats */}
