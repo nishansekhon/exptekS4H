@@ -115,17 +115,23 @@ const FinanceImplementationPage = () => {
           </div>
 
           <div className="relative">
-            {/* SAP Activate Roadmap Image Placeholder */}
+            {/* ExpTek Custom Implementation Roadmap */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-2xl">
-              <div className="aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900 dark:to-cyan-900 rounded-xl flex items-center justify-center">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_a2536fe4-9c15-4a85-9443-258b6a5c1c2c/artifacts/1ia0hll1_image.png" 
-                  alt="SAP Activate Methodology Roadmap"
-                  className="w-full h-full object-contain rounded-xl"
-                />
+              <div className="aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900 dark:to-cyan-900 rounded-xl p-6 flex items-center justify-center overflow-hidden">
+                {/* Mini Preview of Custom Roadmap */}
+                <div className="w-full h-full flex items-center justify-center">
+                  <div className="grid grid-cols-6 gap-2 w-full max-w-md">
+                    <div className="h-8 bg-yellow-400 rounded flex items-center justify-center text-xs font-bold text-white">1</div>
+                    <div className="h-8 bg-green-400 rounded flex items-center justify-center text-xs font-bold text-white">2</div>
+                    <div className="h-8 bg-teal-400 rounded flex items-center justify-center text-xs font-bold text-white">3</div>
+                    <div className="h-8 bg-blue-400 rounded flex items-center justify-center text-xs font-bold text-white">4</div>
+                    <div className="h-8 bg-orange-400 rounded flex items-center justify-center text-xs font-bold text-white">5</div>
+                    <div className="h-8 bg-purple-400 rounded flex items-center justify-center text-xs font-bold text-white">6</div>
+                  </div>
+                </div>
               </div>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">
-                SAP Activate Methodology - 6 Phase Implementation Approach
+                ExpTek Finance Implementation Methodology - 6 Phase Roadmap
               </p>
             </div>
           </div>
