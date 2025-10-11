@@ -265,25 +265,25 @@ const CustomRoadmap = () => {
                       color: '#52C41A',
                       fontSize: '14px',
                       fontWeight: '600',
-                      marginBottom: '12px',
+                      marginBottom: '10px',
                       textTransform: 'none'
                     }}>
                       Core Activities:
                     </h4>
                     <ul>
                       {phase.activities.map((activity, i) => (
-                        <li key={i} className="flex items-start" style={{ marginBottom: '8px' }}>
+                        <li key={i} className="flex items-start" style={{ marginBottom: '6px' }}>
                           <CheckCircle2 className="flex-shrink-0" style={{ 
-                            width: '14px',
-                            height: '14px',
-                            marginTop: '1px',
-                            marginRight: '12px',
+                            width: '11px',
+                            height: '11px',
+                            marginTop: '2px',
+                            marginRight: '8px',
                             color: '#52C41A'
                           }} />
                           <span style={{ 
-                            fontSize: '13px',
-                            lineHeight: '1.4',
-                            color: '#b0b0b0'
+                            fontSize: '12px',
+                            lineHeight: '1.5',
+                            color: '#a8a8a8'
                           }}>
                             {activity}
                           </span>
