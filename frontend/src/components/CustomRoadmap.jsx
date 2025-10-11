@@ -13,106 +13,116 @@ const CustomRoadmap = () => {
     {
       id: 'discover',
       name: 'DISCOVER',
-      duration: 'Weeks 1-2',
+      duration: 'Weeks 1-3',
       color: '#F4B942',
       bgGradient: 'from-yellow-400 to-orange-400',
       icon: '🔍',
       description: 'Business Assessment & Project Initiation',
+      milestones: [
+        'Project Kickoff & Charter Development',
+        'Current State Assessment', 
+        'Cloud Trial Environment Setup',
+        'Stakeholder Alignment Sessions',
+        'Business Case Validation',
+        'Implementation Roadmap Finalization'
+      ],
       activities: [
         'Business process assessment',
-        'Solution scoping & definition',
-        'Project kickoff & governance',
-        'Team enablement & access setup'
-      ],
-      deliverables: [
-        'Project charter',
-        'Scope document',
-        'Initial system access',
-        'Workshop schedule'
+        'Solution scoping & sizing',
+        'Project team formation',
+        'Initial system access setup'
       ]
     },
     {
       id: 'prepare',
       name: 'PREPARE',
-      duration: 'Weeks 3-4',
+      duration: 'Weeks 4-6',
       color: '#52C41A',
       bgGradient: 'from-green-400 to-emerald-400',
       icon: '📋',
       description: 'Foundation Setup & Configuration Design',
+      milestones: [
+        'Governance Structure Establishment',
+        'Fit-to-Standard Workshop Series (25+ sessions)',
+        'Chart of Accounts Design',
+        'Integration Architecture Blueprint',
+        'Data Migration Strategy',
+        'Configuration Workbook Creation'
+      ],
       activities: [
         'Fit-to-Standard analysis',
         'Configuration planning',
         'Integration architecture design',
-        'Data migration strategy'
-      ],
-      deliverables: [
-        'Fit-Gap analysis report',
-        'Configuration workbook',
-        'Integration design doc',
-        'Data migration plan'
+        'Data strategy development'
       ]
     },
     {
       id: 'explore',
       name: 'EXPLORE',
-      duration: 'Weeks 5-8',
+      duration: 'Weeks 8-12',
       color: '#17A2B8',
       bgGradient: 'from-teal-400 to-cyan-400',
       icon: '🔧',
       description: 'System Build & Configuration Execution',
-      activities: [
-        'System configuration workshops',
-        'Development system build',
-        'Integration development',
-        'Data extraction & cleansing'
+      milestones: [
+        'Development System Configuration',
+        'Finance Module Workshop Completion (40+ sessions)',
+        'Integration Development & Testing',
+        'Master Data Template Creation',
+        'Security & Authorization Setup',
+        'Initial Data Load & Validation'
       ],
-      deliverables: [
-        'Configured DEV system',
-        'Integration prototypes',
-        'Cleansed data sets',
-        'Test case library'
+      activities: [
+        'Core system configuration',
+        'Finance workshop execution',
+        'Integration development',
+        'Master data preparation'
       ]
     },
     {
       id: 'realize',
       name: 'REALIZE',
-      duration: 'Weeks 9-11',
+      duration: 'Weeks 13-16',
       color: '#0A6ED1',
       bgGradient: 'from-blue-400 to-blue-600',
       icon: '⚡',
       description: 'Testing, Training & Final Preparation',
-      activities: [
-        'Quality system configuration',
-        'End-to-end testing',
-        'User training delivery',
-        'UAT execution'
+      milestones: [
+        'Quality System Configuration Complete',
+        'End-to-End Testing Execution',
+        'User Acceptance Testing (UAT)',
+        'Training Program Delivery (20+ sessions)',
+        'Cutover Rehearsal Execution',
+        'Go-Live Readiness Assessment'
       ],
-      deliverables: [
-        'Configured QA system',
-        'Test results & sign-off',
-        'Training materials',
-        'UAT approval'
+      activities: [
+        'System & integration testing',
+        'User training delivery',
+        'Data migration execution',
+        'UAT completion & sign-off'
       ]
     },
     {
       id: 'deploy',
       name: 'DEPLOY',
-      duration: 'Week 12',
+      duration: 'Week 17',
       color: '#FF8C00',
       bgGradient: 'from-orange-400 to-red-400',
       icon: '🚀',
       description: 'Production Go-Live & Immediate Support',
-      activities: [
-        'Production cutover',
-        'Go-live execution',
-        'Hypercare support',
-        'Issue resolution'
+      milestones: [
+        'Production System Activation',
+        'Final Data Cutover Execution',
+        'Go-Live Weekend Support',
+        'First Month-End Close Support',
+        'Issue Resolution & Optimization',
+        'Go-Live Success Confirmation'
       ],
-      deliverables: [
-        'Live production system',
-        'Cutover completion report',
-        'Support documentation',
-        'Go-live sign-off'
+      activities: [
+        'Production system cutover',
+        'Go-live execution support',
+        'Hypercare support (2-4 weeks)',
+        'Performance monitoring'
       ]
     },
     {
@@ -123,17 +133,19 @@ const CustomRoadmap = () => {
       bgGradient: 'from-purple-400 to-indigo-400',
       icon: '🔄',
       description: 'Continuous Support & Optimization',
-      activities: [
-        'Continuous optimization',
-        'Enhancement delivery',
-        'Monthly health checks',
-        'Release management'
+      milestones: [
+        'Ongoing Support Services',
+        'Monthly System Health Checks',
+        'Quarterly Business Reviews',
+        'SAP Release Management',
+        'Enhancement Backlog Management',
+        'Value Realization Tracking'
       ],
-      deliverables: [
-        'Support SLA reports',
-        'Enhancement roadmap',
-        'Performance analytics',
-        'Quarterly reviews'
+      activities: [
+        'Continuous system optimization',
+        'Enhancement delivery',
+        'Support services',
+        'Value realization tracking'
       ]
     }
   ];
