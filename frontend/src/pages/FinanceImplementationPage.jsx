@@ -50,10 +50,6 @@ const FinanceImplementationPage = () => {
     // gtag('event', 'resource_download', { resource_name: resource, page: 'finance-implementation' });
   };
 
-  const togglePhaseExpansion = (phaseId) => {
-    setExpandedPhase(expandedPhase === phaseId ? null : phaseId);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-blue-950">
       {/* Breadcrumb Navigation */}
