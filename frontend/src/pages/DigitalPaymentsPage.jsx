@@ -21,7 +21,11 @@ import {
   Lock,
   TrendingUp,
   Users,
-  Clock
+  Clock,
+  CheckCircle,
+  Target,
+  FileText,
+  ArrowDown
 } from 'lucide-react';
 import PaymentEcosystemDiagram from '../components/PaymentEcosystemDiagram';
 import PaymentFlowDiagram from '../components/PaymentFlowDiagram';
