@@ -231,16 +231,16 @@ const CustomRoadmap = () => {
                       color: phase.color,
                       fontSize: '14px',
                       fontWeight: '600',
-                      marginBottom: '12px',
+                      marginBottom: '10px',
                       textTransform: 'none'
                     }}>
                       Key Milestones:
                     </h4>
                     <ul>
                       {phase.milestones.map((milestone, i) => (
-                        <li key={i} className="flex items-start" style={{ marginBottom: '8px' }}>
+                        <li key={i} className="flex items-start" style={{ marginBottom: '6px' }}>
                           <div 
-                            className="rounded-full mt-1 mr-3 flex-shrink-0"
+                            className="rounded-full mt-1 mr-2 flex-shrink-0"
                             style={{ 
                               backgroundColor: phase.color,
                               width: '4px',
@@ -248,9 +248,9 @@ const CustomRoadmap = () => {
                             }}
                           />
                           <span style={{ 
-                            fontSize: '13px',
-                            lineHeight: '1.4',
-                            color: '#b0b0b0'
+                            fontSize: '12px',
+                            lineHeight: '1.5',
+                            color: '#a8a8a8'
                           }}>
                             {milestone}
                           </span>
