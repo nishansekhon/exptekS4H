@@ -78,7 +78,7 @@ const EnhancedHomePage = () => {
                 <div className="text-white text-xs sm:text-sm font-medium leading-tight">Faster Implementation</div>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-lg sm:rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 text-center min-h-[120px] sm:min-h-[140px] flex flex-col justify-center touch-manipulation">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#60d5ff] mb-1 sm:mb-2">10+</div>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#60d5ff] mb-1 sm:mb-2">20+</div>
                 <div className="text-white text-xs sm:text-sm font-medium leading-tight">Years SAP Experience</div>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-lg sm:rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 text-center min-h-[120px] sm:min-h-[140px] flex flex-col justify-center touch-manipulation">
