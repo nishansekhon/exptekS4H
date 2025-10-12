@@ -43,7 +43,7 @@ const ModernHeader = () => {
           <Link to="/" className="flex items-center space-x-3 touch-manipulation">
             <img 
               src="https://customer-assets.emergentagent.com/job_commit-preview/artifacts/wtlv5yv8_ExpTek%20Logo.jpeg" 
-              alt="ExpTek Logo" 
+              alt="ExpTek - SAP S/4HANA Public Cloud Finance Implementation Experts" 
               className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-12'} w-auto`}
             />
             <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 hidden sm:block transition-colors">
