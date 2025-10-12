@@ -9,7 +9,7 @@ const ModernFooter = () => {
     <footer className="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content - Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 py-12 sm:py-16">
           {/* Left Column - Company Info */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-6">
