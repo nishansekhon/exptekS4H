@@ -75,18 +75,31 @@ const FinanceImplementationPage = () => {
 
       {/* Hero Section */}
       <section className="w-full overflow-x-hidden">
-        <div className="container mx-auto px-3 sm:px-6 py-12 sm:py-16">
+        <div className="w-full px-4 sm:px-6 py-12 sm:py-16 max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="space-y-4 sm:space-y-6 max-w-full">
+            <div className="space-y-4 sm:space-y-6 w-full">
             <Badge variant="outline" className="text-blue-600 border-blue-200 bg-blue-50 dark:text-blue-400 dark:border-blue-800 dark:bg-blue-950/50">
               {financeImplementation.hero.badge}
             </Badge>
             
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white max-w-full" style={{ wordBreak: 'break-word', overflowWrap: 'anywhere', hyphens: 'auto', whiteSpace: 'normal', display: 'block', lineHeight: '1.4', width: '100%' }}>
+            <h1 
+              className="text-base sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white"
+              style={{ 
+                wordBreak: 'break-word', 
+                overflowWrap: 'break-word', 
+                wordWrap: 'break-word',
+                hyphens: 'auto',
+                WebkitHyphens: 'auto',
+                MozHyphens: 'auto',
+                msHyphens: 'auto',
+                whiteSpace: 'normal', 
+                lineHeight: '1.5'
+              }}
+            >
               {financeImplementation.hero.title}
             </h1>
             
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed break-words w-full">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed" style={{ wordBreak: 'break-word', overflowWrap: 'break-word' }}>
               {financeImplementation.hero.subtitle}
             </p>
 
