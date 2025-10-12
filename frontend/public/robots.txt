@@ -1,0 +1,34 @@
+# Robots.txt for ExpTEK
+# Allow all web crawlers to access all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://exptek.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Specific rules for common bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block access to admin/backend paths (if any exist in future)
+User-agent: *
+Disallow: /admin/
+Disallow: /api/internal/
+
+# Allow access to legal pages
+User-agent: *
+Allow: /privacy-policy
+Allow: /terms-of-use
+Allow: /cookie-policy
+Allow: /legal-disclosure
+Allow: /do-not-sell
