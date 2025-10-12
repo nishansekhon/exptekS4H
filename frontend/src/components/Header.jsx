@@ -39,7 +39,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="https://customer-assets.emergentagent.com/job_sapcloudfin/artifacts/r7yxv8eg_ExpTek%20Logo.jpeg" 
+              src="https://customer-assets.emergentagent.com/job_commit-preview/artifacts/wtlv5yv8_ExpTek%20Logo.jpeg" 
               alt="ExpTek Logo" 
               className="h-12 w-auto"
             />
