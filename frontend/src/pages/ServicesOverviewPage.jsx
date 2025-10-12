@@ -142,7 +142,7 @@ const ServicesOverviewPage = () => {
             Our Services
           </h1>
           
-          <p className="text-2xl text-blue-600 dark:text-blue-400 font-semibold mb-6">
+          <p className="text-lg sm:text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-semibold mb-6 break-words px-4">
             Comprehensive SAP S/4HANA Public Cloud Finance Solutions
           </p>
           
