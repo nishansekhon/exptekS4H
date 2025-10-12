@@ -83,13 +83,13 @@ const FinanceImplementationPage = () => {
             </Badge>
             
             <h1 
-              className="font-bold text-gray-900 dark:text-white text-sm sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl"
+              className="font-bold text-gray-900 dark:text-white text-xs sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl"
               style={{ 
                 wordBreak: 'break-word', 
                 overflowWrap: 'break-word', 
                 hyphens: 'auto',
                 whiteSpace: 'normal', 
-                lineHeight: '1.5',
+                lineHeight: '1.6',
                 width: '100%',
                 maxWidth: '100%'
               }}
