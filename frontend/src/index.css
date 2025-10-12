@@ -244,6 +244,9 @@ code {
   p {
     font-size: 1rem !important; /* 16px */
     line-height: 1.6 !important;
+    width: 100% !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   /* Ensure all text elements break properly */
