@@ -970,17 +970,17 @@ const FinanceImplementationPage = () => {
       </section>
 
       {/* Final CTA Section - HIGH PRIORITY #4 */}
-      <section className="bg-gradient-to-r from-blue-600 via-blue-700 to-cyan-600 dark:from-blue-800 dark:via-blue-900 dark:to-cyan-800 py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-r from-blue-600 via-blue-700 to-cyan-600 dark:from-blue-800 dark:via-blue-900 dark:to-cyan-800 py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
           {/* Main CTA Content */}
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6 leading-tight">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight break-words">
               Transform Your Finance Operations Faster
             </h2>
-            <p className="text-2xl text-blue-100 mb-4 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-100 mb-3 sm:mb-4 max-w-4xl mx-auto leading-relaxed break-words px-2">
               Join 50+ companies who have achieved 60% faster month-end close and $2M+ annual savings with ExpTek's proven SAP S/4HANA Cloud Finance implementation.
             </p>
-            <p className="text-lg text-blue-200 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-blue-200 max-w-3xl mx-auto break-words px-2">
               Don't let outdated finance systems hold your business back. Get started with a free consultation today.
             </p>
           </div>
