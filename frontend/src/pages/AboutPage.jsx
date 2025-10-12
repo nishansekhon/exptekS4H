@@ -125,11 +125,11 @@ const AboutPage = () => {
             ABOUT EXPTEK
           </Badge>
           
-          <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight break-words">
             About ExpTek
           </h1>
           
-          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed break-words px-4">
             {/* [CONTENT TO BE UPDATED] */}
             Your trusted partner for SAP S/4HANA Public Cloud Finance excellence. Delivering faster, more 
             efficient implementations with proven expertise and methodology.
