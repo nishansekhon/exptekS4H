@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img 
                 src="https://customer-assets.emergentagent.com/job_commit-preview/artifacts/wtlv5yv8_ExpTek%20Logo.jpeg" 
-                alt="ExpTek Logo" 
+                alt="ExpTek - SAP S/4HANA Finance Consulting Services" 
                 className="h-12 w-auto"
               />
               <div className="text-sm text-gray-400">SAP Finance Experts</div>
