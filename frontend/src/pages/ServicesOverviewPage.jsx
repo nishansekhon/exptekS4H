@@ -27,7 +27,7 @@ const ServicesOverviewPage = () => {
       iconEmoji: "📊",
       description: "Complete SAP S/4HANA Public Cloud Finance implementation with proven methodologies and best practices.",
       link: "/services/finance-implementation",
-      features: ["12-20 week implementation", "100+ Fit-to-Standard workshops", "SAP Activate methodology"],
+      features: ["16-20 week implementation", "100+ Fit-to-Standard workshops", "SAP Activate methodology"],
       status: "Available",
       color: "from-blue-500 to-cyan-600"
     },
