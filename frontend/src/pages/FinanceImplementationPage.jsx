@@ -74,18 +74,18 @@ const FinanceImplementationPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+      <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="space-y-4 sm:space-y-6">
             <Badge variant="outline" className="text-blue-600 border-blue-200 bg-blue-50 dark:text-blue-400 dark:border-blue-800 dark:bg-blue-950/50">
               {financeImplementation.hero.badge}
             </Badge>
             
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white leading-tight break-words">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white leading-tight break-words w-full">
               {financeImplementation.hero.title}
             </h1>
             
-            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed break-words w-full">
               {financeImplementation.hero.subtitle}
             </p>
 
