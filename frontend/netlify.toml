@@ -1,0 +1,68 @@
+# Netlify configuration for ExpTek website
+# Handles www to non-www redirects and other optimizations
+
+[build]
+  publish = "build"
+  command = "npm run build"
+
+# WWW to Non-WWW Redirects (301 Permanent)
+[[redirects]]
+  from = "https://www.exptek.com/*"
+  to = "https://exptek.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.exptek.com/*"
+  to = "https://exptek.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://exptek.com/*"
+  to = "https://exptek.com/:splat"
+  status = 301
+  force = true
+
+# React Router support - SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+# Cache static assets
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Don't cache HTML
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
