@@ -204,6 +204,17 @@ code {
 
 /* Mobile Breakpoints: 0-767px */
 @media (max-width: 767px) {
+  /* CRITICAL: Force proper width on all containers */
+  .container,
+  .max-w-5xl,
+  .max-w-4xl,
+  .max-w-3xl,
+  .max-w-2xl,
+  .mx-auto {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
   /* Typography - Make text readable on mobile */
   h1 {
     font-size: 1.875rem !important; /* 30px */
@@ -211,6 +222,7 @@ code {
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
+    width: 100% !important;
   }
 
   h2 {
