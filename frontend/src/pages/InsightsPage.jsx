@@ -191,11 +191,11 @@ const InsightsPage = () => {
             INSIGHTS & EXPERTISE
           </Badge>
           
-          <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight break-words">
             SAP Finance Insights & Best Practices
           </h1>
           
-          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed break-words px-4">
             {/* [CONTENT TO BE UPDATED] */}
             Expert guidance for SAP S/4HANA Public Cloud Finance success. Stay ahead with implementation tips, 
             best practices, and industry insights from our certified consultants.
