@@ -44,6 +44,12 @@ function App() {
               <Route path="/case-studies" element={<CaseStudiesPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/insights" element={<InsightsPage />} />
+              {/* Legal Pages */}
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-use" element={<TermsOfUse />} />
+              <Route path="/cookie-policy" element={<CookiePolicy />} />
+              <Route path="/do-not-sell" element={<DoNotSell />} />
+              <Route path="/legal-disclosure" element={<LegalDisclosure />} />
             </Routes>
           </main>
           <ModernFooter />
