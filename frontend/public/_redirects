@@ -1,0 +1,6 @@
+# Redirect www to non-www
+https://www.exptek.com/* https://exptek.com/:splat 301!
+http://www.exptek.com/* https://exptek.com/:splat 301!
+
+# Force HTTPS
+http://exptek.com/* https://exptek.com/:splat 301!
