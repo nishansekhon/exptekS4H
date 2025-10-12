@@ -222,7 +222,7 @@ const DigitalPaymentsPage = () => {
               Digital Payment Solutions
             </Badge>
             
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white leading-tight break-words">
               Digital Payments & Cloud for Customer Payment
             </h1>
             
