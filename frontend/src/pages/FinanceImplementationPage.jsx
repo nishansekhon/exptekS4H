@@ -83,17 +83,16 @@ const FinanceImplementationPage = () => {
             </Badge>
             
             <h1 
-              className="text-base sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white"
+              className="font-bold text-gray-900 dark:text-white"
               style={{ 
+                fontSize: '1rem',
                 wordBreak: 'break-word', 
                 overflowWrap: 'break-word', 
-                wordWrap: 'break-word',
                 hyphens: 'auto',
-                WebkitHyphens: 'auto',
-                MozHyphens: 'auto',
-                msHyphens: 'auto',
                 whiteSpace: 'normal', 
-                lineHeight: '1.5'
+                lineHeight: '1.5',
+                width: '100%',
+                maxWidth: '100%'
               }}
             >
               {financeImplementation.hero.title}
