@@ -81,7 +81,7 @@ const FinanceImplementationPage = () => {
               {financeImplementation.hero.badge}
             </Badge>
             
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white leading-tight w-full max-w-full" style={{ wordBreak: 'break-word', overflowWrap: 'break-word', hyphens: 'auto', whiteSpace: 'normal', display: 'block' }}>
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white w-full max-w-full" style={{ wordBreak: 'break-word', overflowWrap: 'break-word', hyphens: 'auto', whiteSpace: 'normal', display: 'block', lineHeight: '1.3' }}>
               {financeImplementation.hero.title}
             </h1>
             
