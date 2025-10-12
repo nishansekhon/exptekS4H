@@ -13,6 +13,11 @@ import CaseStudiesPage from './pages/CaseStudiesPage';
 import AboutPage from './pages/AboutPage';
 import InsightsPage from './pages/InsightsPage';
 import ComingSoonPage from './components/ComingSoonPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfUse from './pages/TermsOfUse';
+import CookiePolicy from './pages/CookiePolicy';
+import DoNotSell from './pages/DoNotSell';
+import LegalDisclosure from './pages/LegalDisclosure';
 import './App.css';
 
 function App() {
