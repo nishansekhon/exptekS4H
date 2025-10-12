@@ -152,3 +152,213 @@ code {
     @apply bg-background text-foreground;
     }
 }
+
+/* ========================================
+   CRITICAL MOBILE RESPONSIVENESS FIXES
+   ======================================== */
+
+@layer base {
+  /* Prevent horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Make images responsive by default */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer utilities {
+  /* Mobile-first container */
+  .container-responsive {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-responsive {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-responsive {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+}
+
+/* Mobile Breakpoints: 0-767px */
+@media (max-width: 767px) {
+  /* Typography - Make text readable on mobile */
+  h1 {
+    font-size: 1.875rem !important; /* 30px */
+    line-height: 1.2 !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  h2 {
+    font-size: 1.5rem !important; /* 24px */
+    line-height: 1.3 !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  h3 {
+    font-size: 1.25rem !important; /* 20px */
+    line-height: 1.4 !important;
+  }
+
+  h4 {
+    font-size: 1.125rem !important; /* 18px */
+  }
+
+  p {
+    font-size: 1rem !important; /* 16px */
+    line-height: 1.6 !important;
+  }
+
+  /* Ensure all text elements break properly */
+  .text-4xl, .text-5xl, .text-6xl {
+    font-size: 1.875rem !important;
+  }
+
+  .text-3xl {
+    font-size: 1.5rem !important;
+  }
+
+  .text-2xl {
+    font-size: 1.25rem !important;
+  }
+
+  .text-xl {
+    font-size: 1.125rem !important;
+  }
+
+  /* Sections and spacing */
+  section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .hero {
+    padding: 2rem 1rem !important;
+  }
+
+  /* Navigation fixes */
+  nav ul {
+    flex-direction: column !important;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  /* Grid layouts - Stack on mobile */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Services grid */
+  .services-grid,
+  .stats-grid,
+  .insights-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* Cards */
+  .card,
+  .service-card,
+  .insight-card {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  /* Buttons - Full width on mobile */
+  .cta-buttons {
+    flex-direction: column !important;
+    width: 100%;
+  }
+
+  .cta-buttons > * {
+    width: 100% !important;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Footer */
+  footer .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Hide overflow */
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  /* Make sure containers don't overflow */
+  .max-w-7xl,
+  .max-w-6xl,
+  .max-w-5xl {
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Extra small phones: 0-390px */
+@media (max-width: 390px) {
+  h1 {
+    font-size: 1.5rem !important; /* 24px */
+  }
+
+  h2 {
+    font-size: 1.25rem !important; /* 20px */
+  }
+
+  .text-4xl, .text-5xl, .text-6xl {
+    font-size: 1.5rem !important;
+  }
+
+  section,
+  .container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+}
+
+/* Tablet: 768px-1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .services-grid,
+  .insights-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
