@@ -247,6 +247,7 @@ const FinanceImplementationPage = () => {
               </p>
             </div>
           </div>
+          </div>
         </div>
       </section>
 
