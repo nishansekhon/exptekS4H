@@ -39,6 +39,25 @@
         
         <title>ExpTEK | SAP S/4HANA Public Cloud Expert</title>
         
+        <!-- WWW to Non-WWW Redirect Script -->
+        <script>
+        // Permanent redirect from www to non-www (301 equivalent for client-side)
+        (function() {
+            var host = window.location.host;
+            var protocol = window.location.protocol;
+            
+            // Check if hostname starts with 'www.'
+            if (host.indexOf('www.') === 0) {
+                // Remove 'www.' from hostname
+                var newHost = host.substring(4);
+                var newUrl = protocol + '//' + newHost + window.location.pathname + window.location.search + window.location.hash;
+                
+                // Perform redirect (permanent)
+                window.location.replace(newUrl);
+            }
+        })();
+        </script>
+        
         <!-- Structured Data (JSON-LD) for SEO -->
         <script type="application/ld+json">
         {
