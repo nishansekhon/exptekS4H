@@ -146,7 +146,7 @@ const ServicesOverviewPage = () => {
             Comprehensive SAP S/4HANA Public Cloud Finance Solutions
           </p>
           
-          <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed w-full max-w-4xl mx-auto break-words px-2">
             {/* [CONTENT TO BE UPDATED] */}
             ExpTek specializes in end-to-end SAP Public Cloud Finance consulting, from implementation to optimization. 
             Explore our expert services designed to transform your finance operations with proven methodologies and industry best practices.
