@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to ExpTEK...</title>
+    
+    <!-- Meta refresh as backup (redirects after 0 seconds) -->
+    <meta http-equiv="refresh" content="0;url=https://exptek.com">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://exptek.com">
+    
+    <!-- Immediate JavaScript redirect -->
+    <script>
+    (function() {
+        // Get current path, search, and hash
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        
+        // Build redirect URL
+        var redirectUrl = 'https://exptek.com' + path + search + hash;
+        
+        // Perform permanent redirect (replaces history)
+        window.location.replace(redirectUrl);
+    })();
+    </script>
+    
+    <!-- Preload the destination -->
+    <link rel="preconnect" href="https://exptek.com">
+    <link rel="dns-prefetch" href="https://exptek.com">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        .redirect-message {
+            padding: 2rem;
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid #fff;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-message">
+        <h1>Redirecting to ExpTEK...</h1>
+        <div class="spinner"></div>
+        <p>You are being redirected to our main website.</p>
+        <p>If you are not redirected automatically, please click here:</p>
+        <p><a href="https://exptek.com" id="manual-link">https://exptek.com</a></p>
+    </div>
+    
+    <!-- Update manual link with current path -->
+    <script>
+    var manualLink = document.getElementById('manual-link');
+    if (manualLink) {
+        var fullUrl = 'https://exptek.com' + window.location.pathname + window.location.search + window.location.hash;
+        manualLink.href = fullUrl;
+        manualLink.textContent = fullUrl;
+    }
+    </script>
+    
+    <!-- Fallback redirect after 2 seconds if nothing else works -->
+    <script>
+    setTimeout(function() {
+        if (window.location.host.indexOf('www.') === 0) {
+            window.location.href = 'https://exptek.com' + window.location.pathname + window.location.search + window.location.hash;
+        }
+    }, 2000);
+    </script>
+</body>
+</html>
