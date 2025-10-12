@@ -74,9 +74,9 @@ const FinanceImplementationPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="space-y-4 sm:space-y-6">
+      <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 w-full overflow-hidden">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
+          <div className="space-y-4 sm:space-y-6 w-full overflow-hidden">
             <Badge variant="outline" className="text-blue-600 border-blue-200 bg-blue-50 dark:text-blue-400 dark:border-blue-800 dark:bg-blue-950/50">
               {financeImplementation.hero.badge}
             </Badge>
