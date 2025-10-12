@@ -40,7 +40,7 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3">
             <img 
               src="https://customer-assets.emergentagent.com/job_commit-preview/artifacts/wtlv5yv8_ExpTek%20Logo.jpeg" 
-              alt="ExpTek Logo" 
+              alt="ExpTek - SAP S/4HANA Public Cloud Finance Implementation Experts" 
               className="h-12 w-auto"
             />
             <div className="hidden sm:block">
