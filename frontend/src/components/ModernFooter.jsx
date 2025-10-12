@@ -100,7 +100,7 @@ const ModernFooter = () => {
             </ul>
           </div>
 
-          {/* Right Column - Company */}
+          {/* Third Column - Company */}
           <div>
             <h3 className="text-lg font-semibold mb-6 text-white">Company</h3>
             <ul className="space-y-3">
@@ -136,12 +136,51 @@ const ModernFooter = () => {
                   Contact Us
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Fourth Column - Legal */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6 text-white">Legal</h3>
+            <ul className="space-y-3">
               <li>
                 <Link 
-                  to="/privacy" 
+                  to="/privacy-policy" 
                   className="text-gray-300 hover:text-[#60d5ff] transition-colors text-sm touch-manipulation block py-1 min-h-[44px] flex items-center"
                 >
                   Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/terms-of-use" 
+                  className="text-gray-300 hover:text-[#60d5ff] transition-colors text-sm touch-manipulation block py-1 min-h-[44px] flex items-center"
+                >
+                  Terms of Use
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/cookie-policy" 
+                  className="text-gray-300 hover:text-[#60d5ff] transition-colors text-sm touch-manipulation block py-1 min-h-[44px] flex items-center"
+                >
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/legal-disclosure" 
+                  className="text-gray-300 hover:text-[#60d5ff] transition-colors text-sm touch-manipulation block py-1 min-h-[44px] flex items-center"
+                >
+                  Legal Disclosure
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/do-not-sell" 
+                  className="text-gray-300 hover:text-[#60d5ff] transition-colors text-sm touch-manipulation block py-1 min-h-[44px] flex items-center"
+                >
+                  Do Not Sell My Info
                 </Link>
               </li>
             </ul>
