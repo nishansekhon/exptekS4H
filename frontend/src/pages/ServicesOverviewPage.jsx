@@ -133,7 +133,7 @@ const ServicesOverviewPage = () => {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16">
-        <div className="text-center max-w-5xl mx-auto">
+        <div className="text-center w-full max-w-5xl mx-auto">
           <Badge variant="outline" className="text-blue-600 border-blue-200 bg-blue-50 dark:text-blue-400 dark:border-blue-800 dark:bg-blue-950/50 mb-6">
             ExpTek Services Portfolio
           </Badge>
